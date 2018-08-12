@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4114538C211EEFD100FD7258 /* MDMSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4114538B211EEFD100FD7258 /* MDMSectionModel.m */; };
+		4114538F211EF53C00FD7258 /* MDMRowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4114538E211EF53C00FD7258 /* MDMRowModel.m */; };
+		4114539321201C3600FD7258 /* GIFSpeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4114539221201C3600FD7258 /* GIFSpeedViewController.m */; };
 		4165E57B211DC20F00F6A0E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4165E573211DC20F00F6A0E9 /* Assets.xcassets */; };
 		4165E57C211DC20F00F6A0E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4165E574211DC20F00F6A0E9 /* LaunchScreen.storyboard */; };
 		4165E57D211DC20F00F6A0E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4165E576211DC20F00F6A0E9 /* Main.storyboard */; };
@@ -17,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4114538A211EEFD100FD7258 /* MDMSectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMSectionModel.h; sourceTree = "<group>"; };
+		4114538B211EEFD100FD7258 /* MDMSectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMSectionModel.m; sourceTree = "<group>"; };
+		4114538D211EF53C00FD7258 /* MDMRowModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMRowModel.h; sourceTree = "<group>"; };
+		4114538E211EF53C00FD7258 /* MDMRowModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMRowModel.m; sourceTree = "<group>"; };
+		4114539121201C3600FD7258 /* GIFSpeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIFSpeedViewController.h; sourceTree = "<group>"; };
+		4114539221201C3600FD7258 /* GIFSpeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIFSpeedViewController.m; sourceTree = "<group>"; };
 		4165E558211DC19A00F6A0E9 /* Valhalla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Valhalla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4165E572211DC20F00F6A0E9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4165E573211DC20F00F6A0E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4114539021201C2200FD7258 /* ImageAndGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				4114539121201C3600FD7258 /* GIFSpeedViewController.h */,
+				4114539221201C3600FD7258 /* GIFSpeedViewController.m */,
+			);
+			path = ImageAndGraphics;
+			sourceTree = "<group>";
+		};
 		4165E54F211DC19A00F6A0E9 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +77,7 @@
 		4165E55A211DC19A00F6A0E9 /* Valhalla */ = {
 			isa = PBXGroup;
 			children = (
+				4114539021201C2200FD7258 /* ImageAndGraphics */,
 				4165E582211DC29200F6A0E9 /* Core */,
 				4165E571211DC20F00F6A0E9 /* Supporting Files */,
 			);
@@ -84,6 +103,10 @@
 			children = (
 				4165E583211DC2A200F6A0E9 /* MDMRootViewController.h */,
 				4165E584211DC2A200F6A0E9 /* MDMRootViewController.m */,
+				4114538A211EEFD100FD7258 /* MDMSectionModel.h */,
+				4114538B211EEFD100FD7258 /* MDMSectionModel.m */,
+				4114538D211EF53C00FD7258 /* MDMRowModel.h */,
+				4114538E211EF53C00FD7258 /* MDMRowModel.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -159,7 +182,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4114538C211EEFD100FD7258 /* MDMSectionModel.m in Sources */,
+				4114538F211EF53C00FD7258 /* MDMRowModel.m in Sources */,
 				4165E57F211DC20F00F6A0E9 /* AppDelegate.m in Sources */,
+				4114539321201C3600FD7258 /* GIFSpeedViewController.m in Sources */,
 				4165E57E211DC20F00F6A0E9 /* main.m in Sources */,
 				4165E585211DC2A200F6A0E9 /* MDMRootViewController.m in Sources */,
 			);
