@@ -17,6 +17,7 @@
 		4165E57F211DC20F00F6A0E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4165E579211DC20F00F6A0E9 /* AppDelegate.m */; };
 		4165E580211DC20F00F6A0E9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4165E57A211DC20F00F6A0E9 /* Info.plist */; };
 		4165E585211DC2A200F6A0E9 /* MDMRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4165E584211DC2A200F6A0E9 /* MDMRootViewController.m */; };
+		4165E5AA2121B67E00F6A0E9 /* GIFFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4165E5A92121B67E00F6A0E9 /* GIFFileTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		4165E57A211DC20F00F6A0E9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4165E583211DC2A200F6A0E9 /* MDMRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMRootViewController.h; sourceTree = "<group>"; };
 		4165E584211DC2A200F6A0E9 /* MDMRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMRootViewController.m; sourceTree = "<group>"; };
+		4165E5A82121B67E00F6A0E9 /* GIFFileTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIFFileTool.h; sourceTree = "<group>"; };
+		4165E5A92121B67E00F6A0E9 /* GIFFileTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIFFileTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,8 @@
 			children = (
 				4114539121201C3600FD7258 /* GIFSpeedViewController.h */,
 				4114539221201C3600FD7258 /* GIFSpeedViewController.m */,
+				4165E5A82121B67E00F6A0E9 /* GIFFileTool.h */,
+				4165E5A92121B67E00F6A0E9 /* GIFFileTool.m */,
 			);
 			path = ImageAndGraphics;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 				4114539321201C3600FD7258 /* GIFSpeedViewController.m in Sources */,
 				4165E57E211DC20F00F6A0E9 /* main.m in Sources */,
 				4165E585211DC2A200F6A0E9 /* MDMRootViewController.m in Sources */,
+				4165E5AA2121B67E00F6A0E9 /* GIFFileTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
