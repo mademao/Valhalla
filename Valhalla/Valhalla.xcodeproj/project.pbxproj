@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4114538C211EEFD100FD7258 /* MDMSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4114538B211EEFD100FD7258 /* MDMSectionModel.m */; };
 		4114538F211EF53C00FD7258 /* MDMRowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4114538E211EF53C00FD7258 /* MDMRowModel.m */; };
-		4114539321201C3600FD7258 /* GIFSpeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4114539221201C3600FD7258 /* GIFSpeedViewController.m */; };
 		4165E57B211DC20F00F6A0E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4165E573211DC20F00F6A0E9 /* Assets.xcassets */; };
 		4165E57C211DC20F00F6A0E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4165E574211DC20F00F6A0E9 /* LaunchScreen.storyboard */; };
 		4165E57D211DC20F00F6A0E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4165E576211DC20F00F6A0E9 /* Main.storyboard */; };
@@ -17,7 +16,8 @@
 		4165E57F211DC20F00F6A0E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4165E579211DC20F00F6A0E9 /* AppDelegate.m */; };
 		4165E580211DC20F00F6A0E9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4165E57A211DC20F00F6A0E9 /* Info.plist */; };
 		4165E585211DC2A200F6A0E9 /* MDMRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4165E584211DC2A200F6A0E9 /* MDMRootViewController.m */; };
-		4165E5AA2121B67E00F6A0E9 /* GIFFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4165E5A92121B67E00F6A0E9 /* GIFFileTool.m */; };
+		4165E5D321230C4D00F6A0E9 /* GIFFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4165E5CF21230C4D00F6A0E9 /* GIFFileTool.m */; };
+		4165E5D421230C4D00F6A0E9 /* GIFSpeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4165E5D221230C4D00F6A0E9 /* GIFSpeedViewController.m */; };
 		9C6FF43413A54E23EDFB5DBA /* libPods-Valhalla.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EBBB8B15F3BEAFA413597DF /* libPods-Valhalla.a */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +28,6 @@
 		4114538B211EEFD100FD7258 /* MDMSectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMSectionModel.m; sourceTree = "<group>"; };
 		4114538D211EF53C00FD7258 /* MDMRowModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMRowModel.h; sourceTree = "<group>"; };
 		4114538E211EF53C00FD7258 /* MDMRowModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMRowModel.m; sourceTree = "<group>"; };
-		4114539121201C3600FD7258 /* GIFSpeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIFSpeedViewController.h; sourceTree = "<group>"; };
-		4114539221201C3600FD7258 /* GIFSpeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIFSpeedViewController.m; sourceTree = "<group>"; };
 		4165E558211DC19A00F6A0E9 /* Valhalla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Valhalla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4165E572211DC20F00F6A0E9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4165E573211DC20F00F6A0E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,9 +38,11 @@
 		4165E57A211DC20F00F6A0E9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4165E583211DC2A200F6A0E9 /* MDMRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMRootViewController.h; sourceTree = "<group>"; };
 		4165E584211DC2A200F6A0E9 /* MDMRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMRootViewController.m; sourceTree = "<group>"; };
-		4165E5A82121B67E00F6A0E9 /* GIFFileTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIFFileTool.h; sourceTree = "<group>"; };
-		4165E5A92121B67E00F6A0E9 /* GIFFileTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIFFileTool.m; sourceTree = "<group>"; };
 		4165E5CD2123003900F6A0E9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		4165E5CF21230C4D00F6A0E9 /* GIFFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFFileTool.m; sourceTree = "<group>"; };
+		4165E5D021230C4D00F6A0E9 /* GIFSpeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFSpeedViewController.h; sourceTree = "<group>"; };
+		4165E5D121230C4D00F6A0E9 /* GIFFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFFileTool.h; sourceTree = "<group>"; };
+		4165E5D221230C4D00F6A0E9 /* GIFSpeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFSpeedViewController.m; sourceTree = "<group>"; };
 		8EBBB8B15F3BEAFA413597DF /* libPods-Valhalla.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Valhalla.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -69,10 +69,7 @@
 		4114539021201C2200FD7258 /* ImageAndGraphics */ = {
 			isa = PBXGroup;
 			children = (
-				4114539121201C3600FD7258 /* GIFSpeedViewController.h */,
-				4114539221201C3600FD7258 /* GIFSpeedViewController.m */,
-				4165E5A82121B67E00F6A0E9 /* GIFFileTool.h */,
-				4165E5A92121B67E00F6A0E9 /* GIFFileTool.m */,
+				4165E5CE21230C4D00F6A0E9 /* GIFSpeed */,
 			);
 			path = ImageAndGraphics;
 			sourceTree = "<group>";
@@ -131,6 +128,17 @@
 				4165E5CD2123003900F6A0E9 /* PrefixHeader.pch */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		4165E5CE21230C4D00F6A0E9 /* GIFSpeed */ = {
+			isa = PBXGroup;
+			children = (
+				4165E5D121230C4D00F6A0E9 /* GIFFileTool.h */,
+				4165E5CF21230C4D00F6A0E9 /* GIFFileTool.m */,
+				4165E5D021230C4D00F6A0E9 /* GIFSpeedViewController.h */,
+				4165E5D221230C4D00F6A0E9 /* GIFSpeedViewController.m */,
+			);
+			path = GIFSpeed;
 			sourceTree = "<group>";
 		};
 		6FFA07E30A7279A4F22A4829 /* Pods */ = {
@@ -236,12 +244,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4114538C211EEFD100FD7258 /* MDMSectionModel.m in Sources */,
+				4165E5D421230C4D00F6A0E9 /* GIFSpeedViewController.m in Sources */,
 				4114538F211EF53C00FD7258 /* MDMRowModel.m in Sources */,
 				4165E57F211DC20F00F6A0E9 /* AppDelegate.m in Sources */,
-				4114539321201C3600FD7258 /* GIFSpeedViewController.m in Sources */,
 				4165E57E211DC20F00F6A0E9 /* main.m in Sources */,
+				4165E5D321230C4D00F6A0E9 /* GIFFileTool.m in Sources */,
 				4165E585211DC2A200F6A0E9 /* MDMRootViewController.m in Sources */,
-				4165E5AA2121B67E00F6A0E9 /* GIFFileTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

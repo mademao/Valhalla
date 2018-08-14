@@ -99,7 +99,7 @@ static NSString * const kGSVCFileName = @"GIFSpeedViewController.gif";
 - (YYAnimatedImageView *)imageView {
     if (!_imageView) {
         CGRect bounds = [UIScreen mainScreen].bounds;
-        _imageView = [[YYAnimatedImageView alloc] initWithFrame:CGRectMake(50, 100, bounds.size.width - 100, bounds.size.width - 100)];
+        _imageView = [[YYAnimatedImageView alloc] initWithFrame:CGRectMake(50, 150, bounds.size.width - 100, bounds.size.width - 100)];
         _imageView.contentMode = UIViewContentModeScaleAspectFit;
         [self.view addSubview:_imageView];
         _imageView.hidden = YES;
