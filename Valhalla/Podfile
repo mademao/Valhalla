@@ -1,3 +1,4 @@
 target 'Valhalla' do
 pod 'YYKit', '~> 1.0.9'
+pod 'Pluto', '~> 1.0.4'
 end

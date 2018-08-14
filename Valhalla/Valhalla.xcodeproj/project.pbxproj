@@ -42,6 +42,7 @@
 		4165E584211DC2A200F6A0E9 /* MDMRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMRootViewController.m; sourceTree = "<group>"; };
 		4165E5A82121B67E00F6A0E9 /* GIFFileTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIFFileTool.h; sourceTree = "<group>"; };
 		4165E5A92121B67E00F6A0E9 /* GIFFileTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIFFileTool.m; sourceTree = "<group>"; };
+		4165E5CD2123003900F6A0E9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		8EBBB8B15F3BEAFA413597DF /* libPods-Valhalla.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Valhalla.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -127,6 +128,7 @@
 				4114538B211EEFD100FD7258 /* MDMSectionModel.m */,
 				4114538D211EF53C00FD7258 /* MDMRowModel.h */,
 				4114538E211EF53C00FD7258 /* MDMRowModel.m */,
+				4165E5CD2123003900F6A0E9 /* PrefixHeader.pch */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -381,6 +383,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = Valhalla/Core/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Valhalla/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -398,6 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = Valhalla/Core/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Valhalla/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

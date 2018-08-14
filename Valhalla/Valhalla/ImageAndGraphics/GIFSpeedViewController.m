@@ -12,6 +12,8 @@
 
 @property (nonatomic, strong) UIButton *downloadButton;
 
+//@property (nonatomic,)
+
 @end
 
 @implementation GIFSpeedViewController

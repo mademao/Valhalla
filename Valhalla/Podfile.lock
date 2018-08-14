@@ -1,18 +1,22 @@
 PODS:
+  - Pluto (1.0.4)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
+  - Pluto (~> 1.0.4)
   - YYKit (~> 1.0.9)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Pluto
     - YYKit
 
 SPEC CHECKSUMS:
+  Pluto: 4e1fd373a7bdae7fdabeb3e13d5a265012cd582f
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: a3f34781ad0d0ba6fd1f599f0dfd371c145b05d9
+PODFILE CHECKSUM: 9bc9ee511015b32925dbf453b7b6f1094165e5dc
 
 COCOAPODS: 1.5.3
