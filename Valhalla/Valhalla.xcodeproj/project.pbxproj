@@ -18,9 +18,12 @@
 		4165E580211DC20F00F6A0E9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4165E57A211DC20F00F6A0E9 /* Info.plist */; };
 		4165E585211DC2A200F6A0E9 /* MDMRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4165E584211DC2A200F6A0E9 /* MDMRootViewController.m */; };
 		4165E5AA2121B67E00F6A0E9 /* GIFFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4165E5A92121B67E00F6A0E9 /* GIFFileTool.m */; };
+		9C6FF43413A54E23EDFB5DBA /* libPods-Valhalla.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EBBB8B15F3BEAFA413597DF /* libPods-Valhalla.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CE4EB41AD48211EAE2A7454 /* Pods-Valhalla.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Valhalla.release.xcconfig"; path = "Pods/Target Support Files/Pods-Valhalla/Pods-Valhalla.release.xcconfig"; sourceTree = "<group>"; };
+		31CE3F384BCE5E4E294D241A /* Pods-Valhalla.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Valhalla.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Valhalla/Pods-Valhalla.debug.xcconfig"; sourceTree = "<group>"; };
 		4114538A211EEFD100FD7258 /* MDMSectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMSectionModel.h; sourceTree = "<group>"; };
 		4114538B211EEFD100FD7258 /* MDMSectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMSectionModel.m; sourceTree = "<group>"; };
 		4114538D211EF53C00FD7258 /* MDMRowModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMRowModel.h; sourceTree = "<group>"; };
@@ -39,6 +42,7 @@
 		4165E584211DC2A200F6A0E9 /* MDMRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMRootViewController.m; sourceTree = "<group>"; };
 		4165E5A82121B67E00F6A0E9 /* GIFFileTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIFFileTool.h; sourceTree = "<group>"; };
 		4165E5A92121B67E00F6A0E9 /* GIFFileTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIFFileTool.m; sourceTree = "<group>"; };
+		8EBBB8B15F3BEAFA413597DF /* libPods-Valhalla.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Valhalla.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,12 +50,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C6FF43413A54E23EDFB5DBA /* libPods-Valhalla.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		037834C0AB07563E6E21F9A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EBBB8B15F3BEAFA413597DF /* libPods-Valhalla.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4114539021201C2200FD7258 /* ImageAndGraphics */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +81,8 @@
 			children = (
 				4165E55A211DC19A00F6A0E9 /* Valhalla */,
 				4165E559211DC19A00F6A0E9 /* Products */,
+				6FFA07E30A7279A4F22A4829 /* Pods */,
+				037834C0AB07563E6E21F9A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +131,15 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		6FFA07E30A7279A4F22A4829 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31CE3F384BCE5E4E294D241A /* Pods-Valhalla.debug.xcconfig */,
+				1CE4EB41AD48211EAE2A7454 /* Pods-Valhalla.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,6 +147,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4165E56E211DC19C00F6A0E9 /* Build configuration list for PBXNativeTarget "Valhalla" */;
 			buildPhases = (
+				27C1D8A98A20FE3898B07DAD /* [CP] Check Pods Manifest.lock */,
 				4165E554211DC19A00F6A0E9 /* Sources */,
 				4165E555211DC19A00F6A0E9 /* Frameworks */,
 				4165E556211DC19A00F6A0E9 /* Resources */,
@@ -181,6 +206,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27C1D8A98A20FE3898B07DAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Valhalla-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4165E554211DC19A00F6A0E9 /* Sources */ = {
@@ -331,6 +377,7 @@
 		};
 		4165E56F211DC19C00F6A0E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31CE3F384BCE5E4E294D241A /* Pods-Valhalla.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -347,6 +394,7 @@
 		};
 		4165E570211DC19C00F6A0E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CE4EB41AD48211EAE2A7454 /* Pods-Valhalla.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
