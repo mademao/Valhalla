@@ -10,5 +10,6 @@
 #define PrefixHeader_pch
 
 #import <Pluto.h>
+#import <MBProgressHUD.h>
 
 #endif /* PrefixHeader_pch */

@@ -1,4 +1,5 @@
 target 'Valhalla' do
 pod 'YYImage', '~> 1.0.4'
+pod 'MBProgressHUD', '~> 1.1.0'
 pod 'Pluto', '~> 1.0.4'
 end
