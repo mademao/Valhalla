@@ -7,12 +7,13 @@
 //
 
 #import "GIFSpeedViewController.h"
+#import "YY"
 
 @interface GIFSpeedViewController ()
 
 @property (nonatomic, strong) UIButton *downloadButton;
 
-//@property (nonatomic,)
+@property (nonatomic, strong)
 
 @end
 
