@@ -1,60 +1,27 @@
 //
-//  MDMRootViewController.m
+//  SortViewController.m
 //  Valhalla
 //
-//  Created by mademao on 2018/8/10.
+//  Created by mademao on 2018/8/16.
 //  Copyright © 2018年 mademao. All rights reserved.
 //
 
-#import "MDMRootViewController.h"
-#import "MDMSectionModel.h"
+#import "SortViewController.h"
 
-@interface MDMRootViewController () <UITableViewDelegate, UITableViewDataSource>
-
-@property (nonatomic, strong) NSMutableArray<MDMSectionModel *> *sectionModelArray;
+@interface SortViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 
 @end
 
-@implementation MDMRootViewController
+@implementation SortViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    self.title = NSLocalizedString(@"Main List", nil);
-    
-    [self createSectionArray];
     
     [self setupUI];
-}
-
-- (void)createSectionArray {
-    MDMSectionModel *sectionModel = nil;
-    MDMRowModel *rowModel = nil;
-    
-    //Image and Graphics
-    sectionModel = [[MDMSectionModel alloc] init];
-    sectionModel.name = NSLocalizedString(@"Image and Graphics", nil);
-    
-    rowModel = [[MDMRowModel alloc] init];
-    rowModel.name = NSLocalizedString(@"GIF Speed", nil);
-    rowModel.viewControllerName = @"GIFSpeedViewController";
-    [sectionModel.rowModelArray addObject:rowModel];
-    
-    [self.sectionModelArray addObject:sectionModel];
-    
-    //Algorithm
-    sectionModel = [[MDMSectionModel alloc] init];
-    sectionModel.name = NSLocalizedString(@"Algorithm", nil);
-    
-    rowModel = [[MDMRowModel alloc] init];
-    rowModel.name = NSLocalizedString(@"Sort", nil);
-    rowModel.viewControllerName = @"SortViewController";
-    [sectionModel.rowModelArray addObject:rowModel];
-    
-    [self.sectionModelArray addObject:sectionModel];
 }
 
 - (void)setupUI {
@@ -105,16 +72,6 @@
         viewC.title = rowModel.name;
         [self.navigationController pushViewController:viewC animated:YES];
     }
-}
-
-
-#pragma mark - lazy load
-
-- (NSMutableArray<MDMSectionModel *> *)sectionModelArray {
-    if (!_sectionModelArray) {
-        _sectionModelArray = [NSMutableArray array];
-    }
-    return _sectionModelArray;
 }
 
 @end
