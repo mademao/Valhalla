@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		410A541B2125A9D0000695F8 /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410A541A2125A9D0000695F8 /* SortViewController.m */; };
 		410A5422212687E9000695F8 /* SortTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 410A5421212687E9000695F8 /* SortTool.m */; };
+		410A54522126EFFF000695F8 /* MessageForwardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410A54512126EFFF000695F8 /* MessageForwardingViewController.m */; };
+		410A54592126F018000695F8 /* ClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = 410A54532126F018000695F8 /* ClassB.m */; };
+		410A545A2126F018000695F8 /* ClassC.m in Sources */ = {isa = PBXBuildFile; fileRef = 410A54572126F018000695F8 /* ClassC.m */; };
+		410A545B2126F018000695F8 /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = 410A54582126F018000695F8 /* ClassA.m */; };
 		4114538C211EEFD100FD7258 /* MDMSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4114538B211EEFD100FD7258 /* MDMSectionModel.m */; };
 		4114538F211EF53C00FD7258 /* MDMRowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4114538E211EF53C00FD7258 /* MDMRowModel.m */; };
 		4165E57B211DC20F00F6A0E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4165E573211DC20F00F6A0E9 /* Assets.xcassets */; };
@@ -30,6 +34,14 @@
 		410A541A2125A9D0000695F8 /* SortViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortViewController.m; sourceTree = "<group>"; };
 		410A5420212687E9000695F8 /* SortTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortTool.h; sourceTree = "<group>"; };
 		410A5421212687E9000695F8 /* SortTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortTool.m; sourceTree = "<group>"; };
+		410A54502126EFFF000695F8 /* MessageForwardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageForwardingViewController.h; sourceTree = "<group>"; };
+		410A54512126EFFF000695F8 /* MessageForwardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageForwardingViewController.m; sourceTree = "<group>"; };
+		410A54532126F018000695F8 /* ClassB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassB.m; sourceTree = "<group>"; };
+		410A54542126F018000695F8 /* ClassB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassB.h; sourceTree = "<group>"; };
+		410A54552126F018000695F8 /* ClassA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassA.h; sourceTree = "<group>"; };
+		410A54562126F018000695F8 /* ClassC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassC.h; sourceTree = "<group>"; };
+		410A54572126F018000695F8 /* ClassC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassC.m; sourceTree = "<group>"; };
+		410A54582126F018000695F8 /* ClassA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
 		4114538A211EEFD100FD7258 /* MDMSectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMSectionModel.h; sourceTree = "<group>"; };
 		4114538B211EEFD100FD7258 /* MDMSectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMSectionModel.m; sourceTree = "<group>"; };
 		4114538D211EF53C00FD7258 /* MDMRowModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMRowModel.h; sourceTree = "<group>"; };
@@ -91,6 +103,29 @@
 			path = Sort;
 			sourceTree = "<group>";
 		};
+		410A544B2126EE16000695F8 /* Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				410A544F2126EFFF000695F8 /* MessageForwarding */,
+			);
+			path = "Objective-C";
+			sourceTree = "<group>";
+		};
+		410A544F2126EFFF000695F8 /* MessageForwarding */ = {
+			isa = PBXGroup;
+			children = (
+				410A54502126EFFF000695F8 /* MessageForwardingViewController.h */,
+				410A54512126EFFF000695F8 /* MessageForwardingViewController.m */,
+				410A54552126F018000695F8 /* ClassA.h */,
+				410A54582126F018000695F8 /* ClassA.m */,
+				410A54542126F018000695F8 /* ClassB.h */,
+				410A54532126F018000695F8 /* ClassB.m */,
+				410A54562126F018000695F8 /* ClassC.h */,
+				410A54572126F018000695F8 /* ClassC.m */,
+			);
+			path = MessageForwarding;
+			sourceTree = "<group>";
+		};
 		4114539021201C2200FD7258 /* ImageAndGraphics */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +155,7 @@
 		4165E55A211DC19A00F6A0E9 /* Valhalla */ = {
 			isa = PBXGroup;
 			children = (
+				410A544B2126EE16000695F8 /* Objective-C */,
 				410A54172125A78B000695F8 /* Algorithm */,
 				4114539021201C2200FD7258 /* ImageAndGraphics */,
 				4165E582211DC29200F6A0E9 /* Core */,
@@ -277,7 +313,11 @@
 				4165E57E211DC20F00F6A0E9 /* main.m in Sources */,
 				4165E5D321230C4D00F6A0E9 /* GIFFileTool.m in Sources */,
 				410A541B2125A9D0000695F8 /* SortViewController.m in Sources */,
+				410A545A2126F018000695F8 /* ClassC.m in Sources */,
 				4165E585211DC2A200F6A0E9 /* MDMRootViewController.m in Sources */,
+				410A54592126F018000695F8 /* ClassB.m in Sources */,
+				410A54522126EFFF000695F8 /* MessageForwardingViewController.m in Sources */,
+				410A545B2126F018000695F8 /* ClassA.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

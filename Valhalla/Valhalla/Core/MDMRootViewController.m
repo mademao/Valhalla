@@ -55,6 +55,17 @@
     [sectionModel.rowModelArray addObject:rowModel];
     
     [self.sectionModelArray addObject:sectionModel];
+    
+    //Objective-C
+    sectionModel = [[MDMSectionModel alloc] init];
+    sectionModel.name = NSLocalizedString(@"Objective-C", nil);
+    
+    rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"Message Forwarding", nil);
+    rowModel.viewControllerName = @"MessageForwardingViewController";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
+    [self.sectionModelArray addObject:sectionModel];
 }
 
 - (void)setupUI {
