@@ -34,6 +34,17 @@
     MDMSectionModel *sectionModel = nil;
     MDMRowModel *rowModel = nil;
     
+    //iOS
+    sectionModel = [[MDMSectionModel alloc] init];
+    sectionModel.name = NSLocalizedString(@"iOS", nil);
+    
+    rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"Keychain", nil);
+    rowModel.viewControllerName = @"KeychainViewController";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
+    [self.sectionModelArray addObject:sectionModel];
+    
     //Image and Graphics
     sectionModel = [[MDMSectionModel alloc] init];
     sectionModel.name = NSLocalizedString(@"Image and Graphics", nil);
