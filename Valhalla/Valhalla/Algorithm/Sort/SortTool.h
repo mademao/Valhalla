@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ https://www.cnblogs.com/eniac12/p/5329396.html
+ */
+
 void BubbleSort(int a[], int count);
 void CocktailSort(int a[], int count);
 void SelectionSort(int a[], int count);
