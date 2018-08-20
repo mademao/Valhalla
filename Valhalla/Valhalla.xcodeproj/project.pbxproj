@@ -13,11 +13,12 @@
 		410A54592126F018000695F8 /* ClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = 410A54532126F018000695F8 /* ClassB.m */; };
 		410A545A2126F018000695F8 /* ClassC.m in Sources */ = {isa = PBXBuildFile; fileRef = 410A54572126F018000695F8 /* ClassC.m */; };
 		410A545B2126F018000695F8 /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = 410A54582126F018000695F8 /* ClassA.m */; };
+		410A5480212AE1A5000695F8 /* KeychainUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410A547F212AE1A5000695F8 /* KeychainUtil.swift */; };
 		4114538C211EEFD100FD7258 /* MDMSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4114538B211EEFD100FD7258 /* MDMSectionModel.m */; };
 		4114538F211EF53C00FD7258 /* MDMRowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4114538E211EF53C00FD7258 /* MDMRowModel.m */; };
 		411453982127A5F000FD7258 /* KeychainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411453972127A5F000FD7258 /* KeychainViewController.m */; };
 		4114539D2127A60A00FD7258 /* KeychainUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 411453992127A60A00FD7258 /* KeychainUtil.m */; };
-		4114539E2127A60A00FD7258 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4114539A2127A60A00FD7258 /* KeychainItemWrapper.m */; };
+		4114539E2127A60A00FD7258 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4114539A2127A60A00FD7258 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4165E57B211DC20F00F6A0E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4165E573211DC20F00F6A0E9 /* Assets.xcassets */; };
 		4165E57C211DC20F00F6A0E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4165E574211DC20F00F6A0E9 /* LaunchScreen.storyboard */; };
 		4165E57D211DC20F00F6A0E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4165E576211DC20F00F6A0E9 /* Main.storyboard */; };
@@ -45,6 +46,8 @@
 		410A54562126F018000695F8 /* ClassC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassC.h; sourceTree = "<group>"; };
 		410A54572126F018000695F8 /* ClassC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassC.m; sourceTree = "<group>"; };
 		410A54582126F018000695F8 /* ClassA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
+		410A547E212AE1A4000695F8 /* Valhalla-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Valhalla-Bridging-Header.h"; sourceTree = "<group>"; };
+		410A547F212AE1A5000695F8 /* KeychainUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainUtil.swift; sourceTree = "<group>"; };
 		4114538A211EEFD100FD7258 /* MDMSectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMSectionModel.h; sourceTree = "<group>"; };
 		4114538B211EEFD100FD7258 /* MDMSectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMSectionModel.m; sourceTree = "<group>"; };
 		4114538D211EF53C00FD7258 /* MDMRowModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMRowModel.h; sourceTree = "<group>"; };
@@ -154,6 +157,7 @@
 		411453952127A5C700FD7258 /* Keychain */ = {
 			isa = PBXGroup;
 			children = (
+				410A547F212AE1A5000695F8 /* KeychainUtil.swift */,
 				411453962127A5F000FD7258 /* KeychainViewController.h */,
 				411453972127A5F000FD7258 /* KeychainViewController.m */,
 				4114539B2127A60A00FD7258 /* KeychainItemWrapper.h */,
@@ -212,6 +216,7 @@
 		4165E582211DC29200F6A0E9 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				410A547E212AE1A4000695F8 /* Valhalla-Bridging-Header.h */,
 				4165E583211DC2A200F6A0E9 /* MDMRootViewController.h */,
 				4165E584211DC2A200F6A0E9 /* MDMRootViewController.m */,
 				4114538A211EEFD100FD7258 /* MDMSectionModel.h */,
@@ -275,6 +280,7 @@
 				TargetAttributes = {
 					4165E557211DC19A00F6A0E9 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -342,6 +348,7 @@
 				4114538F211EF53C00FD7258 /* MDMRowModel.m in Sources */,
 				4114539D2127A60A00FD7258 /* KeychainUtil.m in Sources */,
 				4165E57F211DC20F00F6A0E9 /* AppDelegate.m in Sources */,
+				410A5480212AE1A5000695F8 /* KeychainUtil.swift in Sources */,
 				4165E57E211DC20F00F6A0E9 /* main.m in Sources */,
 				4165E5D321230C4D00F6A0E9 /* GIFFileTool.m in Sources */,
 				410A541B2125A9D0000695F8 /* SortViewController.m in Sources */,
@@ -492,6 +499,7 @@
 			baseConfigurationReference = 31CE3F384BCE5E4E294D241A /* Pods-Valhalla.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = Valhalla/Core/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Valhalla/Supporting Files/Info.plist";
@@ -501,6 +509,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mademao.Valhalla;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Valhalla/Core/Valhalla-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -510,6 +521,7 @@
 			baseConfigurationReference = 1CE4EB41AD48211EAE2A7454 /* Pods-Valhalla.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = Valhalla/Core/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Valhalla/Supporting Files/Info.plist";
@@ -519,6 +531,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mademao.Valhalla;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Valhalla/Core/Valhalla-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
