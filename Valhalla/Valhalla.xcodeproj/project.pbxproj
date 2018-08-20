@@ -14,6 +14,8 @@
 		410A545A2126F018000695F8 /* ClassC.m in Sources */ = {isa = PBXBuildFile; fileRef = 410A54572126F018000695F8 /* ClassC.m */; };
 		410A545B2126F018000695F8 /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = 410A54582126F018000695F8 /* ClassA.m */; };
 		410A5480212AE1A5000695F8 /* KeychainUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410A547F212AE1A5000695F8 /* KeychainUtil.swift */; };
+		410A5484212AE85A000695F8 /* DigitScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 410A5483212AE85A000695F8 /* DigitScrollView.m */; };
+		410A5487212AE968000695F8 /* DigitScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410A5486212AE968000695F8 /* DigitScrollViewController.m */; };
 		4114538C211EEFD100FD7258 /* MDMSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4114538B211EEFD100FD7258 /* MDMSectionModel.m */; };
 		4114538F211EF53C00FD7258 /* MDMRowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4114538E211EF53C00FD7258 /* MDMRowModel.m */; };
 		411453982127A5F000FD7258 /* KeychainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411453972127A5F000FD7258 /* KeychainViewController.m */; };
@@ -48,6 +50,10 @@
 		410A54582126F018000695F8 /* ClassA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
 		410A547E212AE1A4000695F8 /* Valhalla-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Valhalla-Bridging-Header.h"; sourceTree = "<group>"; };
 		410A547F212AE1A5000695F8 /* KeychainUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainUtil.swift; sourceTree = "<group>"; };
+		410A5482212AE85A000695F8 /* DigitScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitScrollView.h; sourceTree = "<group>"; };
+		410A5483212AE85A000695F8 /* DigitScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitScrollView.m; sourceTree = "<group>"; };
+		410A5485212AE968000695F8 /* DigitScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DigitScrollViewController.h; sourceTree = "<group>"; };
+		410A5486212AE968000695F8 /* DigitScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DigitScrollViewController.m; sourceTree = "<group>"; };
 		4114538A211EEFD100FD7258 /* MDMSectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMSectionModel.h; sourceTree = "<group>"; };
 		4114538B211EEFD100FD7258 /* MDMSectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMSectionModel.m; sourceTree = "<group>"; };
 		4114538D211EF53C00FD7258 /* MDMRowModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMRowModel.h; sourceTree = "<group>"; };
@@ -138,6 +144,17 @@
 			path = MessageForwarding;
 			sourceTree = "<group>";
 		};
+		410A5481212AE85A000695F8 /* DigitScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				410A5482212AE85A000695F8 /* DigitScrollView.h */,
+				410A5483212AE85A000695F8 /* DigitScrollView.m */,
+				410A5485212AE968000695F8 /* DigitScrollViewController.h */,
+				410A5486212AE968000695F8 /* DigitScrollViewController.m */,
+			);
+			path = DigitScrollView;
+			sourceTree = "<group>";
+		};
 		4114539021201C2200FD7258 /* ImageAndGraphics */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +166,7 @@
 		411453942127A5C700FD7258 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				410A5481212AE85A000695F8 /* DigitScrollView */,
 				411453952127A5C700FD7258 /* Keychain */,
 			);
 			path = iOS;
@@ -347,6 +365,7 @@
 				410A5422212687E9000695F8 /* SortTool.m in Sources */,
 				4114538F211EF53C00FD7258 /* MDMRowModel.m in Sources */,
 				4114539D2127A60A00FD7258 /* KeychainUtil.m in Sources */,
+				410A5487212AE968000695F8 /* DigitScrollViewController.m in Sources */,
 				4165E57F211DC20F00F6A0E9 /* AppDelegate.m in Sources */,
 				410A5480212AE1A5000695F8 /* KeychainUtil.swift in Sources */,
 				4165E57E211DC20F00F6A0E9 /* main.m in Sources */,
@@ -355,6 +374,7 @@
 				410A545A2126F018000695F8 /* ClassC.m in Sources */,
 				4165E585211DC2A200F6A0E9 /* MDMRootViewController.m in Sources */,
 				410A54592126F018000695F8 /* ClassB.m in Sources */,
+				410A5484212AE85A000695F8 /* DigitScrollView.m in Sources */,
 				4114539E2127A60A00FD7258 /* KeychainItemWrapper.m in Sources */,
 				410A54522126EFFF000695F8 /* MessageForwardingViewController.m in Sources */,
 				411453982127A5F000FD7258 /* KeychainViewController.m in Sources */,
