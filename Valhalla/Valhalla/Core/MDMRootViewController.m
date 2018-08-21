@@ -52,6 +52,13 @@
     
     [self.sectionModelArray addObject:sectionModel];
     
+    rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"FormTableView", nil);
+    rowModel.viewControllerName = @"FormTableViewController";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
+    [self.sectionModelArray addObject:sectionModel];
+    
     //Image and Graphics
     sectionModel = [[MDMSectionModel alloc] init];
     sectionModel.name = NSLocalizedString(@"Image and Graphics", nil);
