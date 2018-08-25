@@ -34,6 +34,8 @@
 		4165E585211DC2A200F6A0E9 /* MDMRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4165E584211DC2A200F6A0E9 /* MDMRootViewController.m */; };
 		4165E5D321230C4D00F6A0E9 /* GIFFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4165E5CF21230C4D00F6A0E9 /* GIFFileTool.m */; };
 		4165E5D421230C4D00F6A0E9 /* GIFSpeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4165E5D221230C4D00F6A0E9 /* GIFSpeedViewController.m */; };
+		419277992130F8D9009213DE /* LeftJustifyLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 419277982130F8D9009213DE /* LeftJustifyLayoutViewController.m */; };
+		4192779C2130F94C009213DE /* LeftJustifyLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4192779B2130F94C009213DE /* LeftJustifyLayout.m */; };
 		9C6FF43413A54E23EDFB5DBA /* libPods-Valhalla.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EBBB8B15F3BEAFA413597DF /* libPods-Valhalla.a */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +93,10 @@
 		4165E5D021230C4D00F6A0E9 /* GIFSpeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFSpeedViewController.h; sourceTree = "<group>"; };
 		4165E5D121230C4D00F6A0E9 /* GIFFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFFileTool.h; sourceTree = "<group>"; };
 		4165E5D221230C4D00F6A0E9 /* GIFSpeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFSpeedViewController.m; sourceTree = "<group>"; };
+		419277972130F8D9009213DE /* LeftJustifyLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftJustifyLayoutViewController.h; sourceTree = "<group>"; };
+		419277982130F8D9009213DE /* LeftJustifyLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftJustifyLayoutViewController.m; sourceTree = "<group>"; };
+		4192779A2130F94C009213DE /* LeftJustifyLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftJustifyLayout.h; sourceTree = "<group>"; };
+		4192779B2130F94C009213DE /* LeftJustifyLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftJustifyLayout.m; sourceTree = "<group>"; };
 		8EBBB8B15F3BEAFA413597DF /* libPods-Valhalla.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Valhalla.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -235,6 +241,7 @@
 		4165E55A211DC19A00F6A0E9 /* Valhalla */ = {
 			isa = PBXGroup;
 			children = (
+				419277952130F83C009213DE /* CollectionViewFlowLayout */,
 				411453942127A5C700FD7258 /* iOS */,
 				410A544B2126EE16000695F8 /* Objective-C */,
 				410A54172125A78B000695F8 /* Algorithm */,
@@ -283,6 +290,25 @@
 				4165E5D221230C4D00F6A0E9 /* GIFSpeedViewController.m */,
 			);
 			path = GIFSpeed;
+			sourceTree = "<group>";
+		};
+		419277952130F83C009213DE /* CollectionViewFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				419277962130F83C009213DE /* LeftJustifyLayoutViewController */,
+			);
+			path = CollectionViewFlowLayout;
+			sourceTree = "<group>";
+		};
+		419277962130F83C009213DE /* LeftJustifyLayoutViewController */ = {
+			isa = PBXGroup;
+			children = (
+				419277972130F8D9009213DE /* LeftJustifyLayoutViewController.h */,
+				419277982130F8D9009213DE /* LeftJustifyLayoutViewController.m */,
+				4192779A2130F94C009213DE /* LeftJustifyLayout.h */,
+				4192779B2130F94C009213DE /* LeftJustifyLayout.m */,
+			);
+			path = LeftJustifyLayoutViewController;
 			sourceTree = "<group>";
 		};
 		6FFA07E30A7279A4F22A4829 /* Pods */ = {
@@ -400,6 +426,7 @@
 				4165E57F211DC20F00F6A0E9 /* AppDelegate.m in Sources */,
 				410A5480212AE1A5000695F8 /* KeychainUtil.swift in Sources */,
 				4165E57E211DC20F00F6A0E9 /* main.m in Sources */,
+				4192779C2130F94C009213DE /* LeftJustifyLayout.m in Sources */,
 				4165E5D321230C4D00F6A0E9 /* GIFFileTool.m in Sources */,
 				410A541B2125A9D0000695F8 /* SortViewController.m in Sources */,
 				410A54EA212C3CA3000695F8 /* FormTableViewController.m in Sources */,
@@ -410,6 +437,7 @@
 				4114539E2127A60A00FD7258 /* KeychainItemWrapper.m in Sources */,
 				410A54522126EFFF000695F8 /* MessageForwardingViewController.m in Sources */,
 				411453982127A5F000FD7258 /* KeychainViewController.m in Sources */,
+				419277992130F8D9009213DE /* LeftJustifyLayoutViewController.m in Sources */,
 				410A545B2126F018000695F8 /* ClassA.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

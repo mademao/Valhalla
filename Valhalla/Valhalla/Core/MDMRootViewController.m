@@ -43,18 +43,25 @@
     rowModel.viewControllerName = @"KeychainViewController";
     [sectionModel.rowModelArray addObject:rowModel];
     
-    [self.sectionModelArray addObject:sectionModel];
-    
     rowModel = [[MDMRowModel alloc] init];
     rowModel.name = NSLocalizedString(@"DigitScrollView", nil);
     rowModel.viewControllerName = @"DigitScrollViewController";
     [sectionModel.rowModelArray addObject:rowModel];
     
-    [self.sectionModelArray addObject:sectionModel];
-    
     rowModel = [[MDMRowModel alloc] init];
     rowModel.name = NSLocalizedString(@"FormTableView", nil);
     rowModel.viewControllerName = @"FormTableViewController";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
+    [self.sectionModelArray addObject:sectionModel];
+    
+    //CollectionViewFlowLayout
+    sectionModel = [[MDMSectionModel alloc] init];
+    sectionModel.name = NSLocalizedString(@"CollectionViewFlowLayout", nil);
+    
+    rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"LeftJustifyLayout", nil);
+    rowModel.viewControllerName = @"LeftJustifyLayoutViewController";
     [sectionModel.rowModelArray addObject:rowModel];
     
     [self.sectionModelArray addObject:sectionModel];
