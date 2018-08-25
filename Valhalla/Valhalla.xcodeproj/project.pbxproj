@@ -36,6 +36,8 @@
 		4165E5D421230C4D00F6A0E9 /* GIFSpeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4165E5D221230C4D00F6A0E9 /* GIFSpeedViewController.m */; };
 		419277992130F8D9009213DE /* LeftJustifyLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 419277982130F8D9009213DE /* LeftJustifyLayoutViewController.m */; };
 		4192779C2130F94C009213DE /* LeftJustifyLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4192779B2130F94C009213DE /* LeftJustifyLayout.m */; };
+		419277A02130FE33009213DE /* WaterflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4192779F2130FE32009213DE /* WaterflowLayout.m */; };
+		419277A32130FE6D009213DE /* WaterflowLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 419277A22130FE6D009213DE /* WaterflowLayoutViewController.m */; };
 		9C6FF43413A54E23EDFB5DBA /* libPods-Valhalla.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EBBB8B15F3BEAFA413597DF /* libPods-Valhalla.a */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +99,10 @@
 		419277982130F8D9009213DE /* LeftJustifyLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftJustifyLayoutViewController.m; sourceTree = "<group>"; };
 		4192779A2130F94C009213DE /* LeftJustifyLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftJustifyLayout.h; sourceTree = "<group>"; };
 		4192779B2130F94C009213DE /* LeftJustifyLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftJustifyLayout.m; sourceTree = "<group>"; };
+		4192779E2130FE32009213DE /* WaterflowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterflowLayout.h; sourceTree = "<group>"; };
+		4192779F2130FE32009213DE /* WaterflowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterflowLayout.m; sourceTree = "<group>"; };
+		419277A12130FE6D009213DE /* WaterflowLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterflowLayoutViewController.h; sourceTree = "<group>"; };
+		419277A22130FE6D009213DE /* WaterflowLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterflowLayoutViewController.m; sourceTree = "<group>"; };
 		8EBBB8B15F3BEAFA413597DF /* libPods-Valhalla.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Valhalla.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -295,6 +301,7 @@
 		419277952130F83C009213DE /* CollectionViewFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
+				4192779D2130FE32009213DE /* WaterflowLayout */,
 				419277962130F83C009213DE /* LeftJustifyLayout */,
 			);
 			path = CollectionViewFlowLayout;
@@ -309,6 +316,17 @@
 				4192779B2130F94C009213DE /* LeftJustifyLayout.m */,
 			);
 			path = LeftJustifyLayout;
+			sourceTree = "<group>";
+		};
+		4192779D2130FE32009213DE /* WaterflowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				4192779E2130FE32009213DE /* WaterflowLayout.h */,
+				4192779F2130FE32009213DE /* WaterflowLayout.m */,
+				419277A12130FE6D009213DE /* WaterflowLayoutViewController.h */,
+				419277A22130FE6D009213DE /* WaterflowLayoutViewController.m */,
+			);
+			path = WaterflowLayout;
 			sourceTree = "<group>";
 		};
 		6FFA07E30A7279A4F22A4829 /* Pods */ = {
@@ -423,6 +441,7 @@
 				4114539D2127A60A00FD7258 /* KeychainUtil.m in Sources */,
 				410A54E7212C3914000695F8 /* Player.m in Sources */,
 				410A5487212AE968000695F8 /* DigitScrollViewController.m in Sources */,
+				419277A32130FE6D009213DE /* WaterflowLayoutViewController.m in Sources */,
 				4165E57F211DC20F00F6A0E9 /* AppDelegate.m in Sources */,
 				410A5480212AE1A5000695F8 /* KeychainUtil.swift in Sources */,
 				4165E57E211DC20F00F6A0E9 /* main.m in Sources */,
@@ -437,6 +456,7 @@
 				4114539E2127A60A00FD7258 /* KeychainItemWrapper.m in Sources */,
 				410A54522126EFFF000695F8 /* MessageForwardingViewController.m in Sources */,
 				411453982127A5F000FD7258 /* KeychainViewController.m in Sources */,
+				419277A02130FE33009213DE /* WaterflowLayout.m in Sources */,
 				419277992130F8D9009213DE /* LeftJustifyLayoutViewController.m in Sources */,
 				410A545B2126F018000695F8 /* ClassA.m in Sources */,
 			);
