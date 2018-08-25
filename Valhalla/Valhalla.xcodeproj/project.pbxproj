@@ -295,12 +295,12 @@
 		419277952130F83C009213DE /* CollectionViewFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
-				419277962130F83C009213DE /* LeftJustifyLayoutViewController */,
+				419277962130F83C009213DE /* LeftJustifyLayout */,
 			);
 			path = CollectionViewFlowLayout;
 			sourceTree = "<group>";
 		};
-		419277962130F83C009213DE /* LeftJustifyLayoutViewController */ = {
+		419277962130F83C009213DE /* LeftJustifyLayout */ = {
 			isa = PBXGroup;
 			children = (
 				419277972130F8D9009213DE /* LeftJustifyLayoutViewController.h */,
@@ -308,7 +308,7 @@
 				4192779A2130F94C009213DE /* LeftJustifyLayout.h */,
 				4192779B2130F94C009213DE /* LeftJustifyLayout.m */,
 			);
-			path = LeftJustifyLayoutViewController;
+			path = LeftJustifyLayout;
 			sourceTree = "<group>";
 		};
 		6FFA07E30A7279A4F22A4829 /* Pods */ = {
