@@ -69,6 +69,11 @@
     rowModel.viewControllerName = @"WaterflowLayoutViewController";
     [sectionModel.rowModelArray addObject:rowModel];
     
+    rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"CyclicCardLayout", nil);
+    rowModel.viewControllerName = @"CyclicCardLayoutViewController";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
     [self.sectionModelArray addObject:sectionModel];
     
     //Image and Graphics

@@ -38,6 +38,8 @@
 		4192779C2130F94C009213DE /* LeftJustifyLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4192779B2130F94C009213DE /* LeftJustifyLayout.m */; };
 		419277A02130FE33009213DE /* WaterflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4192779F2130FE32009213DE /* WaterflowLayout.m */; };
 		419277A32130FE6D009213DE /* WaterflowLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 419277A22130FE6D009213DE /* WaterflowLayoutViewController.m */; };
+		419277A72131074F009213DE /* CyclicCardLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 419277A62131074F009213DE /* CyclicCardLayoutViewController.m */; };
+		419277AA21310776009213DE /* CyclicCardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 419277A921310776009213DE /* CyclicCardLayout.m */; };
 		9C6FF43413A54E23EDFB5DBA /* libPods-Valhalla.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EBBB8B15F3BEAFA413597DF /* libPods-Valhalla.a */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +105,10 @@
 		4192779F2130FE32009213DE /* WaterflowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterflowLayout.m; sourceTree = "<group>"; };
 		419277A12130FE6D009213DE /* WaterflowLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterflowLayoutViewController.h; sourceTree = "<group>"; };
 		419277A22130FE6D009213DE /* WaterflowLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterflowLayoutViewController.m; sourceTree = "<group>"; };
+		419277A52131074F009213DE /* CyclicCardLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CyclicCardLayoutViewController.h; sourceTree = "<group>"; };
+		419277A62131074F009213DE /* CyclicCardLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CyclicCardLayoutViewController.m; sourceTree = "<group>"; };
+		419277A821310776009213DE /* CyclicCardLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CyclicCardLayout.h; sourceTree = "<group>"; };
+		419277A921310776009213DE /* CyclicCardLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CyclicCardLayout.m; sourceTree = "<group>"; };
 		8EBBB8B15F3BEAFA413597DF /* libPods-Valhalla.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Valhalla.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -301,6 +307,7 @@
 		419277952130F83C009213DE /* CollectionViewFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
+				419277A4213106B3009213DE /* CyclicCardLayout */,
 				4192779D2130FE32009213DE /* WaterflowLayout */,
 				419277962130F83C009213DE /* LeftJustifyLayout */,
 			);
@@ -327,6 +334,17 @@
 				419277A22130FE6D009213DE /* WaterflowLayoutViewController.m */,
 			);
 			path = WaterflowLayout;
+			sourceTree = "<group>";
+		};
+		419277A4213106B3009213DE /* CyclicCardLayout */ = {
+			isa = PBXGroup;
+			children = (
+				419277A52131074F009213DE /* CyclicCardLayoutViewController.h */,
+				419277A62131074F009213DE /* CyclicCardLayoutViewController.m */,
+				419277A821310776009213DE /* CyclicCardLayout.h */,
+				419277A921310776009213DE /* CyclicCardLayout.m */,
+			);
+			path = CyclicCardLayout;
 			sourceTree = "<group>";
 		};
 		6FFA07E30A7279A4F22A4829 /* Pods */ = {
@@ -434,6 +452,7 @@
 			files = (
 				4114538C211EEFD100FD7258 /* MDMSectionModel.m in Sources */,
 				4165E5D421230C4D00F6A0E9 /* GIFSpeedViewController.m in Sources */,
+				419277A72131074F009213DE /* CyclicCardLayoutViewController.m in Sources */,
 				410A54E5212C3914000695F8 /* FormTableView.m in Sources */,
 				410A5422212687E9000695F8 /* SortTool.m in Sources */,
 				4114538F211EF53C00FD7258 /* MDMRowModel.m in Sources */,
@@ -452,6 +471,7 @@
 				410A545A2126F018000695F8 /* ClassC.m in Sources */,
 				4165E585211DC2A200F6A0E9 /* MDMRootViewController.m in Sources */,
 				410A54592126F018000695F8 /* ClassB.m in Sources */,
+				419277AA21310776009213DE /* CyclicCardLayout.m in Sources */,
 				410A5484212AE85A000695F8 /* DigitScrollView.m in Sources */,
 				4114539E2127A60A00FD7258 /* KeychainItemWrapper.m in Sources */,
 				410A54522126EFFF000695F8 /* MessageForwardingViewController.m in Sources */,
@@ -601,10 +621,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 75C77V5UHU;
+				DEVELOPMENT_TEAM = 8BF66UA5FJ;
 				GCC_PREFIX_HEADER = Valhalla/Core/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Valhalla/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -625,10 +645,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 75C77V5UHU;
+				DEVELOPMENT_TEAM = 8BF66UA5FJ;
 				GCC_PREFIX_HEADER = Valhalla/Core/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Valhalla/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
