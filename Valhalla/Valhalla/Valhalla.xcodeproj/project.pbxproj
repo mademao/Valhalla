@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		411C3F812138172700DEAB36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 411C3F332138172700DEAB36 /* Assets.xcassets */; };
+		411C3F822138172700DEAB36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411C3F342138172700DEAB36 /* LaunchScreen.storyboard */; };
+		411C3F832138172700DEAB36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411C3F362138172700DEAB36 /* Main.storyboard */; };
+		411C3F842138172700DEAB36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F382138172700DEAB36 /* main.m */; };
+		411C3F852138172700DEAB36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F392138172700DEAB36 /* AppDelegate.m */; };
+		411C3F872138172700DEAB36 /* CyclicCardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F3D2138172700DEAB36 /* CyclicCardLayout.m */; };
+		411C3F882138172700DEAB36 /* CyclicCardLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F3F2138172700DEAB36 /* CyclicCardLayoutViewController.m */; };
+		411C3F892138172700DEAB36 /* WaterflowLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F442138172700DEAB36 /* WaterflowLayoutViewController.m */; };
+		411C3F8A2138172700DEAB36 /* WaterflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F452138172700DEAB36 /* WaterflowLayout.m */; };
+		411C3F8B2138172700DEAB36 /* LeftJustifyLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F492138172700DEAB36 /* LeftJustifyLayoutViewController.m */; };
+		411C3F8C2138172700DEAB36 /* LeftJustifyLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F4A2138172700DEAB36 /* LeftJustifyLayout.m */; };
+		411C3F8D2138172700DEAB36 /* ClassB.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F4E2138172700DEAB36 /* ClassB.m */; };
+		411C3F8E2138172700DEAB36 /* ClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F502138172700DEAB36 /* ClassA.m */; };
+		411C3F8F2138172700DEAB36 /* MessageForwardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F522138172700DEAB36 /* MessageForwardingViewController.m */; };
+		411C3F902138172700DEAB36 /* ClassC.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F542138172700DEAB36 /* ClassC.m */; };
+		411C3F912138172700DEAB36 /* MDMRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F562138172700DEAB36 /* MDMRootViewController.m */; };
+		411C3F922138172700DEAB36 /* MDMRowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F5C2138172700DEAB36 /* MDMRowModel.m */; };
+		411C3F932138172700DEAB36 /* MDMSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F5D2138172700DEAB36 /* MDMSectionModel.m */; };
+		411C3F942138172700DEAB36 /* GIFFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F602138172700DEAB36 /* GIFFileTool.m */; };
+		411C3F952138172700DEAB36 /* GIFSpeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F632138172700DEAB36 /* GIFSpeedViewController.m */; };
+		411C3F962138172700DEAB36 /* DigitScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F672138172700DEAB36 /* DigitScrollViewController.m */; };
+		411C3F972138172700DEAB36 /* DigitScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F692138172700DEAB36 /* DigitScrollView.m */; };
+		411C3F982138172700DEAB36 /* FormTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F6B2138172700DEAB36 /* FormTableViewController.m */; };
+		411C3F992138172700DEAB36 /* FormTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F6C2138172700DEAB36 /* FormTableView.m */; };
+		411C3F9A2138172700DEAB36 /* FormScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F712138172700DEAB36 /* FormScrollLabel.m */; };
+		411C3F9B2138172700DEAB36 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F722138172700DEAB36 /* Player.m */; };
+		411C3F9C2138172700DEAB36 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F742138172700DEAB36 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		411C3F9D2138172700DEAB36 /* KeychainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F752138172700DEAB36 /* KeychainViewController.m */; };
+		411C3F9E2138172700DEAB36 /* KeychainUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F782138172700DEAB36 /* KeychainUtil.swift */; };
+		411C3F9F2138172700DEAB36 /* KeychainUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F7A2138172700DEAB36 /* KeychainUtil.m */; };
+		411C3FA02138172700DEAB36 /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F7D2138172700DEAB36 /* SortViewController.m */; };
+		411C3FA12138172700DEAB36 /* SortTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F7F2138172700DEAB36 /* SortTool.m */; };
+		E857A0D4F82E737769D0C1B9 /* libPods-Valhalla.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8EED2BE917D08B1B544E22 /* libPods-Valhalla.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0CCE649E960A006EEA3DDA81 /* Pods-Valhalla.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Valhalla.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Valhalla/Pods-Valhalla.release.xcconfig"; sourceTree = "<group>"; };
+		411C3F18213816F200DEAB36 /* Valhalla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Valhalla.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		411C3F322138172700DEAB36 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		411C3F332138172700DEAB36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		411C3F352138172700DEAB36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		411C3F372138172700DEAB36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		411C3F382138172700DEAB36 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		411C3F392138172700DEAB36 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		411C3F3A2138172700DEAB36 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		411C3F3D2138172700DEAB36 /* CyclicCardLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CyclicCardLayout.m; sourceTree = "<group>"; };
+		411C3F3E2138172700DEAB36 /* CyclicCardLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CyclicCardLayoutViewController.h; sourceTree = "<group>"; };
+		411C3F3F2138172700DEAB36 /* CyclicCardLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CyclicCardLayoutViewController.m; sourceTree = "<group>"; };
+		411C3F402138172700DEAB36 /* CyclicCardLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CyclicCardLayout.h; sourceTree = "<group>"; };
+		411C3F422138172700DEAB36 /* WaterflowLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterflowLayoutViewController.h; sourceTree = "<group>"; };
+		411C3F432138172700DEAB36 /* WaterflowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterflowLayout.h; sourceTree = "<group>"; };
+		411C3F442138172700DEAB36 /* WaterflowLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterflowLayoutViewController.m; sourceTree = "<group>"; };
+		411C3F452138172700DEAB36 /* WaterflowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterflowLayout.m; sourceTree = "<group>"; };
+		411C3F472138172700DEAB36 /* LeftJustifyLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftJustifyLayoutViewController.h; sourceTree = "<group>"; };
+		411C3F482138172700DEAB36 /* LeftJustifyLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftJustifyLayout.h; sourceTree = "<group>"; };
+		411C3F492138172700DEAB36 /* LeftJustifyLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftJustifyLayoutViewController.m; sourceTree = "<group>"; };
+		411C3F4A2138172700DEAB36 /* LeftJustifyLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftJustifyLayout.m; sourceTree = "<group>"; };
+		411C3F4D2138172700DEAB36 /* MessageForwardingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageForwardingViewController.h; sourceTree = "<group>"; };
+		411C3F4E2138172700DEAB36 /* ClassB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassB.m; sourceTree = "<group>"; };
+		411C3F4F2138172700DEAB36 /* ClassC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassC.h; sourceTree = "<group>"; };
+		411C3F502138172700DEAB36 /* ClassA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassA.m; sourceTree = "<group>"; };
+		411C3F512138172700DEAB36 /* ClassB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassB.h; sourceTree = "<group>"; };
+		411C3F522138172700DEAB36 /* MessageForwardingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageForwardingViewController.m; sourceTree = "<group>"; };
+		411C3F532138172700DEAB36 /* ClassA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassA.h; sourceTree = "<group>"; };
+		411C3F542138172700DEAB36 /* ClassC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassC.m; sourceTree = "<group>"; };
+		411C3F562138172700DEAB36 /* MDMRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDMRootViewController.m; sourceTree = "<group>"; };
+		411C3F572138172700DEAB36 /* MDMSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDMSectionModel.h; sourceTree = "<group>"; };
+		411C3F582138172700DEAB36 /* MDMRowModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDMRowModel.h; sourceTree = "<group>"; };
+		411C3F592138172700DEAB36 /* MDMRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDMRootViewController.h; sourceTree = "<group>"; };
+		411C3F5A2138172700DEAB36 /* Valhalla-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Valhalla-Bridging-Header.h"; sourceTree = "<group>"; };
+		411C3F5B2138172700DEAB36 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		411C3F5C2138172700DEAB36 /* MDMRowModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDMRowModel.m; sourceTree = "<group>"; };
+		411C3F5D2138172700DEAB36 /* MDMSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDMSectionModel.m; sourceTree = "<group>"; };
+		411C3F602138172700DEAB36 /* GIFFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFFileTool.m; sourceTree = "<group>"; };
+		411C3F612138172700DEAB36 /* GIFSpeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFSpeedViewController.h; sourceTree = "<group>"; };
+		411C3F622138172700DEAB36 /* GIFFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFFileTool.h; sourceTree = "<group>"; };
+		411C3F632138172700DEAB36 /* GIFSpeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFSpeedViewController.m; sourceTree = "<group>"; };
+		411C3F662138172700DEAB36 /* DigitScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitScrollView.h; sourceTree = "<group>"; };
+		411C3F672138172700DEAB36 /* DigitScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitScrollViewController.m; sourceTree = "<group>"; };
+		411C3F682138172700DEAB36 /* DigitScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DigitScrollViewController.h; sourceTree = "<group>"; };
+		411C3F692138172700DEAB36 /* DigitScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DigitScrollView.m; sourceTree = "<group>"; };
+		411C3F6B2138172700DEAB36 /* FormTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormTableViewController.m; sourceTree = "<group>"; };
+		411C3F6C2138172700DEAB36 /* FormTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormTableView.m; sourceTree = "<group>"; };
+		411C3F6D2138172700DEAB36 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		411C3F6E2138172700DEAB36 /* FormScrollLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormScrollLabel.h; sourceTree = "<group>"; };
+		411C3F6F2138172700DEAB36 /* FormTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormTableViewController.h; sourceTree = "<group>"; };
+		411C3F702138172700DEAB36 /* FormTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormTableView.h; sourceTree = "<group>"; };
+		411C3F712138172700DEAB36 /* FormScrollLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormScrollLabel.m; sourceTree = "<group>"; };
+		411C3F722138172700DEAB36 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		411C3F742138172700DEAB36 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		411C3F752138172700DEAB36 /* KeychainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainViewController.m; sourceTree = "<group>"; };
+		411C3F762138172700DEAB36 /* KeychainUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainUtil.h; sourceTree = "<group>"; };
+		411C3F772138172700DEAB36 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		411C3F782138172700DEAB36 /* KeychainUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainUtil.swift; sourceTree = "<group>"; };
+		411C3F792138172700DEAB36 /* KeychainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainViewController.h; sourceTree = "<group>"; };
+		411C3F7A2138172700DEAB36 /* KeychainUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainUtil.m; sourceTree = "<group>"; };
+		411C3F7D2138172700DEAB36 /* SortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortViewController.m; sourceTree = "<group>"; };
+		411C3F7E2138172700DEAB36 /* SortTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortTool.h; sourceTree = "<group>"; };
+		411C3F7F2138172700DEAB36 /* SortTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortTool.m; sourceTree = "<group>"; };
+		411C3F802138172700DEAB36 /* SortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortViewController.h; sourceTree = "<group>"; };
+		4632E258E1D055BDF27F6541 /* Pods-Valhalla.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Valhalla.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Valhalla/Pods-Valhalla.debug.xcconfig"; sourceTree = "<group>"; };
+		5D8EED2BE917D08B1B544E22 /* libPods-Valhalla.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Valhalla.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		411C3F15213816F200DEAB36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E857A0D4F82E737769D0C1B9 /* libPods-Valhalla.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		411C3F0F213816F200DEAB36 = {
+			isa = PBXGroup;
+			children = (
+				411C3F1A213816F200DEAB36 /* Valhalla */,
+				411C3F19213816F200DEAB36 /* Products */,
+				E7E11C0DBC51A605F2B5AF85 /* Pods */,
+				DC1B6EC024D03AF5E24BE1BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		411C3F19213816F200DEAB36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				411C3F18213816F200DEAB36 /* Valhalla.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		411C3F1A213816F200DEAB36 /* Valhalla */ = {
+			isa = PBXGroup;
+			children = (
+				411C3F552138172700DEAB36 /* Core */,
+				411C3F7B2138172700DEAB36 /* Algorithm */,
+				411C3F3B2138172700DEAB36 /* CollectionViewFlowLayout */,
+				411C3F5E2138172700DEAB36 /* ImageAndGraphics */,
+				411C3F642138172700DEAB36 /* iOS */,
+				411C3F4B2138172700DEAB36 /* Objective-C */,
+				411C3F312138172700DEAB36 /* Supporting Files */,
+			);
+			path = Valhalla;
+			sourceTree = "<group>";
+		};
+		411C3F312138172700DEAB36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				411C3F322138172700DEAB36 /* AppDelegate.h */,
+				411C3F392138172700DEAB36 /* AppDelegate.m */,
+				411C3F332138172700DEAB36 /* Assets.xcassets */,
+				411C3F342138172700DEAB36 /* LaunchScreen.storyboard */,
+				411C3F362138172700DEAB36 /* Main.storyboard */,
+				411C3F382138172700DEAB36 /* main.m */,
+				411C3F3A2138172700DEAB36 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		411C3F3B2138172700DEAB36 /* CollectionViewFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				411C3F3C2138172700DEAB36 /* CyclicCardLayout */,
+				411C3F412138172700DEAB36 /* WaterflowLayout */,
+				411C3F462138172700DEAB36 /* LeftJustifyLayout */,
+			);
+			path = CollectionViewFlowLayout;
+			sourceTree = "<group>";
+		};
+		411C3F3C2138172700DEAB36 /* CyclicCardLayout */ = {
+			isa = PBXGroup;
+			children = (
+				411C3F402138172700DEAB36 /* CyclicCardLayout.h */,
+				411C3F3D2138172700DEAB36 /* CyclicCardLayout.m */,
+				411C3F3E2138172700DEAB36 /* CyclicCardLayoutViewController.h */,
+				411C3F3F2138172700DEAB36 /* CyclicCardLayoutViewController.m */,
+			);
+			path = CyclicCardLayout;
+			sourceTree = "<group>";
+		};
+		411C3F412138172700DEAB36 /* WaterflowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				411C3F432138172700DEAB36 /* WaterflowLayout.h */,
+				411C3F452138172700DEAB36 /* WaterflowLayout.m */,
+				411C3F422138172700DEAB36 /* WaterflowLayoutViewController.h */,
+				411C3F442138172700DEAB36 /* WaterflowLayoutViewController.m */,
+			);
+			path = WaterflowLayout;
+			sourceTree = "<group>";
+		};
+		411C3F462138172700DEAB36 /* LeftJustifyLayout */ = {
+			isa = PBXGroup;
+			children = (
+				411C3F482138172700DEAB36 /* LeftJustifyLayout.h */,
+				411C3F4A2138172700DEAB36 /* LeftJustifyLayout.m */,
+				411C3F472138172700DEAB36 /* LeftJustifyLayoutViewController.h */,
+				411C3F492138172700DEAB36 /* LeftJustifyLayoutViewController.m */,
+			);
+			path = LeftJustifyLayout;
+			sourceTree = "<group>";
+		};
+		411C3F4B2138172700DEAB36 /* Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				411C3F4C2138172700DEAB36 /* MessageForwarding */,
+			);
+			path = "Objective-C";
+			sourceTree = "<group>";
+		};
+		411C3F4C2138172700DEAB36 /* MessageForwarding */ = {
+			isa = PBXGroup;
+			children = (
+				411C3F4D2138172700DEAB36 /* MessageForwardingViewController.h */,
+				411C3F522138172700DEAB36 /* MessageForwardingViewController.m */,
+				411C3F532138172700DEAB36 /* ClassA.h */,
+				411C3F502138172700DEAB36 /* ClassA.m */,
+				411C3F512138172700DEAB36 /* ClassB.h */,
+				411C3F4E2138172700DEAB36 /* ClassB.m */,
+				411C3F4F2138172700DEAB36 /* ClassC.h */,
+				411C3F542138172700DEAB36 /* ClassC.m */,
+			);
+			path = MessageForwarding;
+			sourceTree = "<group>";
+		};
+		411C3F552138172700DEAB36 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				411C3F5B2138172700DEAB36 /* PrefixHeader.pch */,
+				411C3F5A2138172700DEAB36 /* Valhalla-Bridging-Header.h */,
+				411C3F582138172700DEAB36 /* MDMRowModel.h */,
+				411C3F5C2138172700DEAB36 /* MDMRowModel.m */,
+				411C3F572138172700DEAB36 /* MDMSectionModel.h */,
+				411C3F5D2138172700DEAB36 /* MDMSectionModel.m */,
+				411C3F562138172700DEAB36 /* MDMRootViewController.m */,
+				411C3F592138172700DEAB36 /* MDMRootViewController.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		411C3F5E2138172700DEAB36 /* ImageAndGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				411C3F5F2138172700DEAB36 /* GIFSpeed */,
+			);
+			path = ImageAndGraphics;
+			sourceTree = "<group>";
+		};
+		411C3F5F2138172700DEAB36 /* GIFSpeed */ = {
+			isa = PBXGroup;
+			children = (
+				411C3F622138172700DEAB36 /* GIFFileTool.h */,
+				411C3F602138172700DEAB36 /* GIFFileTool.m */,
+				411C3F612138172700DEAB36 /* GIFSpeedViewController.h */,
+				411C3F632138172700DEAB36 /* GIFSpeedViewController.m */,
+			);
+			path = GIFSpeed;
+			sourceTree = "<group>";
+		};
+		411C3F642138172700DEAB36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				411C3F652138172700DEAB36 /* DigitScrollView */,
+				411C3F6A2138172700DEAB36 /* FormTabelView */,
+				411C3F732138172700DEAB36 /* Keychain */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		411C3F652138172700DEAB36 /* DigitScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				411C3F662138172700DEAB36 /* DigitScrollView.h */,
+				411C3F692138172700DEAB36 /* DigitScrollView.m */,
+				411C3F672138172700DEAB36 /* DigitScrollViewController.m */,
+				411C3F682138172700DEAB36 /* DigitScrollViewController.h */,
+			);
+			path = DigitScrollView;
+			sourceTree = "<group>";
+		};
+		411C3F6A2138172700DEAB36 /* FormTabelView */ = {
+			isa = PBXGroup;
+			children = (
+				411C3F6D2138172700DEAB36 /* Player.h */,
+				411C3F722138172700DEAB36 /* Player.m */,
+				411C3F6F2138172700DEAB36 /* FormTableViewController.h */,
+				411C3F6B2138172700DEAB36 /* FormTableViewController.m */,
+				411C3F702138172700DEAB36 /* FormTableView.h */,
+				411C3F6C2138172700DEAB36 /* FormTableView.m */,
+				411C3F6E2138172700DEAB36 /* FormScrollLabel.h */,
+				411C3F712138172700DEAB36 /* FormScrollLabel.m */,
+			);
+			path = FormTabelView;
+			sourceTree = "<group>";
+		};
+		411C3F732138172700DEAB36 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				411C3F792138172700DEAB36 /* KeychainViewController.h */,
+				411C3F752138172700DEAB36 /* KeychainViewController.m */,
+				411C3F762138172700DEAB36 /* KeychainUtil.h */,
+				411C3F7A2138172700DEAB36 /* KeychainUtil.m */,
+				411C3F772138172700DEAB36 /* KeychainItemWrapper.h */,
+				411C3F742138172700DEAB36 /* KeychainItemWrapper.m */,
+				411C3F782138172700DEAB36 /* KeychainUtil.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		411C3F7B2138172700DEAB36 /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				411C3F7C2138172700DEAB36 /* Sort */,
+			);
+			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		411C3F7C2138172700DEAB36 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				411C3F7D2138172700DEAB36 /* SortViewController.m */,
+				411C3F802138172700DEAB36 /* SortViewController.h */,
+				411C3F7E2138172700DEAB36 /* SortTool.h */,
+				411C3F7F2138172700DEAB36 /* SortTool.m */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		DC1B6EC024D03AF5E24BE1BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D8EED2BE917D08B1B544E22 /* libPods-Valhalla.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7E11C0DBC51A605F2B5AF85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4632E258E1D055BDF27F6541 /* Pods-Valhalla.debug.xcconfig */,
+				0CCE649E960A006EEA3DDA81 /* Pods-Valhalla.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		411C3F17213816F200DEAB36 /* Valhalla */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 411C3F2E213816F300DEAB36 /* Build configuration list for PBXNativeTarget "Valhalla" */;
+			buildPhases = (
+				B47D1F7DF4182D825EBFC91C /* [CP] Check Pods Manifest.lock */,
+				411C3F14213816F200DEAB36 /* Sources */,
+				411C3F15213816F200DEAB36 /* Frameworks */,
+				411C3F16213816F200DEAB36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Valhalla;
+			productName = Valhalla;
+			productReference = 411C3F18213816F200DEAB36 /* Valhalla.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		411C3F10213816F200DEAB36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = mademao;
+				TargetAttributes = {
+					411C3F17213816F200DEAB36 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 411C3F13213816F200DEAB36 /* Build configuration list for PBXProject "Valhalla" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 411C3F0F213816F200DEAB36;
+			productRefGroup = 411C3F19213816F200DEAB36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				411C3F17213816F200DEAB36 /* Valhalla */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		411C3F16213816F200DEAB36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				411C3F832138172700DEAB36 /* Main.storyboard in Resources */,
+				411C3F812138172700DEAB36 /* Assets.xcassets in Resources */,
+				411C3F822138172700DEAB36 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B47D1F7DF4182D825EBFC91C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Valhalla-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		411C3F14213816F200DEAB36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				411C3F8F2138172700DEAB36 /* MessageForwardingViewController.m in Sources */,
+				411C3F9F2138172700DEAB36 /* KeychainUtil.m in Sources */,
+				411C3F8B2138172700DEAB36 /* LeftJustifyLayoutViewController.m in Sources */,
+				411C3F872138172700DEAB36 /* CyclicCardLayout.m in Sources */,
+				411C3F982138172700DEAB36 /* FormTableViewController.m in Sources */,
+				411C3F8A2138172700DEAB36 /* WaterflowLayout.m in Sources */,
+				411C3F8D2138172700DEAB36 /* ClassB.m in Sources */,
+				411C3F962138172700DEAB36 /* DigitScrollViewController.m in Sources */,
+				411C3F952138172700DEAB36 /* GIFSpeedViewController.m in Sources */,
+				411C3F892138172700DEAB36 /* WaterflowLayoutViewController.m in Sources */,
+				411C3F852138172700DEAB36 /* AppDelegate.m in Sources */,
+				411C3F8E2138172700DEAB36 /* ClassA.m in Sources */,
+				411C3F9B2138172700DEAB36 /* Player.m in Sources */,
+				411C3F902138172700DEAB36 /* ClassC.m in Sources */,
+				411C3F8C2138172700DEAB36 /* LeftJustifyLayout.m in Sources */,
+				411C3F972138172700DEAB36 /* DigitScrollView.m in Sources */,
+				411C3F882138172700DEAB36 /* CyclicCardLayoutViewController.m in Sources */,
+				411C3F932138172700DEAB36 /* MDMSectionModel.m in Sources */,
+				411C3FA02138172700DEAB36 /* SortViewController.m in Sources */,
+				411C3F942138172700DEAB36 /* GIFFileTool.m in Sources */,
+				411C3F922138172700DEAB36 /* MDMRowModel.m in Sources */,
+				411C3F992138172700DEAB36 /* FormTableView.m in Sources */,
+				411C3F9C2138172700DEAB36 /* KeychainItemWrapper.m in Sources */,
+				411C3F9A2138172700DEAB36 /* FormScrollLabel.m in Sources */,
+				411C3F842138172700DEAB36 /* main.m in Sources */,
+				411C3F9D2138172700DEAB36 /* KeychainViewController.m in Sources */,
+				411C3FA12138172700DEAB36 /* SortTool.m in Sources */,
+				411C3F912138172700DEAB36 /* MDMRootViewController.m in Sources */,
+				411C3F9E2138172700DEAB36 /* KeychainUtil.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		411C3F342138172700DEAB36 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				411C3F352138172700DEAB36 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		411C3F362138172700DEAB36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				411C3F372138172700DEAB36 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		411C3F2C213816F300DEAB36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		411C3F2D213816F300DEAB36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		411C3F2F213816F300DEAB36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4632E258E1D055BDF27F6541 /* Pods-Valhalla.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = Valhalla/Core/PrefixHeader.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/Valhalla/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mademao.Valhalla;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		411C3F30213816F300DEAB36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CCE649E960A006EEA3DDA81 /* Pods-Valhalla.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = Valhalla/Core/PrefixHeader.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/Valhalla/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mademao.Valhalla;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		411C3F13213816F200DEAB36 /* Build configuration list for PBXProject "Valhalla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				411C3F2C213816F300DEAB36 /* Debug */,
+				411C3F2D213816F300DEAB36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		411C3F2E213816F300DEAB36 /* Build configuration list for PBXNativeTarget "Valhalla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				411C3F2F213816F300DEAB36 /* Debug */,
+				411C3F30213816F300DEAB36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 411C3F10213816F200DEAB36 /* Project object */;
+}

@@ -1,0 +1,12 @@
+workspace 'Valhalla'
+
+project 'Valhalla/Valhalla.xcodeproj'
+project 'WatchWeather/WatchWeather.xcodeproj'
+
+target 'Valhalla' do
+	platform :ios, '10.0'
+	project 'Valhalla/Valhalla.xcodeproj'
+	pod 'YYImage', '~> 1.0.4'
+	pod 'MBProgressHUD', '~> 1.1.0'
+	pod 'Pluto', '~> 1.0.4'
+end
