@@ -1,7 +1,10 @@
 workspace 'Valhalla'
 
+use_frameworks!
+
 project 'Valhalla/Valhalla.xcodeproj'
 project 'WatchWeather/WatchWeather.xcodeproj'
+project 'EmployeeCard/EmployeeCard.xcodeproj'
 
 target 'Valhalla' do
 	platform :ios, '10.0'
@@ -9,4 +12,14 @@ target 'Valhalla' do
 	pod 'YYImage', '~> 1.0.4'
 	pod 'MBProgressHUD', '~> 1.1.0'
 	pod 'Pluto', '~> 1.0.4'
+end
+
+target 'EmployeeCard' do
+	platform :ios, '8.0'
+	project 'EmployeeCard/EmployeeCard.xcodeproj'
+	pod 'MJRefresh', '3.1.12'
+	pod 'FMDB', '2.6.2'
+	pod 'Pluto', '~> 1.0.4'
+	pod 'MBProgressHUD', '~> 1.1.0'
+	pod 'Kingfisher', '3.5.2'
 end

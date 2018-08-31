@@ -39,11 +39,12 @@
 		411C3F9F2138172700DEAB36 /* KeychainUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F7A2138172700DEAB36 /* KeychainUtil.m */; };
 		411C3FA02138172700DEAB36 /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F7D2138172700DEAB36 /* SortViewController.m */; };
 		411C3FA12138172700DEAB36 /* SortTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F7F2138172700DEAB36 /* SortTool.m */; };
-		E857A0D4F82E737769D0C1B9 /* libPods-Valhalla.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8EED2BE917D08B1B544E22 /* libPods-Valhalla.a */; };
+		81F947615183889FE734590E /* Pods_Valhalla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34DDC438D7A6E57F2DEC1D97 /* Pods_Valhalla.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0CCE649E960A006EEA3DDA81 /* Pods-Valhalla.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Valhalla.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Valhalla/Pods-Valhalla.release.xcconfig"; sourceTree = "<group>"; };
+		34DDC438D7A6E57F2DEC1D97 /* Pods_Valhalla.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Valhalla.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		411C3F18213816F200DEAB36 /* Valhalla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Valhalla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		411C3F322138172700DEAB36 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		411C3F332138172700DEAB36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,7 +109,6 @@
 		411C3F7F2138172700DEAB36 /* SortTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortTool.m; sourceTree = "<group>"; };
 		411C3F802138172700DEAB36 /* SortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortViewController.h; sourceTree = "<group>"; };
 		4632E258E1D055BDF27F6541 /* Pods-Valhalla.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Valhalla.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Valhalla/Pods-Valhalla.debug.xcconfig"; sourceTree = "<group>"; };
-		5D8EED2BE917D08B1B544E22 /* libPods-Valhalla.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Valhalla.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E857A0D4F82E737769D0C1B9 /* libPods-Valhalla.a in Frameworks */,
+				81F947615183889FE734590E /* Pods_Valhalla.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,8 +244,8 @@
 				411C3F5C2138172700DEAB36 /* MDMRowModel.m */,
 				411C3F572138172700DEAB36 /* MDMSectionModel.h */,
 				411C3F5D2138172700DEAB36 /* MDMSectionModel.m */,
-				411C3F562138172700DEAB36 /* MDMRootViewController.m */,
 				411C3F592138172700DEAB36 /* MDMRootViewController.h */,
+				411C3F562138172700DEAB36 /* MDMRootViewController.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -341,7 +341,7 @@
 		DC1B6EC024D03AF5E24BE1BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5D8EED2BE917D08B1B544E22 /* libPods-Valhalla.a */,
+				34DDC438D7A6E57F2DEC1D97 /* Pods_Valhalla.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -366,6 +366,7 @@
 				411C3F14213816F200DEAB36 /* Sources */,
 				411C3F15213816F200DEAB36 /* Frameworks */,
 				411C3F16213816F200DEAB36 /* Resources */,
+				A706E71E0AC3D765956DF59F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -422,6 +423,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		A706E71E0AC3D765956DF59F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-Valhalla/Pods-Valhalla-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD-iOS10.0/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Pluto-iOS10.0/Pluto.framework",
+				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pluto.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Valhalla/Pods-Valhalla-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B47D1F7DF4182D825EBFC91C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

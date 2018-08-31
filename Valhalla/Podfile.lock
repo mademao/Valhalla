@@ -1,26 +1,40 @@
 PODS:
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - Kingfisher (3.5.2)
   - MBProgressHUD (1.1.0)
+  - MJRefresh (3.1.12)
   - Pluto (1.0.4)
   - YYImage (1.0.4):
     - YYImage/Core (= 1.0.4)
   - YYImage/Core (1.0.4)
 
 DEPENDENCIES:
+  - FMDB (= 2.6.2)
+  - Kingfisher (= 3.5.2)
   - MBProgressHUD (~> 1.1.0)
+  - MJRefresh (= 3.1.12)
   - Pluto (~> 1.0.4)
   - YYImage (~> 1.0.4)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - FMDB
+    - Kingfisher
     - MBProgressHUD
+    - MJRefresh
     - Pluto
     - YYImage
 
 SPEC CHECKSUMS:
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  Kingfisher: 9950e382c500b6834ce004c7c4131c444e90c3a1
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   Pluto: 4e1fd373a7bdae7fdabeb3e13d5a265012cd582f
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
 
-PODFILE CHECKSUM: b47bc864a8b49d08a11745cc5b0de994432d331d
+PODFILE CHECKSUM: 031ae63b8bf3ae93bb6ede2fe1999bb115b02cd1
 
 COCOAPODS: 1.5.3
