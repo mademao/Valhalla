@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DwQ-Q7-ylI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StepCount" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOs-5Z-cQZ">
+                                <rect key="frame" x="70" y="208.5" width="235" height="50"/>
+                                <color key="backgroundColor" red="0.19215686269999999" green="0.33725490200000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JZp-PW-dAD"/>
+                                </constraints>
+                                <state key="normal" title="HealthKit读取健康数据">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="healthKitReadData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cJD-yn-bc8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5c-Rw-pRo">
+                                <rect key="frame" x="70" y="308.5" width="235" height="50"/>
+                                <color key="backgroundColor" red="0.19215686269999999" green="0.33725490200000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="HealthKit写入健康数据">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="healthKitWriteData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgQ-So-wOu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQf-5R-A2t">
+                                <rect key="frame" x="69.5" y="408.5" width="235" height="50"/>
+                                <color key="backgroundColor" red="0.19215686269999999" green="0.33725490200000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="CoreMotion读取运动数据">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="coreMotionReadData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="71M-sa-khe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sQf-5R-A2t" firstAttribute="centerX" secondItem="j5c-Rw-pRo" secondAttribute="centerX" id="0Qm-I4-KqO"/>
+                            <constraint firstItem="NOs-5Z-cQZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="9qw-hV-pPI"/>
+                            <constraint firstItem="j5c-Rw-pRo" firstAttribute="centerX" secondItem="NOs-5Z-cQZ" secondAttribute="centerX" id="9rz-gs-9o8"/>
+                            <constraint firstItem="j5c-Rw-pRo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Diq-hz-6qS"/>
+                            <constraint firstItem="j5c-Rw-pRo" firstAttribute="top" secondItem="NOs-5Z-cQZ" secondAttribute="bottom" constant="50" id="Kk5-dE-sY8"/>
+                            <constraint firstItem="sQf-5R-A2t" firstAttribute="top" secondItem="j5c-Rw-pRo" secondAttribute="bottom" constant="50" id="gfZ-kS-9V6"/>
+                            <constraint firstItem="sQf-5R-A2t" firstAttribute="height" secondItem="j5c-Rw-pRo" secondAttribute="height" id="hss-4Q-pZf"/>
+                            <constraint firstItem="sQf-5R-A2t" firstAttribute="width" secondItem="j5c-Rw-pRo" secondAttribute="width" id="xHA-Yt-neR"/>
+                            <constraint firstItem="NOs-5Z-cQZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xWS-jb-cLb"/>
+                            <constraint firstItem="j5c-Rw-pRo" firstAttribute="width" secondItem="NOs-5Z-cQZ" secondAttribute="width" id="y0P-6R-Av9"/>
+                            <constraint firstItem="j5c-Rw-pRo" firstAttribute="height" secondItem="NOs-5Z-cQZ" secondAttribute="height" id="z6h-e8-Qyl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bs7-4h-iGQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456.80000000000001" y="117.39130434782609"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lDW-AQ-e8e">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DwQ-Q7-ylI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1OW-4b-dbX">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mmV-0u-dr3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qu2-ef-v8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-426" y="117"/>
+        </scene>
+    </scenes>
+</document>
