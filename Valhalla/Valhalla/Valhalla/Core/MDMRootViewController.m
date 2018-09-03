@@ -108,6 +108,17 @@
     [sectionModel.rowModelArray addObject:rowModel];
     
     [self.sectionModelArray addObject:sectionModel];
+    
+    //Animation
+    sectionModel = [[MDMSectionModel alloc] init];
+    sectionModel.name = NSLocalizedString(@"Animation", nil);
+    
+    rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"Login Button", nil);
+    rowModel.viewControllerName = @"LoginButtonViewController";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
+    [self.sectionModelArray addObject:sectionModel];
 }
 
 - (void)setupUI {
