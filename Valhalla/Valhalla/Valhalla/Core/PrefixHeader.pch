@@ -9,7 +9,7 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-#import <Pluto.h>
-#import <MBProgressHUD.h>
+#import <Pluto/Pluto.h>
+#import <MBProgressHUD/MBProgressHUD.h>
 
 #endif /* PrefixHeader_pch */

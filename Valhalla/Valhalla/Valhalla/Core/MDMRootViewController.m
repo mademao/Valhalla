@@ -114,6 +114,11 @@
     sectionModel.name = NSLocalizedString(@"Animation", nil);
     
     rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"Glutinous View", nil);
+    rowModel.viewControllerName = @"GlutinousViewViewController";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
+    rowModel = [[MDMRowModel alloc] init];
     rowModel.name = NSLocalizedString(@"Login Button", nil);
     rowModel.viewControllerName = @"LoginButtonViewController";
     [sectionModel.rowModelArray addObject:rowModel];
