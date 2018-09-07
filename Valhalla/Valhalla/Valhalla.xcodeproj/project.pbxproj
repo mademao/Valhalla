@@ -43,6 +43,7 @@
 		41CF3A5721412027000FC5B3 /* GlutinousView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF3A5621412026000FC5B3 /* GlutinousView.m */; };
 		41CF3AA92142A951000FC5B3 /* TurnAroundButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF3AA82142A951000FC5B3 /* TurnAroundButtonViewController.m */; };
 		41CF3AAC2142AA09000FC5B3 /* TurnAroundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF3AAB2142AA09000FC5B3 /* TurnAroundButton.m */; };
+		41CF3AB12142B047000FC5B3 /* NavigationAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF3AB02142B047000FC5B3 /* NavigationAnimationViewController.m */; };
 		81F947615183889FE734590E /* Pods_Valhalla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34DDC438D7A6E57F2DEC1D97 /* Pods_Valhalla.framework */; };
 /* End PBXBuildFile section */
 
@@ -120,6 +121,8 @@
 		41CF3AA82142A951000FC5B3 /* TurnAroundButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TurnAroundButtonViewController.m; sourceTree = "<group>"; };
 		41CF3AAB2142AA09000FC5B3 /* TurnAroundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurnAroundButton.m; sourceTree = "<group>"; };
 		41CF3AAD2142AA4A000FC5B3 /* TurnAroundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurnAroundButton.h; sourceTree = "<group>"; };
+		41CF3AAF2142B047000FC5B3 /* NavigationAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationAnimationViewController.h; sourceTree = "<group>"; };
+		41CF3AB02142B047000FC5B3 /* NavigationAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationAnimationViewController.m; sourceTree = "<group>"; };
 		4632E258E1D055BDF27F6541 /* Pods-Valhalla.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Valhalla.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Valhalla/Pods-Valhalla.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -354,6 +357,7 @@
 		41CF3A5021411ECA000FC5B3 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				41CF3AAE2142B013000FC5B3 /* NavigationAnimation */,
 				41CF3AA62142A944000FC5B3 /* TurnAroundButton */,
 				41CF3A5121411ECA000FC5B3 /* GlutinousView */,
 			);
@@ -380,6 +384,15 @@
 				41CF3AAB2142AA09000FC5B3 /* TurnAroundButton.m */,
 			);
 			path = TurnAroundButton;
+			sourceTree = "<group>";
+		};
+		41CF3AAE2142B013000FC5B3 /* NavigationAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				41CF3AAF2142B047000FC5B3 /* NavigationAnimationViewController.h */,
+				41CF3AB02142B047000FC5B3 /* NavigationAnimationViewController.m */,
+			);
+			path = NavigationAnimation;
 			sourceTree = "<group>";
 		};
 		DC1B6EC024D03AF5E24BE1BD /* Frameworks */ = {
@@ -547,6 +560,7 @@
 				411C3FA12138172700DEAB36 /* SortTool.m in Sources */,
 				411C3F912138172700DEAB36 /* MDMRootViewController.m in Sources */,
 				411C3F9E2138172700DEAB36 /* KeychainUtil.swift in Sources */,
+				41CF3AB12142B047000FC5B3 /* NavigationAnimationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
