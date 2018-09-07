@@ -119,8 +119,8 @@
     [sectionModel.rowModelArray addObject:rowModel];
     
     rowModel = [[MDMRowModel alloc] init];
-    rowModel.name = NSLocalizedString(@"Login Button", nil);
-    rowModel.viewControllerName = @"LoginButtonViewController";
+    rowModel.name = NSLocalizedString(@"Turn Around Button", nil);
+    rowModel.viewControllerName = @"TurnAroundButtonViewController";
     [sectionModel.rowModelArray addObject:rowModel];
     
     [self.sectionModelArray addObject:sectionModel];
