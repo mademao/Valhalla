@@ -39,6 +39,8 @@
 		411C3F9F2138172700DEAB36 /* KeychainUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F7A2138172700DEAB36 /* KeychainUtil.m */; };
 		411C3FA02138172700DEAB36 /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F7D2138172700DEAB36 /* SortViewController.m */; };
 		411C3FA12138172700DEAB36 /* SortTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F7F2138172700DEAB36 /* SortTool.m */; };
+		41B7995B21469EC8001A632F /* NavigationAnimationPushedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B7995A21469EC8001A632F /* NavigationAnimationPushedViewController.m */; };
+		41B7995E21469F4F001A632F /* NavigationAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B7995D21469F4F001A632F /* NavigationAnimation.m */; };
 		41CF3A5421411EDD000FC5B3 /* GlutinousViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF3A5321411EDD000FC5B3 /* GlutinousViewViewController.m */; };
 		41CF3A5721412027000FC5B3 /* GlutinousView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF3A5621412026000FC5B3 /* GlutinousView.m */; };
 		41CF3AA92142A951000FC5B3 /* TurnAroundButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF3AA82142A951000FC5B3 /* TurnAroundButtonViewController.m */; };
@@ -113,6 +115,10 @@
 		411C3F7E2138172700DEAB36 /* SortTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortTool.h; sourceTree = "<group>"; };
 		411C3F7F2138172700DEAB36 /* SortTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortTool.m; sourceTree = "<group>"; };
 		411C3F802138172700DEAB36 /* SortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortViewController.h; sourceTree = "<group>"; };
+		41B7995921469EC8001A632F /* NavigationAnimationPushedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationAnimationPushedViewController.h; sourceTree = "<group>"; };
+		41B7995A21469EC8001A632F /* NavigationAnimationPushedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationAnimationPushedViewController.m; sourceTree = "<group>"; };
+		41B7995C21469F4F001A632F /* NavigationAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationAnimation.h; sourceTree = "<group>"; };
+		41B7995D21469F4F001A632F /* NavigationAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationAnimation.m; sourceTree = "<group>"; };
 		41CF3A5221411EDD000FC5B3 /* GlutinousViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlutinousViewViewController.h; sourceTree = "<group>"; };
 		41CF3A5321411EDD000FC5B3 /* GlutinousViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlutinousViewViewController.m; sourceTree = "<group>"; };
 		41CF3A5521412026000FC5B3 /* GlutinousView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlutinousView.h; sourceTree = "<group>"; };
@@ -391,6 +397,10 @@
 			children = (
 				41CF3AAF2142B047000FC5B3 /* NavigationAnimationViewController.h */,
 				41CF3AB02142B047000FC5B3 /* NavigationAnimationViewController.m */,
+				41B7995921469EC8001A632F /* NavigationAnimationPushedViewController.h */,
+				41B7995A21469EC8001A632F /* NavigationAnimationPushedViewController.m */,
+				41B7995C21469F4F001A632F /* NavigationAnimation.h */,
+				41B7995D21469F4F001A632F /* NavigationAnimation.m */,
 			);
 			path = NavigationAnimation;
 			sourceTree = "<group>";
@@ -530,6 +540,7 @@
 				411C3F8F2138172700DEAB36 /* MessageForwardingViewController.m in Sources */,
 				411C3F9F2138172700DEAB36 /* KeychainUtil.m in Sources */,
 				41CF3A5421411EDD000FC5B3 /* GlutinousViewViewController.m in Sources */,
+				41B7995B21469EC8001A632F /* NavigationAnimationPushedViewController.m in Sources */,
 				411C3F8B2138172700DEAB36 /* LeftJustifyLayoutViewController.m in Sources */,
 				411C3F872138172700DEAB36 /* CyclicCardLayout.m in Sources */,
 				411C3F982138172700DEAB36 /* FormTableViewController.m in Sources */,
@@ -554,6 +565,7 @@
 				411C3F992138172700DEAB36 /* FormTableView.m in Sources */,
 				411C3F9C2138172700DEAB36 /* KeychainItemWrapper.m in Sources */,
 				41CF3AAC2142AA09000FC5B3 /* TurnAroundButton.m in Sources */,
+				41B7995E21469F4F001A632F /* NavigationAnimation.m in Sources */,
 				411C3F9A2138172700DEAB36 /* FormScrollLabel.m in Sources */,
 				411C3F842138172700DEAB36 /* main.m in Sources */,
 				411C3F9D2138172700DEAB36 /* KeychainViewController.m in Sources */,
