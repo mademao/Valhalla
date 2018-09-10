@@ -17,7 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.view.backgroundColor = [UIColor greenColor];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    imageView.image = [UIImage imageNamed:@"Image2"];
+    [self.view addSubview:imageView];
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

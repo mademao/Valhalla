@@ -19,7 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor redColor];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    imageView.image = [UIImage imageNamed:@"Image1"];
+    [self.view addSubview:imageView];
     
     self.navigationController.delegate = self;
     
