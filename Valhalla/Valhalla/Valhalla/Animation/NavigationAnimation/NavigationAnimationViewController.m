@@ -26,9 +26,33 @@
     self.navigationController.delegate = self;
     
     [self.navigationController setNavigationBarHidden:YES];
+    
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    backButton.frame = CGRectMake(0, 0, 200, 50);
+    backButton.center = CGPointMake(self.view.center.x, self.view.center.y - 100);
+    [backButton setTitle:NSLocalizedString(@"Back", nil) forState:UIControlStateNormal];
+    [backButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    backButton.backgroundColor = [UIColor redColor];
+    backButton.layer.cornerRadius = 5.0;
+    [backButton addTarget:self action:@selector(backButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:backButton];
+    
+    UIButton *pushButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    pushButton.frame = CGRectMake(0, 0, 200, 50);
+    pushButton.center = CGPointMake(self.view.center.x, self.view.center.y + 100);
+    [pushButton setTitle:NSLocalizedString(@"Push", nil) forState:UIControlStateNormal];
+    [pushButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    pushButton.backgroundColor = [UIColor redColor];
+    pushButton.layer.cornerRadius = 5.0;
+    [pushButton addTarget:self action:@selector(pushButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:pushButton];
 }
 
-- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+- (void)backButtonAction:(UIButton *)button {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)pushButtonAction:(UIButton *)button {
     NavigationAnimationPushedViewController *viewController = [[NavigationAnimationPushedViewController alloc] init];
     [self.navigationController pushViewController:viewController animated:YES];
 }

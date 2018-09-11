@@ -20,9 +20,19 @@
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     imageView.image = [UIImage imageNamed:@"Image2"];
     [self.view addSubview:imageView];
+    
+    UIButton *popButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    popButton.frame = CGRectMake(0, 0, 200, 50);
+    popButton.center = CGPointMake(self.view.center.x, self.view.center.y);
+    [popButton setTitle:NSLocalizedString(@"Pop", nil) forState:UIControlStateNormal];
+    [popButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    popButton.backgroundColor = [UIColor redColor];
+    popButton.layer.cornerRadius = 5.0;
+    [popButton addTarget:self action:@selector(popButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:popButton];
 }
 
-- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+- (void)popButtonAction:(UIButton *)button {
     [self.navigationController popViewControllerAnimated:YES];
 }
 
