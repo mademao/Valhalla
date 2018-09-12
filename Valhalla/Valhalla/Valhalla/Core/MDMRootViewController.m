@@ -128,6 +128,11 @@
     rowModel.viewControllerName = @"NavigationAnimationViewController";
     [sectionModel.rowModelArray addObject:rowModel];
     
+    rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"Point to Screen Transtion", nil);
+    rowModel.viewControllerName = @"PointToScreenTranstionViewController";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
     [self.sectionModelArray addObject:sectionModel];
 }
 
