@@ -44,6 +44,11 @@
     [sectionModel.rowModelArray addObject:rowModel];
     
     rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"StoreReview", nil);
+    rowModel.viewControllerName = @"StoreReviewViewController";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
+    rowModel = [[MDMRowModel alloc] init];
     rowModel.name = NSLocalizedString(@"DigitScrollView", nil);
     rowModel.viewControllerName = @"DigitScrollViewController";
     [sectionModel.rowModelArray addObject:rowModel];

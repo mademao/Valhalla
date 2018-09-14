@@ -39,6 +39,7 @@
 		411C3F9F2138172700DEAB36 /* KeychainUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F7A2138172700DEAB36 /* KeychainUtil.m */; };
 		411C3FA02138172700DEAB36 /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F7D2138172700DEAB36 /* SortViewController.m */; };
 		411C3FA12138172700DEAB36 /* SortTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F7F2138172700DEAB36 /* SortTool.m */; };
+		4199EBFD214BE6BC001AE878 /* StoreReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4199EBFC214BE6BC001AE878 /* StoreReviewViewController.m */; };
 		41B383EA21493555002E6590 /* PointToScreenTranstionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B383E921493555002E6590 /* PointToScreenTranstionViewController.m */; };
 		41B383ED21493802002E6590 /* PointToScreenTranstion.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B383EC21493802002E6590 /* PointToScreenTranstion.m */; };
 		41B383F021493BB2002E6590 /* PointToScreenTranstionPresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B383EF21493BB2002E6590 /* PointToScreenTranstionPresentedViewController.m */; };
@@ -118,6 +119,8 @@
 		411C3F7E2138172700DEAB36 /* SortTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortTool.h; sourceTree = "<group>"; };
 		411C3F7F2138172700DEAB36 /* SortTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortTool.m; sourceTree = "<group>"; };
 		411C3F802138172700DEAB36 /* SortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortViewController.h; sourceTree = "<group>"; };
+		4199EBFB214BE6BC001AE878 /* StoreReviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreReviewViewController.h; sourceTree = "<group>"; };
+		4199EBFC214BE6BC001AE878 /* StoreReviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreReviewViewController.m; sourceTree = "<group>"; };
 		41B383E821493555002E6590 /* PointToScreenTranstionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointToScreenTranstionViewController.h; sourceTree = "<group>"; };
 		41B383E921493555002E6590 /* PointToScreenTranstionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointToScreenTranstionViewController.m; sourceTree = "<group>"; };
 		41B383EB21493802002E6590 /* PointToScreenTranstion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointToScreenTranstion.h; sourceTree = "<group>"; };
@@ -303,6 +306,7 @@
 		411C3F642138172700DEAB36 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				4199EBFA214BE674001AE878 /* StoreReview */,
 				411C3F652138172700DEAB36 /* DigitScrollView */,
 				411C3F6A2138172700DEAB36 /* FormTabelView */,
 				411C3F732138172700DEAB36 /* Keychain */,
@@ -367,6 +371,15 @@
 				411C3F7F2138172700DEAB36 /* SortTool.m */,
 			);
 			path = Sort;
+			sourceTree = "<group>";
+		};
+		4199EBFA214BE674001AE878 /* StoreReview */ = {
+			isa = PBXGroup;
+			children = (
+				4199EBFB214BE6BC001AE878 /* StoreReviewViewController.h */,
+				4199EBFC214BE6BC001AE878 /* StoreReviewViewController.m */,
+			);
+			path = StoreReview;
 			sourceTree = "<group>";
 		};
 		41B383E721493545002E6590 /* PointToScreenTranstion */ = {
@@ -564,6 +577,7 @@
 				411C3F8F2138172700DEAB36 /* MessageForwardingViewController.m in Sources */,
 				411C3F9F2138172700DEAB36 /* KeychainUtil.m in Sources */,
 				41CF3A5421411EDD000FC5B3 /* GlutinousViewViewController.m in Sources */,
+				4199EBFD214BE6BC001AE878 /* StoreReviewViewController.m in Sources */,
 				41B383EA21493555002E6590 /* PointToScreenTranstionViewController.m in Sources */,
 				41B7995B21469EC8001A632F /* NavigationAnimationPushedViewController.m in Sources */,
 				411C3F8B2138172700DEAB36 /* LeftJustifyLayoutViewController.m in Sources */,
