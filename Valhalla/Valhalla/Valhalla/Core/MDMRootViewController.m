@@ -58,6 +58,11 @@
     rowModel.viewControllerName = @"FormTableViewController";
     [sectionModel.rowModelArray addObject:rowModel];
     
+    rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"Pick Up Color", nil);
+    rowModel.viewControllerName = @"PickUpColorViewController";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
     [self.sectionModelArray addObject:sectionModel];
     
     //CollectionViewFlowLayout

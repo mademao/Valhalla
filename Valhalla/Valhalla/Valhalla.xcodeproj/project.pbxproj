@@ -39,6 +39,7 @@
 		411C3F9F2138172700DEAB36 /* KeychainUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F7A2138172700DEAB36 /* KeychainUtil.m */; };
 		411C3FA02138172700DEAB36 /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F7D2138172700DEAB36 /* SortViewController.m */; };
 		411C3FA12138172700DEAB36 /* SortTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F7F2138172700DEAB36 /* SortTool.m */; };
+		414DB6CD2152783800B8F1F6 /* PickUpColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414DB6CC2152783800B8F1F6 /* PickUpColorViewController.m */; };
 		4199EBFD214BE6BC001AE878 /* StoreReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4199EBFC214BE6BC001AE878 /* StoreReviewViewController.m */; };
 		41B383EA21493555002E6590 /* PointToScreenTranstionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B383E921493555002E6590 /* PointToScreenTranstionViewController.m */; };
 		41B383ED21493802002E6590 /* PointToScreenTranstion.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B383EC21493802002E6590 /* PointToScreenTranstion.m */; };
@@ -119,6 +120,8 @@
 		411C3F7E2138172700DEAB36 /* SortTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortTool.h; sourceTree = "<group>"; };
 		411C3F7F2138172700DEAB36 /* SortTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortTool.m; sourceTree = "<group>"; };
 		411C3F802138172700DEAB36 /* SortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortViewController.h; sourceTree = "<group>"; };
+		414DB6CB2152783800B8F1F6 /* PickUpColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickUpColorViewController.h; sourceTree = "<group>"; };
+		414DB6CC2152783800B8F1F6 /* PickUpColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickUpColorViewController.m; sourceTree = "<group>"; };
 		4199EBFB214BE6BC001AE878 /* StoreReviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreReviewViewController.h; sourceTree = "<group>"; };
 		4199EBFC214BE6BC001AE878 /* StoreReviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreReviewViewController.m; sourceTree = "<group>"; };
 		41B383E821493555002E6590 /* PointToScreenTranstionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointToScreenTranstionViewController.h; sourceTree = "<group>"; };
@@ -306,6 +309,7 @@
 		411C3F642138172700DEAB36 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				414DB6CA215277E000B8F1F6 /* PickUpColor */,
 				4199EBFA214BE674001AE878 /* StoreReview */,
 				411C3F652138172700DEAB36 /* DigitScrollView */,
 				411C3F6A2138172700DEAB36 /* FormTabelView */,
@@ -371,6 +375,15 @@
 				411C3F7F2138172700DEAB36 /* SortTool.m */,
 			);
 			path = Sort;
+			sourceTree = "<group>";
+		};
+		414DB6CA215277E000B8F1F6 /* PickUpColor */ = {
+			isa = PBXGroup;
+			children = (
+				414DB6CB2152783800B8F1F6 /* PickUpColorViewController.h */,
+				414DB6CC2152783800B8F1F6 /* PickUpColorViewController.m */,
+			);
+			path = PickUpColor;
 			sourceTree = "<group>";
 		};
 		4199EBFA214BE674001AE878 /* StoreReview */ = {
@@ -486,11 +499,12 @@
 		411C3F10213816F200DEAB36 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = mademao;
 				TargetAttributes = {
 					411C3F17213816F200DEAB36 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -575,6 +589,7 @@
 			files = (
 				41B383ED21493802002E6590 /* PointToScreenTranstion.m in Sources */,
 				411C3F8F2138172700DEAB36 /* MessageForwardingViewController.m in Sources */,
+				414DB6CD2152783800B8F1F6 /* PickUpColorViewController.m in Sources */,
 				411C3F9F2138172700DEAB36 /* KeychainUtil.m in Sources */,
 				41CF3A5421411EDD000FC5B3 /* GlutinousViewViewController.m in Sources */,
 				4199EBFD214BE6BC001AE878 /* StoreReviewViewController.m in Sources */,
@@ -744,6 +759,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -763,7 +779,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mademao.Valhalla;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -783,7 +799,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mademao.Valhalla;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
