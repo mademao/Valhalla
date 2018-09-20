@@ -12,6 +12,10 @@
 
 @property (nonatomic, strong) UIImageView *imageView;
 
+@property (nonatomic, strong) UILabel *colorLabel;
+
+@property (nonatomic, strong) UIView *colorView;
+
 @end
 
 @implementation PickUpColorViewController
@@ -23,7 +27,7 @@
     
     UIImage *image = [UIImage imageNamed:@"Valhalla"];
     self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, image.size.width, image.size.height)];
-    self.imageView.center = self.view.center;
+    self.imageView.center = CGPointMake(self.view.center.x, self.view.center.y - 60);
     self.imageView.image = image;
     [self.view addSubview:self.imageView];
     
@@ -32,6 +36,20 @@
     tapGR.numberOfTapsRequired = 1;
     [self.imageView addGestureRecognizer:tapGR];
     self.imageView.userInteractionEnabled = YES;
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, self.imageView.plt_y - 70, PltScreenWidth, 50)];
+    label.text = NSLocalizedString(@"Plase Touch Image", nil);
+    label.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:label];
+    
+    self.colorLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.imageView.plt_maxY + 50, PltScreenWidth, 50)];
+    self.colorLabel.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:self.colorLabel];
+    
+    self.colorView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+    self.colorView.center = CGPointMake(self.view.center.x, self.colorLabel.plt_maxY + 60);
+    self.colorView.backgroundColor = self.view.backgroundColor;
+    [self.view addSubview:self.colorView];
 }
 
 - (void)tapGRAction:(UIGestureRecognizer *)gr {
@@ -39,7 +57,10 @@
         CGPoint touchLocation = [gr locationInView:self.imageView];
         
         int alpha = 0, red = 0, green = 0, blue = 0;
-        [self getColorWithPoint:touchLocation alpha:alpha red:red green:green blue:blue];
+        [self getColorWithPoint:touchLocation alpha:&alpha red:&red green:&green blue:&blue];
+        
+        self.colorLabel.text = [NSString stringWithFormat:@"ARGB: %d %d %d %d(%0X%0X%0X%0X)", alpha, red, green, blue, alpha, red, green, blue];
+        self.colorView.backgroundColor = [UIColor colorWithRed:red / 255.0 green:green / 255.0 blue:blue / 255.0 alpha:alpha / 255.0];
     }
 }
 
