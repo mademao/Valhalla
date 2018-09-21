@@ -68,6 +68,11 @@
     rowModel.viewControllerName = @"CreateQRCodeViewController";
     [sectionModel.rowModelArray addObject:rowModel];
     
+    rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"Create PDF", nil);
+    rowModel.viewControllerName = @"CreatePDFViewController";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
     [self.sectionModelArray addObject:sectionModel];
     
     //CollectionViewFlowLayout
