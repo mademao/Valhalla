@@ -40,6 +40,7 @@
 		411C3FA02138172700DEAB36 /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F7D2138172700DEAB36 /* SortViewController.m */; };
 		411C3FA12138172700DEAB36 /* SortTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F7F2138172700DEAB36 /* SortTool.m */; };
 		414DB6CD2152783800B8F1F6 /* PickUpColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414DB6CC2152783800B8F1F6 /* PickUpColorViewController.m */; };
+		414DB6D42154C19000B8F1F6 /* CreateQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414DB6D32154C19000B8F1F6 /* CreateQRCodeViewController.m */; };
 		4199EBFD214BE6BC001AE878 /* StoreReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4199EBFC214BE6BC001AE878 /* StoreReviewViewController.m */; };
 		41B383EA21493555002E6590 /* PointToScreenTranstionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B383E921493555002E6590 /* PointToScreenTranstionViewController.m */; };
 		41B383ED21493802002E6590 /* PointToScreenTranstion.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B383EC21493802002E6590 /* PointToScreenTranstion.m */; };
@@ -122,6 +123,8 @@
 		411C3F802138172700DEAB36 /* SortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortViewController.h; sourceTree = "<group>"; };
 		414DB6CB2152783800B8F1F6 /* PickUpColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickUpColorViewController.h; sourceTree = "<group>"; };
 		414DB6CC2152783800B8F1F6 /* PickUpColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickUpColorViewController.m; sourceTree = "<group>"; };
+		414DB6D22154C19000B8F1F6 /* CreateQRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateQRCodeViewController.h; sourceTree = "<group>"; };
+		414DB6D32154C19000B8F1F6 /* CreateQRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateQRCodeViewController.m; sourceTree = "<group>"; };
 		4199EBFB214BE6BC001AE878 /* StoreReviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreReviewViewController.h; sourceTree = "<group>"; };
 		4199EBFC214BE6BC001AE878 /* StoreReviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreReviewViewController.m; sourceTree = "<group>"; };
 		41B383E821493555002E6590 /* PointToScreenTranstionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointToScreenTranstionViewController.h; sourceTree = "<group>"; };
@@ -309,6 +312,7 @@
 		411C3F642138172700DEAB36 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				414DB6D12154C17F00B8F1F6 /* CreateQRCode */,
 				414DB6CA215277E000B8F1F6 /* PickUpColor */,
 				4199EBFA214BE674001AE878 /* StoreReview */,
 				411C3F652138172700DEAB36 /* DigitScrollView */,
@@ -384,6 +388,15 @@
 				414DB6CC2152783800B8F1F6 /* PickUpColorViewController.m */,
 			);
 			path = PickUpColor;
+			sourceTree = "<group>";
+		};
+		414DB6D12154C17F00B8F1F6 /* CreateQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				414DB6D22154C19000B8F1F6 /* CreateQRCodeViewController.h */,
+				414DB6D32154C19000B8F1F6 /* CreateQRCodeViewController.m */,
+			);
+			path = CreateQRCode;
 			sourceTree = "<group>";
 		};
 		4199EBFA214BE674001AE878 /* StoreReview */ = {
@@ -621,6 +634,7 @@
 				411C3F9C2138172700DEAB36 /* KeychainItemWrapper.m in Sources */,
 				41CF3AAC2142AA09000FC5B3 /* TurnAroundButton.m in Sources */,
 				41B7995E21469F4F001A632F /* NavigationAnimation.m in Sources */,
+				414DB6D42154C19000B8F1F6 /* CreateQRCodeViewController.m in Sources */,
 				411C3F9A2138172700DEAB36 /* FormScrollLabel.m in Sources */,
 				411C3F842138172700DEAB36 /* main.m in Sources */,
 				411C3F9D2138172700DEAB36 /* KeychainViewController.m in Sources */,

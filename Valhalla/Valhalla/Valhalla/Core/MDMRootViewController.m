@@ -63,6 +63,11 @@
     rowModel.viewControllerName = @"PickUpColorViewController";
     [sectionModel.rowModelArray addObject:rowModel];
     
+    rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"Create QR Code", nil);
+    rowModel.viewControllerName = @"CreateQRCodeViewController";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
     [self.sectionModelArray addObject:sectionModel];
     
     //CollectionViewFlowLayout
