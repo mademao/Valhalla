@@ -42,6 +42,7 @@
 		414DB6CD2152783800B8F1F6 /* PickUpColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414DB6CC2152783800B8F1F6 /* PickUpColorViewController.m */; };
 		414DB6D42154C19000B8F1F6 /* CreateQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414DB6D32154C19000B8F1F6 /* CreateQRCodeViewController.m */; };
 		4199EBFD214BE6BC001AE878 /* StoreReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4199EBFC214BE6BC001AE878 /* StoreReviewViewController.m */; };
+		41B26A04215511A7007DD3AC /* QRCodeCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B26A03215511A7007DD3AC /* QRCodeCreater.m */; };
 		41B383EA21493555002E6590 /* PointToScreenTranstionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B383E921493555002E6590 /* PointToScreenTranstionViewController.m */; };
 		41B383ED21493802002E6590 /* PointToScreenTranstion.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B383EC21493802002E6590 /* PointToScreenTranstion.m */; };
 		41B383F021493BB2002E6590 /* PointToScreenTranstionPresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B383EF21493BB2002E6590 /* PointToScreenTranstionPresentedViewController.m */; };
@@ -127,6 +128,8 @@
 		414DB6D32154C19000B8F1F6 /* CreateQRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateQRCodeViewController.m; sourceTree = "<group>"; };
 		4199EBFB214BE6BC001AE878 /* StoreReviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreReviewViewController.h; sourceTree = "<group>"; };
 		4199EBFC214BE6BC001AE878 /* StoreReviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreReviewViewController.m; sourceTree = "<group>"; };
+		41B26A02215511A7007DD3AC /* QRCodeCreater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeCreater.h; sourceTree = "<group>"; };
+		41B26A03215511A7007DD3AC /* QRCodeCreater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeCreater.m; sourceTree = "<group>"; };
 		41B383E821493555002E6590 /* PointToScreenTranstionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointToScreenTranstionViewController.h; sourceTree = "<group>"; };
 		41B383E921493555002E6590 /* PointToScreenTranstionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointToScreenTranstionViewController.m; sourceTree = "<group>"; };
 		41B383EB21493802002E6590 /* PointToScreenTranstion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointToScreenTranstion.h; sourceTree = "<group>"; };
@@ -395,6 +398,8 @@
 			children = (
 				414DB6D22154C19000B8F1F6 /* CreateQRCodeViewController.h */,
 				414DB6D32154C19000B8F1F6 /* CreateQRCodeViewController.m */,
+				41B26A02215511A7007DD3AC /* QRCodeCreater.h */,
+				41B26A03215511A7007DD3AC /* QRCodeCreater.m */,
 			);
 			path = CreateQRCode;
 			sourceTree = "<group>";
@@ -621,6 +626,7 @@
 				411C3F8E2138172700DEAB36 /* ClassA.m in Sources */,
 				411C3F9B2138172700DEAB36 /* Player.m in Sources */,
 				411C3F902138172700DEAB36 /* ClassC.m in Sources */,
+				41B26A04215511A7007DD3AC /* QRCodeCreater.m in Sources */,
 				41CF3AA92142A951000FC5B3 /* TurnAroundButtonViewController.m in Sources */,
 				411C3F8C2138172700DEAB36 /* LeftJustifyLayout.m in Sources */,
 				411C3F972138172700DEAB36 /* DigitScrollView.m in Sources */,
