@@ -81,9 +81,13 @@ static KeychainUtil *util = nil;
 - (void)save:(NSString *)service data:(id)data {
     OSStatus result;
     NSMutableDictionary *keychainQuery = [self getKeychainQuery:service];
-    SecItemDelete((__bridge_retained CFDictionaryRef)keychainQuery);
+    CFDictionaryRef cKeychainQuery = (__bridge_retained CFDictionaryRef)keychainQuery;
+    SecItemDelete(cKeychainQuery);
     [keychainQuery setObject:[NSKeyedArchiver archivedDataWithRootObject:data] forKey:(__bridge_transfer id)kSecValueData];
-    result = SecItemAdd((__bridge_retained CFDictionaryRef)keychainQuery, NULL);
+    result = SecItemAdd(cKeychainQuery, NULL);
+    if (cKeychainQuery) {
+        CFRelease(cKeychainQuery);
+    }
     NSCAssert(result == noErr, @"Couldn't add the Keychain Item.");
 }
 
@@ -118,7 +122,11 @@ static KeychainUtil *util = nil;
 - (void)delete:(NSString *)service {
     OSStatus result;
     NSMutableDictionary *keychainQuery = [self getKeychainQuery:service];
-    result = SecItemDelete((__bridge_retained CFDictionaryRef)keychainQuery);
+    CFDictionaryRef cKeychainQuery = (__bridge_retained CFDictionaryRef)keychainQuery;
+    result = SecItemDelete(cKeychainQuery);
+    if (cKeychainQuery) {
+        CFRelease(cKeychainQuery);
+    }
     NSCAssert(result == noErr, @"Couldn't delete the keychain item.");
 }
 

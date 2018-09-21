@@ -71,6 +71,7 @@
     CGImageRef inImage = self.imageView.image.CGImage;
     point = CGPointMake(point.x * self.imageView.image.scale, point.y * self.imageView.image.scale);
     CGContextRef context = [self createARGBBitmapContextFromImage:inImage];
+    CFRetain(context);
     if (context == NULL) {
         return;
     }
@@ -143,6 +144,9 @@
     }
     
     CGColorSpaceRelease(colorSpace);
+    if (context) {
+        CFAutorelease(context);
+    }
     return context;
 }
 

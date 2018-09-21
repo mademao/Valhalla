@@ -300,7 +300,7 @@
             return cell;
         }
     }
-    return nil;
+    return [[UITableViewCell alloc] init];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView

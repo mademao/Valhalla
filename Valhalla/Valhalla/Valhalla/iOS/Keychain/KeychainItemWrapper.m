@@ -193,7 +193,7 @@
     OSStatus junk = noErr;
     if (!keychainItemData)
     {
-        self.keychainItemData = [[NSMutableDictionary alloc] init];
+        self.keychainItemData = [NSMutableDictionary dictionary];
     }
     else if (keychainItemData)
     {
