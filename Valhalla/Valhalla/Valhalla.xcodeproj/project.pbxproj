@@ -54,6 +54,7 @@
 		41CF3AA92142A951000FC5B3 /* TurnAroundButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF3AA82142A951000FC5B3 /* TurnAroundButtonViewController.m */; };
 		41CF3AAC2142AA09000FC5B3 /* TurnAroundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF3AAB2142AA09000FC5B3 /* TurnAroundButton.m */; };
 		41CF3AB12142B047000FC5B3 /* NavigationAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF3AB02142B047000FC5B3 /* NavigationAnimationViewController.m */; };
+		41E740A7215A635C0029C91D /* CreatePDFPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E740A6215A635C0029C91D /* CreatePDFPreviewView.m */; };
 		81F947615183889FE734590E /* Pods_Valhalla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34DDC438D7A6E57F2DEC1D97 /* Pods_Valhalla.framework */; };
 /* End PBXBuildFile section */
 
@@ -153,6 +154,8 @@
 		41CF3AAD2142AA4A000FC5B3 /* TurnAroundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurnAroundButton.h; sourceTree = "<group>"; };
 		41CF3AAF2142B047000FC5B3 /* NavigationAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationAnimationViewController.h; sourceTree = "<group>"; };
 		41CF3AB02142B047000FC5B3 /* NavigationAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationAnimationViewController.m; sourceTree = "<group>"; };
+		41E740A5215A635C0029C91D /* CreatePDFPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreatePDFPreviewView.h; sourceTree = "<group>"; };
+		41E740A6215A635C0029C91D /* CreatePDFPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreatePDFPreviewView.m; sourceTree = "<group>"; };
 		4632E258E1D055BDF27F6541 /* Pods-Valhalla.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Valhalla.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Valhalla/Pods-Valhalla.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -422,6 +425,8 @@
 			children = (
 				41B26A0621552258007DD3AC /* CreatePDFViewController.h */,
 				41B26A0721552258007DD3AC /* CreatePDFViewController.m */,
+				41E740A5215A635C0029C91D /* CreatePDFPreviewView.h */,
+				41E740A6215A635C0029C91D /* CreatePDFPreviewView.m */,
 			);
 			path = CreatePDF;
 			sourceTree = "<group>";
@@ -651,6 +656,7 @@
 				411C3F942138172700DEAB36 /* GIFFileTool.m in Sources */,
 				411C3F922138172700DEAB36 /* MDMRowModel.m in Sources */,
 				411C3F992138172700DEAB36 /* FormTableView.m in Sources */,
+				41E740A7215A635C0029C91D /* CreatePDFPreviewView.m in Sources */,
 				411C3F9C2138172700DEAB36 /* KeychainItemWrapper.m in Sources */,
 				41CF3AAC2142AA09000FC5B3 /* TurnAroundButton.m in Sources */,
 				41B7995E21469F4F001A632F /* NavigationAnimation.m in Sources */,

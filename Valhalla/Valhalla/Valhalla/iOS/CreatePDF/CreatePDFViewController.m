@@ -7,10 +7,13 @@
 //
 
 #import "CreatePDFViewController.h"
+#import "CreatePDFPreviewView.h"
 
 @interface CreatePDFViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
+
+@property (nonatomic, strong) CreatePDFPreviewView *previewView;
 
 @end
 
@@ -50,12 +53,14 @@
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         NSData *data = [self createPDFfromUIScrollView:self.tableView];
-        [data writeToFile:[PltDocumentPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.pdf", [[NSDate date] plt_StringWithDate:nil]]] atomically:YES];
+        NSString *filePath = [PltDocumentPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.pdf", [[NSDate date] plt_StringWithDate:nil]]];
+        [data writeToFile:filePath atomically:YES];
+        [self.previewView showPDF:filePath];
     });
 }
 
 
--(NSMutableData*)createPDFfromUIScrollView:(UIScrollView*)scrollView {
+- (NSMutableData*)createPDFfromUIScrollView:(UIScrollView*)scrollView {
     
     //存储ScrollView的初始位置及父视图
     CGRect origRect = scrollView.frame;
@@ -97,6 +102,16 @@
     
     //输出打印数据，根据需要进行数据的存储或传输
     return pdfData;
+}
+
+
+#pragma mark - lazy load
+
+- (CreatePDFPreviewView *)previewView {
+    if (!_previewView) {
+        _previewView = [[CreatePDFPreviewView alloc] init];
+    }
+    return _previewView;
 }
 
 @end
