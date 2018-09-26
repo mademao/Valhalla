@@ -59,6 +59,11 @@
     [sectionModel.rowModelArray addObject:rowModel];
     
     rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"TableView Cell Extension", nil);
+    rowModel.viewControllerName = @"TableViewCellExtensionViewController";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
+    rowModel = [[MDMRowModel alloc] init];
     rowModel.name = NSLocalizedString(@"Pick Up Color", nil);
     rowModel.viewControllerName = @"PickUpColorViewController";
     [sectionModel.rowModelArray addObject:rowModel];
