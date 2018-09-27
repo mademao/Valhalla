@@ -50,6 +50,7 @@
 		41B383F021493BB2002E6590 /* PointToScreenTranstionPresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B383EF21493BB2002E6590 /* PointToScreenTranstionPresentedViewController.m */; };
 		41B7995B21469EC8001A632F /* NavigationAnimationPushedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B7995A21469EC8001A632F /* NavigationAnimationPushedViewController.m */; };
 		41B7995E21469F4F001A632F /* NavigationAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B7995D21469F4F001A632F /* NavigationAnimation.m */; };
+		41CD2469215D0721003EE7D1 /* list.json in Resources */ = {isa = PBXBuildFile; fileRef = 41CD2468215D0721003EE7D1 /* list.json */; };
 		41CF3A5421411EDD000FC5B3 /* GlutinousViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF3A5321411EDD000FC5B3 /* GlutinousViewViewController.m */; };
 		41CF3A5721412027000FC5B3 /* GlutinousView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF3A5621412026000FC5B3 /* GlutinousView.m */; };
 		41CF3AA92142A951000FC5B3 /* TurnAroundButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF3AA82142A951000FC5B3 /* TurnAroundButtonViewController.m */; };
@@ -147,6 +148,7 @@
 		41B7995A21469EC8001A632F /* NavigationAnimationPushedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationAnimationPushedViewController.m; sourceTree = "<group>"; };
 		41B7995C21469F4F001A632F /* NavigationAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationAnimation.h; sourceTree = "<group>"; };
 		41B7995D21469F4F001A632F /* NavigationAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationAnimation.m; sourceTree = "<group>"; };
+		41CD2468215D0721003EE7D1 /* list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = list.json; sourceTree = "<group>"; };
 		41CF3A5221411EDD000FC5B3 /* GlutinousViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlutinousViewViewController.h; sourceTree = "<group>"; };
 		41CF3A5321411EDD000FC5B3 /* GlutinousViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlutinousViewViewController.m; sourceTree = "<group>"; };
 		41CF3A5521412026000FC5B3 /* GlutinousView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlutinousView.h; sourceTree = "<group>"; };
@@ -420,6 +422,7 @@
 			children = (
 				4167C804215BBAB800C40E50 /* TableViewCellExtensionViewController.h */,
 				4167C805215BBAB800C40E50 /* TableViewCellExtensionViewController.m */,
+				41CD2468215D0721003EE7D1 /* list.json */,
 			);
 			path = TableViewCellExtension;
 			sourceTree = "<group>";
@@ -581,6 +584,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				411C3F832138172700DEAB36 /* Main.storyboard in Resources */,
+				41CD2469215D0721003EE7D1 /* list.json in Resources */,
 				411C3F812138172700DEAB36 /* Assets.xcassets in Resources */,
 				411C3F822138172700DEAB36 /* LaunchScreen.storyboard in Resources */,
 			);
