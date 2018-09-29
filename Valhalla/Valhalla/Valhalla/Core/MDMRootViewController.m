@@ -44,23 +44,28 @@
     [sectionModel.rowModelArray addObject:rowModel];
     
     rowModel = [[MDMRowModel alloc] init];
-    rowModel.name = NSLocalizedString(@"StoreReview", nil);
+    rowModel.name = NSLocalizedString(@"Store Review", nil);
     rowModel.viewControllerName = @"StoreReviewViewController";
     [sectionModel.rowModelArray addObject:rowModel];
     
     rowModel = [[MDMRowModel alloc] init];
-    rowModel.name = NSLocalizedString(@"DigitScrollView", nil);
+    rowModel.name = NSLocalizedString(@"Digit ScrollView", nil);
     rowModel.viewControllerName = @"DigitScrollViewController";
     [sectionModel.rowModelArray addObject:rowModel];
     
     rowModel = [[MDMRowModel alloc] init];
-    rowModel.name = NSLocalizedString(@"FormTableView", nil);
+    rowModel.name = NSLocalizedString(@"Form TableView", nil);
     rowModel.viewControllerName = @"FormTableViewController";
     [sectionModel.rowModelArray addObject:rowModel];
     
     rowModel = [[MDMRowModel alloc] init];
     rowModel.name = NSLocalizedString(@"TableView Cell Extension", nil);
     rowModel.viewControllerName = @"TableViewCellExtensionViewController";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
+    rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"Image TableView", nil);
+    rowModel.viewControllerName = @"ImageTableViewViewController";
     [sectionModel.rowModelArray addObject:rowModel];
     
     rowModel = [[MDMRowModel alloc] init];
@@ -85,17 +90,17 @@
     sectionModel.name = NSLocalizedString(@"CollectionViewFlowLayout", nil);
     
     rowModel = [[MDMRowModel alloc] init];
-    rowModel.name = NSLocalizedString(@"LeftJustifyLayout", nil);
+    rowModel.name = NSLocalizedString(@"Left Justify Layout", nil);
     rowModel.viewControllerName = @"LeftJustifyLayoutViewController";
     [sectionModel.rowModelArray addObject:rowModel];
     
     rowModel = [[MDMRowModel alloc] init];
-    rowModel.name = NSLocalizedString(@"WaterflowLayout", nil);
+    rowModel.name = NSLocalizedString(@"Waterflow Layout", nil);
     rowModel.viewControllerName = @"WaterflowLayoutViewController";
     [sectionModel.rowModelArray addObject:rowModel];
     
     rowModel = [[MDMRowModel alloc] init];
-    rowModel.name = NSLocalizedString(@"CyclicCardLayout", nil);
+    rowModel.name = NSLocalizedString(@"Cyclic Card Layout", nil);
     rowModel.viewControllerName = @"CyclicCardLayoutViewController";
     [sectionModel.rowModelArray addObject:rowModel];
     
