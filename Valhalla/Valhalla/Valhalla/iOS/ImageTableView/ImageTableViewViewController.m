@@ -25,11 +25,12 @@ static const NSInteger kImageViewTag = 11111;
     [self.view addSubview:self.tableView];
     
     UIImage *image = [UIImage imageNamed:@"Valhalla"];
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, -image.size.height, self.tableView.plt_width, image.size.height)];
+    CGFloat imageHeight = self.tableView.plt_width / image.size.width * image.size.height;
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, -imageHeight, self.tableView.plt_width, imageHeight)];
     imageView.tag = kImageViewTag;
     imageView.image = image;
     imageView.contentMode = UIViewContentModeScaleAspectFill;
-    self.tableView.contentInset = UIEdgeInsetsMake(image.size.height, 0, 0, 0);
+    self.tableView.contentInset = UIEdgeInsetsMake(imageHeight, 0, 0, 0);
     [self.tableView addSubview:imageView];
 }
 
@@ -50,6 +51,16 @@ static const NSInteger kImageViewTag = 11111;
     cell.textLabel.text = [NSString stringWithFormat:@"%ld--%ld", indexPath.section, indexPath.row];
     
     return cell;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    CGPoint point = scrollView.contentOffset;
+    if (point.y < -scrollView.contentInset.top) {
+        CGRect rect = [self.tableView viewWithTag:kImageViewTag].frame;
+        rect.origin.y = point.y;
+        rect.size.height = -point.y;
+        [self.tableView viewWithTag:kImageViewTag].frame = rect;
+    }
 }
 
 
