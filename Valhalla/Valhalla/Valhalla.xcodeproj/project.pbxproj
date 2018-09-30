@@ -54,6 +54,7 @@
 		41CD24AA215E58AD003EE7D1 /* TableViewCellExtensionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CD24A9215E58AD003EE7D1 /* TableViewCellExtensionHeaderView.m */; };
 		41CD24AF215FA73E003EE7D1 /* ImageTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CD24AE215FA73E003EE7D1 /* ImageTableViewViewController.m */; };
 		41CD25412160EDDC003EE7D1 /* VideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CD25402160EDDC003EE7D1 /* VideoPlayerViewController.m */; };
+		41CD25442160EE28003EE7D1 /* VideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CD25432160EE28003EE7D1 /* VideoPlayerView.m */; };
 		41CF3A5421411EDD000FC5B3 /* GlutinousViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF3A5321411EDD000FC5B3 /* GlutinousViewViewController.m */; };
 		41CF3A5721412027000FC5B3 /* GlutinousView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF3A5621412026000FC5B3 /* GlutinousView.m */; };
 		41CF3AA92142A951000FC5B3 /* TurnAroundButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF3AA82142A951000FC5B3 /* TurnAroundButtonViewController.m */; };
@@ -158,6 +159,8 @@
 		41CD24AE215FA73E003EE7D1 /* ImageTableViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageTableViewViewController.m; sourceTree = "<group>"; };
 		41CD253F2160EDDC003EE7D1 /* VideoPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPlayerViewController.h; sourceTree = "<group>"; };
 		41CD25402160EDDC003EE7D1 /* VideoPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerViewController.m; sourceTree = "<group>"; };
+		41CD25422160EE28003EE7D1 /* VideoPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPlayerView.h; sourceTree = "<group>"; };
+		41CD25432160EE28003EE7D1 /* VideoPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerView.m; sourceTree = "<group>"; };
 		41CF3A5221411EDD000FC5B3 /* GlutinousViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlutinousViewViewController.h; sourceTree = "<group>"; };
 		41CF3A5321411EDD000FC5B3 /* GlutinousViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlutinousViewViewController.m; sourceTree = "<group>"; };
 		41CF3A5521412026000FC5B3 /* GlutinousView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlutinousView.h; sourceTree = "<group>"; };
@@ -487,6 +490,8 @@
 			children = (
 				41CD253F2160EDDC003EE7D1 /* VideoPlayerViewController.h */,
 				41CD25402160EDDC003EE7D1 /* VideoPlayerViewController.m */,
+				41CD25422160EE28003EE7D1 /* VideoPlayerView.h */,
+				41CD25432160EE28003EE7D1 /* VideoPlayerView.m */,
 			);
 			path = VideoPlayer;
 			sourceTree = "<group>";
@@ -706,6 +711,7 @@
 				41CD24AA215E58AD003EE7D1 /* TableViewCellExtensionHeaderView.m in Sources */,
 				411C3F942138172700DEAB36 /* GIFFileTool.m in Sources */,
 				411C3F922138172700DEAB36 /* MDMRowModel.m in Sources */,
+				41CD25442160EE28003EE7D1 /* VideoPlayerView.m in Sources */,
 				411C3F992138172700DEAB36 /* FormTableView.m in Sources */,
 				41E740A7215A635C0029C91D /* CreatePDFPreviewView.m in Sources */,
 				411C3F9C2138172700DEAB36 /* KeychainItemWrapper.m in Sources */,
