@@ -50,6 +50,7 @@
 		41B383F021493BB2002E6590 /* PointToScreenTranstionPresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B383EF21493BB2002E6590 /* PointToScreenTranstionPresentedViewController.m */; };
 		41B7995B21469EC8001A632F /* NavigationAnimationPushedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B7995A21469EC8001A632F /* NavigationAnimationPushedViewController.m */; };
 		41B7995E21469F4F001A632F /* NavigationAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B7995D21469F4F001A632F /* NavigationAnimation.m */; };
+		41B84127216B8B7700B62FDB /* ImageOrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B84126216B8B7700B62FDB /* ImageOrientationViewController.m */; };
 		41CD2469215D0721003EE7D1 /* list.json in Resources */ = {isa = PBXBuildFile; fileRef = 41CD2468215D0721003EE7D1 /* list.json */; };
 		41CD24AA215E58AD003EE7D1 /* TableViewCellExtensionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CD24A9215E58AD003EE7D1 /* TableViewCellExtensionHeaderView.m */; };
 		41CD24AF215FA73E003EE7D1 /* ImageTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CD24AE215FA73E003EE7D1 /* ImageTableViewViewController.m */; };
@@ -152,6 +153,8 @@
 		41B7995A21469EC8001A632F /* NavigationAnimationPushedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationAnimationPushedViewController.m; sourceTree = "<group>"; };
 		41B7995C21469F4F001A632F /* NavigationAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationAnimation.h; sourceTree = "<group>"; };
 		41B7995D21469F4F001A632F /* NavigationAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationAnimation.m; sourceTree = "<group>"; };
+		41B84125216B8B7700B62FDB /* ImageOrientationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageOrientationViewController.h; sourceTree = "<group>"; };
+		41B84126216B8B7700B62FDB /* ImageOrientationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageOrientationViewController.m; sourceTree = "<group>"; };
 		41CD2468215D0721003EE7D1 /* list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = list.json; sourceTree = "<group>"; };
 		41CD24A8215E58AD003EE7D1 /* TableViewCellExtensionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCellExtensionHeaderView.h; sourceTree = "<group>"; };
 		41CD24A9215E58AD003EE7D1 /* TableViewCellExtensionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCellExtensionHeaderView.m; sourceTree = "<group>"; };
@@ -319,6 +322,7 @@
 		411C3F5E2138172700DEAB36 /* ImageAndGraphics */ = {
 			isa = PBXGroup;
 			children = (
+				41B84124216B8B6800B62FDB /* ImageOrientation */,
 				411C3F5F2138172700DEAB36 /* GIFSpeed */,
 			);
 			path = ImageAndGraphics;
@@ -474,6 +478,15 @@
 				41B383EC21493802002E6590 /* PointToScreenTranstion.m */,
 			);
 			path = PointToScreenTranstion;
+			sourceTree = "<group>";
+		};
+		41B84124216B8B6800B62FDB /* ImageOrientation */ = {
+			isa = PBXGroup;
+			children = (
+				41B84125216B8B7700B62FDB /* ImageOrientationViewController.h */,
+				41B84126216B8B7700B62FDB /* ImageOrientationViewController.m */,
+			);
+			path = ImageOrientation;
 			sourceTree = "<group>";
 		};
 		41CD24AC215FA701003EE7D1 /* ImageTableView */ = {
@@ -708,6 +721,7 @@
 				411C3FA02138172700DEAB36 /* SortViewController.m in Sources */,
 				41B26A0821552259007DD3AC /* CreatePDFViewController.m in Sources */,
 				41CD24AF215FA73E003EE7D1 /* ImageTableViewViewController.m in Sources */,
+				41B84127216B8B7700B62FDB /* ImageOrientationViewController.m in Sources */,
 				41CD24AA215E58AD003EE7D1 /* TableViewCellExtensionHeaderView.m in Sources */,
 				411C3F942138172700DEAB36 /* GIFFileTool.m in Sources */,
 				411C3F922138172700DEAB36 /* MDMRowModel.m in Sources */,

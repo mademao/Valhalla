@@ -120,6 +120,11 @@
     rowModel.viewControllerName = @"GIFSpeedViewController";
     [sectionModel.rowModelArray addObject:rowModel];
     
+    rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"Image Orientation", nil);
+    rowModel.viewControllerName = @"ImageOrientationViewController";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
     [self.sectionModelArray addObject:sectionModel];
     
     //Algorithm
