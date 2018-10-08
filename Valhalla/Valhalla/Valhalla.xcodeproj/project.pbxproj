@@ -51,6 +51,7 @@
 		41B7995B21469EC8001A632F /* NavigationAnimationPushedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B7995A21469EC8001A632F /* NavigationAnimationPushedViewController.m */; };
 		41B7995E21469F4F001A632F /* NavigationAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B7995D21469F4F001A632F /* NavigationAnimation.m */; };
 		41B84127216B8B7700B62FDB /* ImageOrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B84126216B8B7700B62FDB /* ImageOrientationViewController.m */; };
+		41B8412A216B8BC800B62FDB /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B84129216B8BC800B62FDB /* UIImage+FixOrientation.m */; };
 		41CD2469215D0721003EE7D1 /* list.json in Resources */ = {isa = PBXBuildFile; fileRef = 41CD2468215D0721003EE7D1 /* list.json */; };
 		41CD24AA215E58AD003EE7D1 /* TableViewCellExtensionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CD24A9215E58AD003EE7D1 /* TableViewCellExtensionHeaderView.m */; };
 		41CD24AF215FA73E003EE7D1 /* ImageTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CD24AE215FA73E003EE7D1 /* ImageTableViewViewController.m */; };
@@ -155,6 +156,8 @@
 		41B7995D21469F4F001A632F /* NavigationAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationAnimation.m; sourceTree = "<group>"; };
 		41B84125216B8B7700B62FDB /* ImageOrientationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageOrientationViewController.h; sourceTree = "<group>"; };
 		41B84126216B8B7700B62FDB /* ImageOrientationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageOrientationViewController.m; sourceTree = "<group>"; };
+		41B84128216B8BC800B62FDB /* UIImage+FixOrientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FixOrientation.h"; sourceTree = "<group>"; };
+		41B84129216B8BC800B62FDB /* UIImage+FixOrientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FixOrientation.m"; sourceTree = "<group>"; };
 		41CD2468215D0721003EE7D1 /* list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = list.json; sourceTree = "<group>"; };
 		41CD24A8215E58AD003EE7D1 /* TableViewCellExtensionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCellExtensionHeaderView.h; sourceTree = "<group>"; };
 		41CD24A9215E58AD003EE7D1 /* TableViewCellExtensionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCellExtensionHeaderView.m; sourceTree = "<group>"; };
@@ -485,6 +488,8 @@
 			children = (
 				41B84125216B8B7700B62FDB /* ImageOrientationViewController.h */,
 				41B84126216B8B7700B62FDB /* ImageOrientationViewController.m */,
+				41B84128216B8BC800B62FDB /* UIImage+FixOrientation.h */,
+				41B84129216B8BC800B62FDB /* UIImage+FixOrientation.m */,
 			);
 			path = ImageOrientation;
 			sourceTree = "<group>";
@@ -707,6 +712,7 @@
 				411C3F962138172700DEAB36 /* DigitScrollViewController.m in Sources */,
 				411C3F952138172700DEAB36 /* GIFSpeedViewController.m in Sources */,
 				411C3F892138172700DEAB36 /* WaterflowLayoutViewController.m in Sources */,
+				41B8412A216B8BC800B62FDB /* UIImage+FixOrientation.m in Sources */,
 				411C3F852138172700DEAB36 /* AppDelegate.m in Sources */,
 				411C3F8E2138172700DEAB36 /* ClassA.m in Sources */,
 				411C3F9B2138172700DEAB36 /* Player.m in Sources */,
