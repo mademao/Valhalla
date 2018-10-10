@@ -7,6 +7,7 @@
 //
 
 #import "ImageOrientationViewController.h"
+#import "ImageOrientationDetailViewController.h"
 
 @interface ImageOrientationViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -26,15 +27,18 @@
 
 #pragma mark - UITableViewDelegate & UITableViewDataSource
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     return 8;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class]) forIndexPath:indexPath];
     
     switch (indexPath.row) {
@@ -77,6 +81,17 @@
     }
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    ImageOrientationDetailViewController *viewController = [[ImageOrientationDetailViewController alloc] initWithImageOrientation:indexPath.row];
+    viewController.title = cell.textLabel.text;
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 

@@ -52,6 +52,7 @@
 		41B7995E21469F4F001A632F /* NavigationAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B7995D21469F4F001A632F /* NavigationAnimation.m */; };
 		41B84127216B8B7700B62FDB /* ImageOrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B84126216B8B7700B62FDB /* ImageOrientationViewController.m */; };
 		41B8412A216B8BC800B62FDB /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B84129216B8BC800B62FDB /* UIImage+FixOrientation.m */; };
+		41B8412D216C5FA600B62FDB /* ImageOrientationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8412C216C5FA600B62FDB /* ImageOrientationDetailViewController.m */; };
 		41CD2469215D0721003EE7D1 /* list.json in Resources */ = {isa = PBXBuildFile; fileRef = 41CD2468215D0721003EE7D1 /* list.json */; };
 		41CD24AA215E58AD003EE7D1 /* TableViewCellExtensionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CD24A9215E58AD003EE7D1 /* TableViewCellExtensionHeaderView.m */; };
 		41CD24AF215FA73E003EE7D1 /* ImageTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CD24AE215FA73E003EE7D1 /* ImageTableViewViewController.m */; };
@@ -158,6 +159,8 @@
 		41B84126216B8B7700B62FDB /* ImageOrientationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageOrientationViewController.m; sourceTree = "<group>"; };
 		41B84128216B8BC800B62FDB /* UIImage+FixOrientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FixOrientation.h"; sourceTree = "<group>"; };
 		41B84129216B8BC800B62FDB /* UIImage+FixOrientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FixOrientation.m"; sourceTree = "<group>"; };
+		41B8412B216C5FA600B62FDB /* ImageOrientationDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageOrientationDetailViewController.h; sourceTree = "<group>"; };
+		41B8412C216C5FA600B62FDB /* ImageOrientationDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageOrientationDetailViewController.m; sourceTree = "<group>"; };
 		41CD2468215D0721003EE7D1 /* list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = list.json; sourceTree = "<group>"; };
 		41CD24A8215E58AD003EE7D1 /* TableViewCellExtensionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCellExtensionHeaderView.h; sourceTree = "<group>"; };
 		41CD24A9215E58AD003EE7D1 /* TableViewCellExtensionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCellExtensionHeaderView.m; sourceTree = "<group>"; };
@@ -488,6 +491,8 @@
 			children = (
 				41B84125216B8B7700B62FDB /* ImageOrientationViewController.h */,
 				41B84126216B8B7700B62FDB /* ImageOrientationViewController.m */,
+				41B8412B216C5FA600B62FDB /* ImageOrientationDetailViewController.h */,
+				41B8412C216C5FA600B62FDB /* ImageOrientationDetailViewController.m */,
 				41B84128216B8BC800B62FDB /* UIImage+FixOrientation.h */,
 				41B84129216B8BC800B62FDB /* UIImage+FixOrientation.m */,
 			);
@@ -723,6 +728,7 @@
 				411C3F972138172700DEAB36 /* DigitScrollView.m in Sources */,
 				411C3F882138172700DEAB36 /* CyclicCardLayoutViewController.m in Sources */,
 				411C3F932138172700DEAB36 /* MDMSectionModel.m in Sources */,
+				41B8412D216C5FA600B62FDB /* ImageOrientationDetailViewController.m in Sources */,
 				41B383F021493BB2002E6590 /* PointToScreenTranstionPresentedViewController.m in Sources */,
 				411C3FA02138172700DEAB36 /* SortViewController.m in Sources */,
 				41B26A0821552259007DD3AC /* CreatePDFViewController.m in Sources */,

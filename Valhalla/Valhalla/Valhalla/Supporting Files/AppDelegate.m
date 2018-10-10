@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    pltLog([NSString stringWithFormat:@"📂--->%@", PltDocumentPath]);
+    pltLog([NSString stringWithFormat:@"📂--->%@", PltHomePath]);
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
