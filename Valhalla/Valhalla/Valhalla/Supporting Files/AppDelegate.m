@@ -20,6 +20,9 @@
     
     pltLog([NSString stringWithFormat:@"📂--->%@", PltHomePath]);
     
+    ///设置外部3D Touch选项
+    [self setShortcuts];
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
@@ -57,6 +60,23 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+#pragma mark - 3D Touch
+
+- (void)setShortcuts {
+    UIApplicationShortcutIcon *icon1 = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeDate];
+    UIApplicationShortcutIcon *icon2 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"sun"];
+    
+    UIApplicationShortcutItem *item1 = [[UIApplicationShortcutItem alloc] initWithType:@"default" localizedTitle:@"default" localizedSubtitle:@"default" icon:icon1 userInfo:@{@"title" : @"default"}];
+    UIApplicationShortcutItem *item2 = [[UIApplicationShortcutItem alloc] initWithType:@"sun" localizedTitle:@"sun" localizedSubtitle:@"sun" icon:icon2 userInfo:@{@"title" : @"sun"}];
+    
+    [[UIApplication sharedApplication] setShortcutItems:@[item1, item2]];
+}
+
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
+    NSLog(@"%@", shortcutItem);
 }
 
 

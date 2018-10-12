@@ -88,6 +88,11 @@
     rowModel.viewControllerName = @"VideoPlayerViewController";
     [sectionModel.rowModelArray addObject:rowModel];
     
+    rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"3D Touch", nil);
+    rowModel.viewControllerName = @"ForceTouchViewController";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
     [self.sectionModelArray addObject:sectionModel];
     
     //CollectionViewFlowLayout

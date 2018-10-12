@@ -53,6 +53,7 @@
 		41B84127216B8B7700B62FDB /* ImageOrientationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B84126216B8B7700B62FDB /* ImageOrientationViewController.m */; };
 		41B8412A216B8BC800B62FDB /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B84129216B8BC800B62FDB /* UIImage+FixOrientation.m */; };
 		41B8412D216C5FA600B62FDB /* ImageOrientationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B8412C216C5FA600B62FDB /* ImageOrientationDetailViewController.m */; };
+		41B841852170CF3C00B62FDB /* ForceTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B841842170CF3C00B62FDB /* ForceTouchViewController.m */; };
 		41CD2469215D0721003EE7D1 /* list.json in Resources */ = {isa = PBXBuildFile; fileRef = 41CD2468215D0721003EE7D1 /* list.json */; };
 		41CD24AA215E58AD003EE7D1 /* TableViewCellExtensionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CD24A9215E58AD003EE7D1 /* TableViewCellExtensionHeaderView.m */; };
 		41CD24AF215FA73E003EE7D1 /* ImageTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CD24AE215FA73E003EE7D1 /* ImageTableViewViewController.m */; };
@@ -161,6 +162,8 @@
 		41B84129216B8BC800B62FDB /* UIImage+FixOrientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FixOrientation.m"; sourceTree = "<group>"; };
 		41B8412B216C5FA600B62FDB /* ImageOrientationDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageOrientationDetailViewController.h; sourceTree = "<group>"; };
 		41B8412C216C5FA600B62FDB /* ImageOrientationDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageOrientationDetailViewController.m; sourceTree = "<group>"; };
+		41B841832170CF3C00B62FDB /* ForceTouchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForceTouchViewController.h; sourceTree = "<group>"; };
+		41B841842170CF3C00B62FDB /* ForceTouchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForceTouchViewController.m; sourceTree = "<group>"; };
 		41CD2468215D0721003EE7D1 /* list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = list.json; sourceTree = "<group>"; };
 		41CD24A8215E58AD003EE7D1 /* TableViewCellExtensionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCellExtensionHeaderView.h; sourceTree = "<group>"; };
 		41CD24A9215E58AD003EE7D1 /* TableViewCellExtensionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCellExtensionHeaderView.m; sourceTree = "<group>"; };
@@ -348,6 +351,7 @@
 		411C3F642138172700DEAB36 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				41B841822170CF3100B62FDB /* 3DTouch */,
 				41CD253E2160EDCF003EE7D1 /* VideoPlayer */,
 				41CD24AC215FA701003EE7D1 /* ImageTableView */,
 				4167C803215BBAAE00C40E50 /* TableViewCellExtension */,
@@ -497,6 +501,15 @@
 				41B84129216B8BC800B62FDB /* UIImage+FixOrientation.m */,
 			);
 			path = ImageOrientation;
+			sourceTree = "<group>";
+		};
+		41B841822170CF3100B62FDB /* 3DTouch */ = {
+			isa = PBXGroup;
+			children = (
+				41B841832170CF3C00B62FDB /* ForceTouchViewController.h */,
+				41B841842170CF3C00B62FDB /* ForceTouchViewController.m */,
+			);
+			path = 3DTouch;
 			sourceTree = "<group>";
 		};
 		41CD24AC215FA701003EE7D1 /* ImageTableView */ = {
@@ -709,6 +722,7 @@
 				41B383EA21493555002E6590 /* PointToScreenTranstionViewController.m in Sources */,
 				41B7995B21469EC8001A632F /* NavigationAnimationPushedViewController.m in Sources */,
 				411C3F8B2138172700DEAB36 /* LeftJustifyLayoutViewController.m in Sources */,
+				41B841852170CF3C00B62FDB /* ForceTouchViewController.m in Sources */,
 				411C3F872138172700DEAB36 /* CyclicCardLayout.m in Sources */,
 				411C3F982138172700DEAB36 /* FormTableViewController.m in Sources */,
 				411C3F8A2138172700DEAB36 /* WaterflowLayout.m in Sources */,
