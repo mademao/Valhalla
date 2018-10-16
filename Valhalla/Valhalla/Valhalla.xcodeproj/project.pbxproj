@@ -65,6 +65,7 @@
 		41CF3AAC2142AA09000FC5B3 /* TurnAroundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF3AAB2142AA09000FC5B3 /* TurnAroundButton.m */; };
 		41CF3AB12142B047000FC5B3 /* NavigationAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CF3AB02142B047000FC5B3 /* NavigationAnimationViewController.m */; };
 		41E740A7215A635C0029C91D /* CreatePDFPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E740A6215A635C0029C91D /* CreatePDFPreviewView.m */; };
+		41EEBCD72176147E00EE5058 /* ForceTouchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EEBCD62176147E00EE5058 /* ForceTouchDetailViewController.m */; };
 		81F947615183889FE734590E /* Pods_Valhalla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34DDC438D7A6E57F2DEC1D97 /* Pods_Valhalla.framework */; };
 /* End PBXBuildFile section */
 
@@ -185,6 +186,8 @@
 		41CF3AB02142B047000FC5B3 /* NavigationAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationAnimationViewController.m; sourceTree = "<group>"; };
 		41E740A5215A635C0029C91D /* CreatePDFPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreatePDFPreviewView.h; sourceTree = "<group>"; };
 		41E740A6215A635C0029C91D /* CreatePDFPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreatePDFPreviewView.m; sourceTree = "<group>"; };
+		41EEBCD52176147E00EE5058 /* ForceTouchDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForceTouchDetailViewController.h; sourceTree = "<group>"; };
+		41EEBCD62176147E00EE5058 /* ForceTouchDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForceTouchDetailViewController.m; sourceTree = "<group>"; };
 		4632E258E1D055BDF27F6541 /* Pods-Valhalla.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Valhalla.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Valhalla/Pods-Valhalla.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -508,6 +511,8 @@
 			children = (
 				41B841832170CF3C00B62FDB /* ForceTouchViewController.h */,
 				41B841842170CF3C00B62FDB /* ForceTouchViewController.m */,
+				41EEBCD52176147E00EE5058 /* ForceTouchDetailViewController.h */,
+				41EEBCD62176147E00EE5058 /* ForceTouchDetailViewController.m */,
 			);
 			path = 3DTouch;
 			sourceTree = "<group>";
@@ -735,6 +740,7 @@
 				411C3F852138172700DEAB36 /* AppDelegate.m in Sources */,
 				411C3F8E2138172700DEAB36 /* ClassA.m in Sources */,
 				411C3F9B2138172700DEAB36 /* Player.m in Sources */,
+				41EEBCD72176147E00EE5058 /* ForceTouchDetailViewController.m in Sources */,
 				411C3F902138172700DEAB36 /* ClassC.m in Sources */,
 				41B26A04215511A7007DD3AC /* QRCodeCreater.m in Sources */,
 				41CF3AA92142A951000FC5B3 /* TurnAroundButtonViewController.m in Sources */,
@@ -908,6 +914,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75C77V5UHU;
 				GCC_PREFIX_HEADER = Valhalla/Core/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Valhalla/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -928,6 +935,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75C77V5UHU;
 				GCC_PREFIX_HEADER = Valhalla/Core/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Valhalla/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
