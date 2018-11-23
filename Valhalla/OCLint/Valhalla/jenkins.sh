@@ -24,6 +24,9 @@ EOF
 DIR_PATH=$(cd `dirname $0`;pwd)
 cd ${DIR_PATH}
 
+#更新Cocoapods依赖库
+pod update --no-repo-update
+
 #执行oclint检测
 ./oclint.sh -r html
 
