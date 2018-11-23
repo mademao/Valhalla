@@ -31,6 +31,9 @@ cd ${DIR_PATH}
 cd ..
 chmod 777 sendmail.py
 python sendmail.py Valhalla ismademao@gmail.com
+
+#删除生成报告文件
+cd Valhalla
 rm "Report.html"
 
 
