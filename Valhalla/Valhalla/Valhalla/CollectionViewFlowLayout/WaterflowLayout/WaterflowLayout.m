@@ -96,15 +96,15 @@ static const UIEdgeInsets kDefaultEdgeInsets = {10, 10, 10, 10};
     }
     
     // X坐标
-    CGFloat X = self.edgeInsets.left + minLengthColum * (width + self.columnSpace);
+    CGFloat x = self.edgeInsets.left + minLengthColum * (width + self.columnSpace);
     
     // Y坐标
-    CGFloat Y = [self.columnHeights[minLengthColum] floatValue];
-    if (Y != self.edgeInsets.top) {
-        Y += self.rowSpace;
+    CGFloat y = [self.columnHeights[minLengthColum] floatValue];
+    if (y != self.edgeInsets.top) {
+        y += self.rowSpace;
     }
     
-    attributes.frame = CGRectMake(X, Y, width, height);
+    attributes.frame = CGRectMake(x, y, width, height);
     
     // 更新记录
     self.columnHeights[minLengthColum] = @(CGRectGetMaxY(attributes.frame));

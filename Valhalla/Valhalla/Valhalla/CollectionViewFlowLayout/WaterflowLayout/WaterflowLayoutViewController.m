@@ -84,9 +84,9 @@
         self.dataArray = [NSMutableArray array];
         
         for (int i = 0; i < 1000; i++) {
-            int x = arc4random() % 30 + 100;
-            int y = arc4random() % 100 + 150;
-            CGSize size = CGSizeMake(x, y);
+            int width = arc4random() % 30 + 100;
+            int height = arc4random() % 100 + 150;
+            CGSize size = CGSizeMake(width, height);
             [self.dataArray addObject:[NSValue valueWithCGSize:size]];
         }
         
