@@ -55,6 +55,7 @@ fi
 
 oclint-json-compilation-database \
 -e Pods \
+-e Valhalla/Valhalla/Algorithm/Sort/SortTool.m \
 -- \
 -extra-arg=-Wno-everything \
 $reportType \
