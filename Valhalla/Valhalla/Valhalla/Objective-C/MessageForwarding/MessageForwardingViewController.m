@@ -27,12 +27,12 @@
     
     [ClassA classTestMethod1:@"333"];
     
-    ClassA *a = [[ClassA alloc] init];
-    [a testMethod1:@"123"];
+    ClassA *classA = [[ClassA alloc] init];
+    [classA testMethod1:@"123"];
     
-    [a testMethod2:@"321"];
+    [classA testMethod2:@"321"];
     
-    [a testMethod3:@"222"];
+    [classA testMethod3:@"222"];
 }
 
 @end

@@ -62,7 +62,8 @@
     
     //这个UIView就是执行动画的容器
     UIView *containerView = [transitionContext containerView];
-    //我们还要确保controller的view都必须是这个containerView的subview，同时改变View会保持影响，比如修改了前一个页面的透明度，在模态回来的时候，这个页面的透明度会保持为修改后的值
+    //我们还要确保controller的view都必须是这个containerView的subview，同时改变View会保持影响
+    //比如修改了前一个页面的透明度，在模态回来的时候，这个页面的透明度会保持为修改后的值
     [containerView addSubview:toVC.view];
     [containerView addSubview:fromVC.view];
     

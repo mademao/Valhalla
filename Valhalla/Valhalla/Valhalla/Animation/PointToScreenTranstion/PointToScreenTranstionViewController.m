@@ -37,8 +37,8 @@
 }
 
 - (void)nextAction:(UIButton *)sender {
-    PointToScreenTranstionPresentedViewController *vc = [[PointToScreenTranstionPresentedViewController alloc] init];
-    [self presentViewController:vc animated:YES completion:nil];
+    PointToScreenTranstionPresentedViewController *viewController = [[PointToScreenTranstionPresentedViewController alloc] init];
+    [self presentViewController:viewController animated:YES completion:nil];
 }
 
 @end

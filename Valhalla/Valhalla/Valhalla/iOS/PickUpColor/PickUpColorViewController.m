@@ -52,9 +52,9 @@
     [self.view addSubview:self.colorView];
 }
 
-- (void)tapGRAction:(UIGestureRecognizer *)gr {
-    if (gr.state == UIGestureRecognizerStateEnded) {
-        CGPoint touchLocation = [gr locationInView:self.imageView];
+- (void)tapGRAction:(UIGestureRecognizer *)gestureRecognizer {
+    if (gestureRecognizer.state == UIGestureRecognizerStateEnded) {
+        CGPoint touchLocation = [gestureRecognizer locationInView:self.imageView];
         
         int alpha = 0, red = 0, green = 0, blue = 0;
         [self getColorWithPoint:touchLocation alpha:&alpha red:&red green:&green blue:&blue];
@@ -69,7 +69,7 @@
         return;
     }
     CGImageRef inImage = self.imageView.image.CGImage;
-    point = CGPointMake(point.x * self.imageView.image.scale, point.y * self.imageView.image.scale);
+    CGPoint realPoint = CGPointMake(point.x * self.imageView.image.scale, point.y * self.imageView.image.scale);
     CGContextRef context = [self createARGBBitmapContextFromImage:inImage];
     CFRetain(context);
     if (context == NULL) {
@@ -86,15 +86,13 @@
     unsigned char * data = CGBitmapContextGetData(context);
     if (data != NULL) {
         @try {
-            int offset = 4 * ((wide * round(point.y)) + round(point.x));
+            int offset = 4 * ((wide * round(realPoint.y)) + round(realPoint.x));
             *alpha = data[offset];
             *red = data[offset + 1];
             *green = data[offset + 2];
             *blue = data[offset + 3];
         } @catch (NSException *exception) {
             NSLog(@"%@", [exception reason]);
-        } @finally {
-            
         }
     }
     CGContextRelease(context);

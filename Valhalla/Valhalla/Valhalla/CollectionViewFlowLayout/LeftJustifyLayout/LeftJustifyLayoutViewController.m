@@ -55,7 +55,10 @@
 ///每一块的宽度
 - (CGFloat)layout:(LeftJustifyLayout *)layout widthForItemAtIndexPath:(NSIndexPath *)indexPath {
     NSString *string = [self.dataArray objectAtIndex:indexPath.item];
-    return [string boundingRectWithSize:CGSizeMake(10000, 50) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:19]} context:nil].size.width + 5;
+    return [string boundingRectWithSize:CGSizeMake(10000, 50)
+                                options:NSStringDrawingUsesLineFragmentOrigin
+                             attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:19]}
+                                context:nil].size.width + 5;
 }
 
 #pragma mark - UICollectionViewDelegate, UICollectionViewDataSource
@@ -80,10 +83,34 @@
         label.tag = 11111;
         [cell.contentView addSubview:label];
         label.translatesAutoresizingMaskIntoConstraints = NO;
-        [cell.contentView addConstraint:[NSLayoutConstraint constraintWithItem:cell.contentView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:label attribute:NSLayoutAttributeTop multiplier:1 constant:0]];
-        [cell.contentView addConstraint:[NSLayoutConstraint constraintWithItem:cell.contentView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:label attribute:NSLayoutAttributeLeading multiplier:1 constant:0]];
-        [cell.contentView addConstraint:[NSLayoutConstraint constraintWithItem:cell.contentView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:label attribute:NSLayoutAttributeBottom multiplier:1 constant:0]];
-        [cell.contentView addConstraint:[NSLayoutConstraint constraintWithItem:cell.contentView attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:label attribute:NSLayoutAttributeTrailing multiplier:1 constant:0]];
+        [cell.contentView addConstraint:[NSLayoutConstraint constraintWithItem:cell.contentView
+                                                                     attribute:NSLayoutAttributeTop
+                                                                     relatedBy:NSLayoutRelationEqual
+                                                                        toItem:label
+                                                                     attribute:NSLayoutAttributeTop
+                                                                    multiplier:1
+                                                                      constant:0]];
+        [cell.contentView addConstraint:[NSLayoutConstraint constraintWithItem:cell.contentView
+                                                                     attribute:NSLayoutAttributeLeading
+                                                                     relatedBy:NSLayoutRelationEqual
+                                                                        toItem:label
+                                                                     attribute:NSLayoutAttributeLeading
+                                                                    multiplier:1
+                                                                      constant:0]];
+        [cell.contentView addConstraint:[NSLayoutConstraint constraintWithItem:cell.contentView
+                                                                     attribute:NSLayoutAttributeBottom
+                                                                     relatedBy:NSLayoutRelationEqual
+                                                                        toItem:label
+                                                                     attribute:NSLayoutAttributeBottom
+                                                                    multiplier:1
+                                                                      constant:0]];
+        [cell.contentView addConstraint:[NSLayoutConstraint constraintWithItem:cell.contentView
+                                                                     attribute:NSLayoutAttributeTrailing
+                                                                     relatedBy:NSLayoutRelationEqual
+                                                                        toItem:label
+                                                                     attribute:NSLayoutAttributeTrailing
+                                                                    multiplier:1
+                                                                      constant:0]];
     }
     label.text = [self.dataArray objectAtIndex:indexPath.item];
     return cell;

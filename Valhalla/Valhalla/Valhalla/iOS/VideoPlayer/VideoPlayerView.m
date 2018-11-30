@@ -211,11 +211,10 @@
                 float volum = self.volumSilider.value;
                 [self.volumSilider setValue:volum - (ySpace / 30. / 3) animated:YES];
                 //解决部分机型上音量调大到某一程度无法继续调大的问题
-                if (ySpace < 0) {
-                    if (volum - (ySpace / 30. / 3) - self.volumSilider.value >= 0.1) {
-                        [self.volumSilider setValue:0.1 animated:NO];
-                        [self.volumSilider setValue:volum - (ySpace / 30. / 3) animated:YES];
-                    }
+                if (ySpace < 0 &&
+                    volum - (ySpace / 30. / 3) - self.volumSilider.value >= 0.1) {
+                    [self.volumSilider setValue:0.1 animated:NO];
+                    [self.volumSilider setValue:volum - (ySpace / 30. / 3) animated:YES];
                 }
             } else {
                 //亮度
