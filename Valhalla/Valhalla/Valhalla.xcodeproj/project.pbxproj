@@ -42,6 +42,9 @@
 		414DB6CD2152783800B8F1F6 /* PickUpColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414DB6CC2152783800B8F1F6 /* PickUpColorViewController.m */; };
 		414DB6D42154C19000B8F1F6 /* CreateQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414DB6D32154C19000B8F1F6 /* CreateQRCodeViewController.m */; };
 		4167C806215BBAB800C40E50 /* TableViewCellExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4167C805215BBAB800C40E50 /* TableViewCellExtensionViewController.m */; };
+		4193345821D39DC000B53BD7 /* CoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4193345721D39DC000B53BD7 /* CoreTextViewController.m */; };
+		4193345B21D39DD400B53BD7 /* CoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4193345A21D39DD400B53BD7 /* CoreTextView.m */; };
+		4193345E21D39E6300B53BD7 /* CoreTextLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4193345D21D39E6300B53BD7 /* CoreTextLayer.m */; };
 		4199EBFD214BE6BC001AE878 /* StoreReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4199EBFC214BE6BC001AE878 /* StoreReviewViewController.m */; };
 		41B26A04215511A7007DD3AC /* QRCodeCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B26A03215511A7007DD3AC /* QRCodeCreater.m */; };
 		41B26A0821552259007DD3AC /* CreatePDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B26A0721552258007DD3AC /* CreatePDFViewController.m */; };
@@ -141,6 +144,12 @@
 		414DB6D32154C19000B8F1F6 /* CreateQRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateQRCodeViewController.m; sourceTree = "<group>"; };
 		4167C804215BBAB800C40E50 /* TableViewCellExtensionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCellExtensionViewController.h; sourceTree = "<group>"; };
 		4167C805215BBAB800C40E50 /* TableViewCellExtensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCellExtensionViewController.m; sourceTree = "<group>"; };
+		4193345621D39DC000B53BD7 /* CoreTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreTextViewController.h; sourceTree = "<group>"; };
+		4193345721D39DC000B53BD7 /* CoreTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreTextViewController.m; sourceTree = "<group>"; };
+		4193345921D39DD400B53BD7 /* CoreTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreTextView.h; sourceTree = "<group>"; };
+		4193345A21D39DD400B53BD7 /* CoreTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreTextView.m; sourceTree = "<group>"; };
+		4193345C21D39E6300B53BD7 /* CoreTextLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreTextLayer.h; sourceTree = "<group>"; };
+		4193345D21D39E6300B53BD7 /* CoreTextLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreTextLayer.m; sourceTree = "<group>"; };
 		4199EBFB214BE6BC001AE878 /* StoreReviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreReviewViewController.h; sourceTree = "<group>"; };
 		4199EBFC214BE6BC001AE878 /* StoreReviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreReviewViewController.m; sourceTree = "<group>"; };
 		41B26A02215511A7007DD3AC /* QRCodeCreater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeCreater.h; sourceTree = "<group>"; };
@@ -354,6 +363,7 @@
 		411C3F642138172700DEAB36 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				4193345521D39D2200B53BD7 /* CoreText */,
 				41B841822170CF3100B62FDB /* 3DTouch */,
 				41CD253E2160EDCF003EE7D1 /* VideoPlayer */,
 				41CD24AC215FA701003EE7D1 /* ImageTableView */,
@@ -458,6 +468,19 @@
 				41CD2468215D0721003EE7D1 /* list.json */,
 			);
 			path = TableViewCellExtension;
+			sourceTree = "<group>";
+		};
+		4193345521D39D2200B53BD7 /* CoreText */ = {
+			isa = PBXGroup;
+			children = (
+				4193345621D39DC000B53BD7 /* CoreTextViewController.h */,
+				4193345721D39DC000B53BD7 /* CoreTextViewController.m */,
+				4193345921D39DD400B53BD7 /* CoreTextView.h */,
+				4193345A21D39DD400B53BD7 /* CoreTextView.m */,
+				4193345C21D39E6300B53BD7 /* CoreTextLayer.h */,
+				4193345D21D39E6300B53BD7 /* CoreTextLayer.m */,
+			);
+			path = CoreText;
 			sourceTree = "<group>";
 		};
 		4199EBFA214BE674001AE878 /* StoreReview */ = {
@@ -741,6 +764,7 @@
 				411C3F8E2138172700DEAB36 /* ClassA.m in Sources */,
 				411C3F9B2138172700DEAB36 /* Player.m in Sources */,
 				41EEBCD72176147E00EE5058 /* ForceTouchDetailViewController.m in Sources */,
+				4193345821D39DC000B53BD7 /* CoreTextViewController.m in Sources */,
 				411C3F902138172700DEAB36 /* ClassC.m in Sources */,
 				41B26A04215511A7007DD3AC /* QRCodeCreater.m in Sources */,
 				41CF3AA92142A951000FC5B3 /* TurnAroundButtonViewController.m in Sources */,
@@ -765,7 +789,9 @@
 				41B7995E21469F4F001A632F /* NavigationAnimation.m in Sources */,
 				414DB6D42154C19000B8F1F6 /* CreateQRCodeViewController.m in Sources */,
 				4167C806215BBAB800C40E50 /* TableViewCellExtensionViewController.m in Sources */,
+				4193345E21D39E6300B53BD7 /* CoreTextLayer.m in Sources */,
 				411C3F9A2138172700DEAB36 /* FormScrollLabel.m in Sources */,
+				4193345B21D39DD400B53BD7 /* CoreTextView.m in Sources */,
 				411C3F842138172700DEAB36 /* main.m in Sources */,
 				411C3F9D2138172700DEAB36 /* KeychainViewController.m in Sources */,
 				411C3FA12138172700DEAB36 /* SortTool.m in Sources */,

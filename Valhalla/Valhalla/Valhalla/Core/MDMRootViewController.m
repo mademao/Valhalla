@@ -93,6 +93,11 @@
     rowModel.viewControllerName = @"ForceTouchViewController";
     [sectionModel.rowModelArray addObject:rowModel];
     
+    rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"CoreText", nil);
+    rowModel.viewControllerName = @"CoreTextViewController";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
     [self.sectionModelArray addObject:sectionModel];
     
     //CollectionViewFlowLayout
