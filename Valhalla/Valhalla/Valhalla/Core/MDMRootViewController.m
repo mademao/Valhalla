@@ -131,6 +131,11 @@
     [sectionModel.rowModelArray addObject:rowModel];
     
     rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"PNG Check", nil);
+    rowModel.viewControllerName = @"PNGCheckViewController";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
+    rowModel = [[MDMRowModel alloc] init];
     rowModel.name = NSLocalizedString(@"Image Orientation", nil);
     rowModel.viewControllerName = @"ImageOrientationViewController";
     [sectionModel.rowModelArray addObject:rowModel];

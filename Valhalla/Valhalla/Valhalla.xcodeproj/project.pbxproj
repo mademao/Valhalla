@@ -46,6 +46,9 @@
 		4193345B21D39DD400B53BD7 /* CoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4193345A21D39DD400B53BD7 /* CoreTextView.m */; };
 		4193345E21D39E6300B53BD7 /* CoreTextLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4193345D21D39E6300B53BD7 /* CoreTextLayer.m */; };
 		4199EBFD214BE6BC001AE878 /* StoreReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4199EBFC214BE6BC001AE878 /* StoreReviewViewController.m */; };
+		41A723FB22448E2F00B4F77C /* PNGCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A723F922448E2F00B4F77C /* PNGCheck.m */; };
+		41A723FE22448E3E00B4F77C /* PNGCheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A723FD22448E3E00B4F77C /* PNGCheckViewController.m */; };
+		41A7240122448EB700B4F77C /* png in Resources */ = {isa = PBXBuildFile; fileRef = 41A7240022448EB700B4F77C /* png */; };
 		41B26A04215511A7007DD3AC /* QRCodeCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B26A03215511A7007DD3AC /* QRCodeCreater.m */; };
 		41B26A0821552259007DD3AC /* CreatePDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B26A0721552258007DD3AC /* CreatePDFViewController.m */; };
 		41B383EA21493555002E6590 /* PointToScreenTranstionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B383E921493555002E6590 /* PointToScreenTranstionViewController.m */; };
@@ -152,6 +155,11 @@
 		4193345D21D39E6300B53BD7 /* CoreTextLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreTextLayer.m; sourceTree = "<group>"; };
 		4199EBFB214BE6BC001AE878 /* StoreReviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreReviewViewController.h; sourceTree = "<group>"; };
 		4199EBFC214BE6BC001AE878 /* StoreReviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoreReviewViewController.m; sourceTree = "<group>"; };
+		41A723F922448E2F00B4F77C /* PNGCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNGCheck.m; sourceTree = "<group>"; };
+		41A723FA22448E2F00B4F77C /* PNGCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNGCheck.h; sourceTree = "<group>"; };
+		41A723FC22448E3E00B4F77C /* PNGCheckViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNGCheckViewController.h; sourceTree = "<group>"; };
+		41A723FD22448E3E00B4F77C /* PNGCheckViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNGCheckViewController.m; sourceTree = "<group>"; };
+		41A7240022448EB700B4F77C /* png */ = {isa = PBXFileReference; lastKnownFileType = folder; path = png; sourceTree = "<group>"; };
 		41B26A02215511A7007DD3AC /* QRCodeCreater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeCreater.h; sourceTree = "<group>"; };
 		41B26A03215511A7007DD3AC /* QRCodeCreater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeCreater.m; sourceTree = "<group>"; };
 		41B26A0621552258007DD3AC /* CreatePDFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreatePDFViewController.h; sourceTree = "<group>"; };
@@ -248,6 +256,7 @@
 		411C3F312138172700DEAB36 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				41A723FF22448E9A00B4F77C /* File */,
 				411C3F322138172700DEAB36 /* AppDelegate.h */,
 				411C3F392138172700DEAB36 /* AppDelegate.m */,
 				411C3F332138172700DEAB36 /* Assets.xcassets */,
@@ -343,6 +352,7 @@
 		411C3F5E2138172700DEAB36 /* ImageAndGraphics */ = {
 			isa = PBXGroup;
 			children = (
+				41A723F822448E0B00B4F77C /* PNGCheck */,
 				41B84124216B8B6800B62FDB /* ImageOrientation */,
 				411C3F5F2138172700DEAB36 /* GIFSpeed */,
 			);
@@ -490,6 +500,25 @@
 				4199EBFC214BE6BC001AE878 /* StoreReviewViewController.m */,
 			);
 			path = StoreReview;
+			sourceTree = "<group>";
+		};
+		41A723F822448E0B00B4F77C /* PNGCheck */ = {
+			isa = PBXGroup;
+			children = (
+				41A723FA22448E2F00B4F77C /* PNGCheck.h */,
+				41A723F922448E2F00B4F77C /* PNGCheck.m */,
+				41A723FC22448E3E00B4F77C /* PNGCheckViewController.h */,
+				41A723FD22448E3E00B4F77C /* PNGCheckViewController.m */,
+			);
+			path = PNGCheck;
+			sourceTree = "<group>";
+		};
+		41A723FF22448E9A00B4F77C /* File */ = {
+			isa = PBXGroup;
+			children = (
+				41A7240022448EB700B4F77C /* png */,
+			);
+			path = File;
 			sourceTree = "<group>";
 		};
 		41B26A052155222A007DD3AC /* CreatePDF */ = {
@@ -683,6 +712,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41A7240122448EB700B4F77C /* png in Resources */,
 				411C3F832138172700DEAB36 /* Main.storyboard in Resources */,
 				41CD2469215D0721003EE7D1 /* list.json in Resources */,
 				411C3F812138172700DEAB36 /* Assets.xcassets in Resources */,
@@ -781,10 +811,12 @@
 				41CD24AA215E58AD003EE7D1 /* TableViewCellExtensionHeaderView.m in Sources */,
 				411C3F942138172700DEAB36 /* GIFFileTool.m in Sources */,
 				411C3F922138172700DEAB36 /* MDMRowModel.m in Sources */,
+				41A723FE22448E3E00B4F77C /* PNGCheckViewController.m in Sources */,
 				41CD25442160EE28003EE7D1 /* VideoPlayerView.m in Sources */,
 				411C3F992138172700DEAB36 /* FormTableView.m in Sources */,
 				41E740A7215A635C0029C91D /* CreatePDFPreviewView.m in Sources */,
 				411C3F9C2138172700DEAB36 /* KeychainItemWrapper.m in Sources */,
+				41A723FB22448E2F00B4F77C /* PNGCheck.m in Sources */,
 				41CF3AAC2142AA09000FC5B3 /* TurnAroundButton.m in Sources */,
 				41B7995E21469F4F001A632F /* NavigationAnimation.m in Sources */,
 				414DB6D42154C19000B8F1F6 /* CreateQRCodeViewController.m in Sources */,
