@@ -16,8 +16,10 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    NSString *file = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"png"];
-    [PNGCheck checkPNGWithPath:[file stringByAppendingPathComponent:@"test.png"]];
+//    NSString *file = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"png"];
+//    [PNGCheck checkPNGWithPath:[file stringByAppendingPathComponent:@"test.png"]];
+//    [PNGCheck checkPNGWithPath:@"/Users/mademao/Desktop/输入法6.3.0代码设计.png"];
+    [PNGCheck checkPNGWithPath:@"/Users/mademao/Desktop/image0.png"];
 }
 
 @end
