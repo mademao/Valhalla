@@ -140,6 +140,11 @@
     rowModel.viewControllerName = @"ImageOrientationViewController";
     [sectionModel.rowModelArray addObject:rowModel];
     
+    rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"Compress Image", nil);
+    rowModel.viewControllerName = @"CompressImageViewController";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
     [self.sectionModelArray addObject:sectionModel];
     
     //Algorithm

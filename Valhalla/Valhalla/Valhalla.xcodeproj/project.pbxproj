@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		410A6B5522CA2AE000C43B56 /* CompressImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410A6B5422CA2AE000C43B56 /* CompressImageViewController.m */; };
 		410A6B5722CA2C4300C43B56 /* gif in Resources */ = {isa = PBXBuildFile; fileRef = 410A6B5622CA2C4300C43B56 /* gif */; };
+		410A6B5A22CA332E00C43B56 /* CompressImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 410A6B5922CA332E00C43B56 /* CompressImageUtil.m */; };
 		411C3F812138172700DEAB36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 411C3F332138172700DEAB36 /* Assets.xcassets */; };
 		411C3F822138172700DEAB36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411C3F342138172700DEAB36 /* LaunchScreen.storyboard */; };
 		411C3F832138172700DEAB36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411C3F362138172700DEAB36 /* Main.storyboard */; };
@@ -83,6 +84,8 @@
 		410A6B5322CA2AE000C43B56 /* CompressImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompressImageViewController.h; sourceTree = "<group>"; };
 		410A6B5422CA2AE000C43B56 /* CompressImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompressImageViewController.m; sourceTree = "<group>"; };
 		410A6B5622CA2C4300C43B56 /* gif */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gif; sourceTree = "<group>"; };
+		410A6B5822CA332E00C43B56 /* CompressImageUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompressImageUtil.h; sourceTree = "<group>"; };
+		410A6B5922CA332E00C43B56 /* CompressImageUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompressImageUtil.m; sourceTree = "<group>"; };
 		411C3F18213816F200DEAB36 /* Valhalla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Valhalla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		411C3F322138172700DEAB36 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		411C3F332138172700DEAB36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -230,6 +233,8 @@
 			children = (
 				410A6B5322CA2AE000C43B56 /* CompressImageViewController.h */,
 				410A6B5422CA2AE000C43B56 /* CompressImageViewController.m */,
+				410A6B5822CA332E00C43B56 /* CompressImageUtil.h */,
+				410A6B5922CA332E00C43B56 /* CompressImageUtil.m */,
 			);
 			path = CompressImage;
 			sourceTree = "<group>";
@@ -813,6 +818,7 @@
 				411C3F8C2138172700DEAB36 /* LeftJustifyLayout.m in Sources */,
 				411C3F972138172700DEAB36 /* DigitScrollView.m in Sources */,
 				411C3F882138172700DEAB36 /* CyclicCardLayoutViewController.m in Sources */,
+				410A6B5A22CA332E00C43B56 /* CompressImageUtil.m in Sources */,
 				411C3F932138172700DEAB36 /* MDMSectionModel.m in Sources */,
 				41B8412D216C5FA600B62FDB /* ImageOrientationDetailViewController.m in Sources */,
 				41B383F021493BB2002E6590 /* PointToScreenTranstionPresentedViewController.m in Sources */,
