@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		410A6B5522CA2AE000C43B56 /* CompressImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410A6B5422CA2AE000C43B56 /* CompressImageViewController.m */; };
+		410A6B5722CA2C4300C43B56 /* gif in Resources */ = {isa = PBXBuildFile; fileRef = 410A6B5622CA2C4300C43B56 /* gif */; };
 		411C3F812138172700DEAB36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 411C3F332138172700DEAB36 /* Assets.xcassets */; };
 		411C3F822138172700DEAB36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411C3F342138172700DEAB36 /* LaunchScreen.storyboard */; };
 		411C3F832138172700DEAB36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411C3F362138172700DEAB36 /* Main.storyboard */; };
@@ -78,6 +80,9 @@
 /* Begin PBXFileReference section */
 		0CCE649E960A006EEA3DDA81 /* Pods-Valhalla.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Valhalla.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Valhalla/Pods-Valhalla.release.xcconfig"; sourceTree = "<group>"; };
 		34DDC438D7A6E57F2DEC1D97 /* Pods_Valhalla.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Valhalla.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		410A6B5322CA2AE000C43B56 /* CompressImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompressImageViewController.h; sourceTree = "<group>"; };
+		410A6B5422CA2AE000C43B56 /* CompressImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompressImageViewController.m; sourceTree = "<group>"; };
+		410A6B5622CA2C4300C43B56 /* gif */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gif; sourceTree = "<group>"; };
 		411C3F18213816F200DEAB36 /* Valhalla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Valhalla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		411C3F322138172700DEAB36 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		411C3F332138172700DEAB36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -220,6 +225,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		410A6B5222CA2A5500C43B56 /* CompressImage */ = {
+			isa = PBXGroup;
+			children = (
+				410A6B5322CA2AE000C43B56 /* CompressImageViewController.h */,
+				410A6B5422CA2AE000C43B56 /* CompressImageViewController.m */,
+			);
+			path = CompressImage;
+			sourceTree = "<group>";
+		};
 		411C3F0F213816F200DEAB36 = {
 			isa = PBXGroup;
 			children = (
@@ -352,6 +366,7 @@
 		411C3F5E2138172700DEAB36 /* ImageAndGraphics */ = {
 			isa = PBXGroup;
 			children = (
+				410A6B5222CA2A5500C43B56 /* CompressImage */,
 				41A723F822448E0B00B4F77C /* PNGCheck */,
 				41B84124216B8B6800B62FDB /* ImageOrientation */,
 				411C3F5F2138172700DEAB36 /* GIFSpeed */,
@@ -516,6 +531,7 @@
 		41A723FF22448E9A00B4F77C /* File */ = {
 			isa = PBXGroup;
 			children = (
+				410A6B5622CA2C4300C43B56 /* gif */,
 				41A7240022448EB700B4F77C /* png */,
 			);
 			path = File;
@@ -715,6 +731,7 @@
 				41A7240122448EB700B4F77C /* png in Resources */,
 				411C3F832138172700DEAB36 /* Main.storyboard in Resources */,
 				41CD2469215D0721003EE7D1 /* list.json in Resources */,
+				410A6B5722CA2C4300C43B56 /* gif in Resources */,
 				411C3F812138172700DEAB36 /* Assets.xcassets in Resources */,
 				411C3F822138172700DEAB36 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -728,21 +745,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-Valhalla/Pods-Valhalla-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD-iOS10.0/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/Pluto-iOS10.0/Pluto.framework",
-				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Valhalla/Pods-Valhalla-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pluto.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Valhalla/Pods-Valhalla-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Valhalla/Pods-Valhalla-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Valhalla/Pods-Valhalla-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B47D1F7DF4182D825EBFC91C /* [CP] Check Pods Manifest.lock */ = {
@@ -819,6 +831,7 @@
 				41A723FB22448E2F00B4F77C /* PNGCheck.m in Sources */,
 				41CF3AAC2142AA09000FC5B3 /* TurnAroundButton.m in Sources */,
 				41B7995E21469F4F001A632F /* NavigationAnimation.m in Sources */,
+				410A6B5522CA2AE000C43B56 /* CompressImageViewController.m in Sources */,
 				414DB6D42154C19000B8F1F6 /* CreateQRCodeViewController.m in Sources */,
 				4167C806215BBAB800C40E50 /* TableViewCellExtensionViewController.m in Sources */,
 				4193345E21D39E6300B53BD7 /* CoreTextLayer.m in Sources */,
