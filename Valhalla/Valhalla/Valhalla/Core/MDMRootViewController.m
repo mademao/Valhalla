@@ -98,6 +98,11 @@
     rowModel.viewControllerName = @"CoreTextViewController";
     [sectionModel.rowModelArray addObject:rowModel];
     
+    rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"Code Transfer", nil);
+    rowModel.viewControllerName = @"CodeTransferViewController";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
     [self.sectionModelArray addObject:sectionModel];
     
     //CollectionViewFlowLayout

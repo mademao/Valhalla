@@ -42,6 +42,7 @@
 		411C3F9F2138172700DEAB36 /* KeychainUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F7A2138172700DEAB36 /* KeychainUtil.m */; };
 		411C3FA02138172700DEAB36 /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F7D2138172700DEAB36 /* SortViewController.m */; };
 		411C3FA12138172700DEAB36 /* SortTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F7F2138172700DEAB36 /* SortTool.m */; };
+		41326390230B939D0093229C /* CodeTransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4132638F230B939D0093229C /* CodeTransferViewController.m */; };
 		414DB6CD2152783800B8F1F6 /* PickUpColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414DB6CC2152783800B8F1F6 /* PickUpColorViewController.m */; };
 		414DB6D42154C19000B8F1F6 /* CreateQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414DB6D32154C19000B8F1F6 /* CreateQRCodeViewController.m */; };
 		4167C806215BBAB800C40E50 /* TableViewCellExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4167C805215BBAB800C40E50 /* TableViewCellExtensionViewController.m */; };
@@ -149,6 +150,8 @@
 		411C3F7E2138172700DEAB36 /* SortTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortTool.h; sourceTree = "<group>"; };
 		411C3F7F2138172700DEAB36 /* SortTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortTool.m; sourceTree = "<group>"; };
 		411C3F802138172700DEAB36 /* SortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortViewController.h; sourceTree = "<group>"; };
+		4132638E230B939D0093229C /* CodeTransferViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeTransferViewController.h; sourceTree = "<group>"; };
+		4132638F230B939D0093229C /* CodeTransferViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeTransferViewController.m; sourceTree = "<group>"; };
 		414DB6CB2152783800B8F1F6 /* PickUpColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickUpColorViewController.h; sourceTree = "<group>"; };
 		414DB6CC2152783800B8F1F6 /* PickUpColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickUpColorViewController.m; sourceTree = "<group>"; };
 		414DB6D22154C19000B8F1F6 /* CreateQRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateQRCodeViewController.h; sourceTree = "<group>"; };
@@ -393,6 +396,7 @@
 		411C3F642138172700DEAB36 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				4132638D230B934F0093229C /* CodeTransfer */,
 				4193345521D39D2200B53BD7 /* CoreText */,
 				41B841822170CF3100B62FDB /* 3DTouch */,
 				41CD253E2160EDCF003EE7D1 /* VideoPlayer */,
@@ -466,6 +470,15 @@
 				411C3F7F2138172700DEAB36 /* SortTool.m */,
 			);
 			path = Sort;
+			sourceTree = "<group>";
+		};
+		4132638D230B934F0093229C /* CodeTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				4132638E230B939D0093229C /* CodeTransferViewController.h */,
+				4132638F230B939D0093229C /* CodeTransferViewController.m */,
+			);
+			path = CodeTransfer;
 			sourceTree = "<group>";
 		};
 		414DB6CA215277E000B8F1F6 /* PickUpColor */ = {
@@ -841,6 +854,7 @@
 				414DB6D42154C19000B8F1F6 /* CreateQRCodeViewController.m in Sources */,
 				4167C806215BBAB800C40E50 /* TableViewCellExtensionViewController.m in Sources */,
 				4193345E21D39E6300B53BD7 /* CoreTextLayer.m in Sources */,
+				41326390230B939D0093229C /* CodeTransferViewController.m in Sources */,
 				411C3F9A2138172700DEAB36 /* FormScrollLabel.m in Sources */,
 				4193345B21D39DD400B53BD7 /* CoreTextView.m in Sources */,
 				411C3F842138172700DEAB36 /* main.m in Sources */,
