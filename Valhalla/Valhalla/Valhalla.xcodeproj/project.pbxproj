@@ -42,6 +42,8 @@
 		411C3F9F2138172700DEAB36 /* KeychainUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F7A2138172700DEAB36 /* KeychainUtil.m */; };
 		411C3FA02138172700DEAB36 /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F7D2138172700DEAB36 /* SortViewController.m */; };
 		411C3FA12138172700DEAB36 /* SortTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F7F2138172700DEAB36 /* SortTool.m */; };
+		4127ECE02467A63C00E6E0AD /* DyldImageViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4127ECDF2467A63C00E6E0AD /* DyldImageViewController.mm */; };
+		4127ECE32467A66B00E6E0AD /* mdm_dyld_image_util.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4127ECE22467A66B00E6E0AD /* mdm_dyld_image_util.mm */; };
 		41326390230B939D0093229C /* CodeTransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4132638F230B939D0093229C /* CodeTransferViewController.m */; };
 		414DB6CD2152783800B8F1F6 /* PickUpColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414DB6CC2152783800B8F1F6 /* PickUpColorViewController.m */; };
 		414DB6D42154C19000B8F1F6 /* CreateQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414DB6D32154C19000B8F1F6 /* CreateQRCodeViewController.m */; };
@@ -150,6 +152,10 @@
 		411C3F7E2138172700DEAB36 /* SortTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortTool.h; sourceTree = "<group>"; };
 		411C3F7F2138172700DEAB36 /* SortTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortTool.m; sourceTree = "<group>"; };
 		411C3F802138172700DEAB36 /* SortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortViewController.h; sourceTree = "<group>"; };
+		4127ECDE2467A63C00E6E0AD /* DyldImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DyldImageViewController.h; sourceTree = "<group>"; };
+		4127ECDF2467A63C00E6E0AD /* DyldImageViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DyldImageViewController.mm; sourceTree = "<group>"; };
+		4127ECE12467A66B00E6E0AD /* mdm_dyld_image_util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mdm_dyld_image_util.h; sourceTree = "<group>"; };
+		4127ECE22467A66B00E6E0AD /* mdm_dyld_image_util.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = mdm_dyld_image_util.mm; sourceTree = "<group>"; };
 		4132638E230B939D0093229C /* CodeTransferViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeTransferViewController.h; sourceTree = "<group>"; };
 		4132638F230B939D0093229C /* CodeTransferViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeTransferViewController.m; sourceTree = "<group>"; };
 		414DB6CB2152783800B8F1F6 /* PickUpColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickUpColorViewController.h; sourceTree = "<group>"; };
@@ -396,6 +402,7 @@
 		411C3F642138172700DEAB36 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				4127ECDD2467A21400E6E0AD /* DyldImage */,
 				4132638D230B934F0093229C /* CodeTransfer */,
 				4193345521D39D2200B53BD7 /* CoreText */,
 				41B841822170CF3100B62FDB /* 3DTouch */,
@@ -470,6 +477,17 @@
 				411C3F7F2138172700DEAB36 /* SortTool.m */,
 			);
 			path = Sort;
+			sourceTree = "<group>";
+		};
+		4127ECDD2467A21400E6E0AD /* DyldImage */ = {
+			isa = PBXGroup;
+			children = (
+				4127ECDE2467A63C00E6E0AD /* DyldImageViewController.h */,
+				4127ECDF2467A63C00E6E0AD /* DyldImageViewController.mm */,
+				4127ECE12467A66B00E6E0AD /* mdm_dyld_image_util.h */,
+				4127ECE22467A66B00E6E0AD /* mdm_dyld_image_util.mm */,
+			);
+			path = DyldImage;
 			sourceTree = "<group>";
 		};
 		4132638D230B934F0093229C /* CodeTransfer */ = {
@@ -800,6 +818,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4127ECE32467A66B00E6E0AD /* mdm_dyld_image_util.mm in Sources */,
 				41CD25412160EDDC003EE7D1 /* VideoPlayerViewController.m in Sources */,
 				41B383ED21493802002E6590 /* PointToScreenTranstion.m in Sources */,
 				411C3F8F2138172700DEAB36 /* MessageForwardingViewController.m in Sources */,
@@ -835,6 +854,7 @@
 				411C3F932138172700DEAB36 /* MDMSectionModel.m in Sources */,
 				41B8412D216C5FA600B62FDB /* ImageOrientationDetailViewController.m in Sources */,
 				41B383F021493BB2002E6590 /* PointToScreenTranstionPresentedViewController.m in Sources */,
+				4127ECE02467A63C00E6E0AD /* DyldImageViewController.mm in Sources */,
 				411C3FA02138172700DEAB36 /* SortViewController.m in Sources */,
 				41B26A0821552259007DD3AC /* CreatePDFViewController.m in Sources */,
 				41CD24AF215FA73E003EE7D1 /* ImageTableViewViewController.m in Sources */,

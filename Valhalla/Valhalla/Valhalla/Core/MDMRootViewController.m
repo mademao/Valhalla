@@ -44,6 +44,11 @@
     [sectionModel.rowModelArray addObject:rowModel];
     
     rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"Dyld Image", nil);
+    rowModel.viewControllerName = @"DyldImageViewController";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
+    rowModel = [[MDMRowModel alloc] init];
     rowModel.name = NSLocalizedString(@"Store Review", nil);
     rowModel.viewControllerName = @"StoreReviewViewController";
     [sectionModel.rowModelArray addObject:rowModel];
