@@ -19,7 +19,7 @@ DEPENDENCIES:
   - YYImage (~> 1.0.4)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - FMDB
     - Kingfisher
     - MBProgressHUD
@@ -37,4 +37,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 031ae63b8bf3ae93bb6ede2fe1999bb115b02cd1
 
-COCOAPODS: 1.7.1
+COCOAPODS: 1.9.3

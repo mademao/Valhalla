@@ -47,6 +47,8 @@
 		41326390230B939D0093229C /* CodeTransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4132638F230B939D0093229C /* CodeTransferViewController.m */; };
 		414DB6CD2152783800B8F1F6 /* PickUpColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414DB6CC2152783800B8F1F6 /* PickUpColorViewController.m */; };
 		414DB6D42154C19000B8F1F6 /* CreateQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414DB6D32154C19000B8F1F6 /* CreateQRCodeViewController.m */; };
+		415FE56626B1127F00816F06 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415FE56526B1127F00816F06 /* KeyboardViewController.m */; };
+		415FE56A26B1127F00816F06 /* Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 415FE56226B1127F00816F06 /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4167C806215BBAB800C40E50 /* TableViewCellExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4167C805215BBAB800C40E50 /* TableViewCellExtensionViewController.m */; };
 		4193345821D39DC000B53BD7 /* CoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4193345721D39DC000B53BD7 /* CoreTextViewController.m */; };
 		4193345B21D39DD400B53BD7 /* CoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4193345A21D39DD400B53BD7 /* CoreTextView.m */; };
@@ -80,6 +82,30 @@
 		41EEBCD72176147E00EE5058 /* ForceTouchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EEBCD62176147E00EE5058 /* ForceTouchDetailViewController.m */; };
 		81F947615183889FE734590E /* Pods_Valhalla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34DDC438D7A6E57F2DEC1D97 /* Pods_Valhalla.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		415FE56826B1127F00816F06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 411C3F10213816F200DEAB36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 415FE56126B1127F00816F06;
+			remoteInfo = Keyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		415FE56B26B1127F00816F06 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				415FE56A26B1127F00816F06 /* Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0CCE649E960A006EEA3DDA81 /* Pods-Valhalla.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Valhalla.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Valhalla/Pods-Valhalla.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +188,10 @@
 		414DB6CC2152783800B8F1F6 /* PickUpColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickUpColorViewController.m; sourceTree = "<group>"; };
 		414DB6D22154C19000B8F1F6 /* CreateQRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateQRCodeViewController.h; sourceTree = "<group>"; };
 		414DB6D32154C19000B8F1F6 /* CreateQRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateQRCodeViewController.m; sourceTree = "<group>"; };
+		415FE56226B1127F00816F06 /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		415FE56426B1127F00816F06 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		415FE56526B1127F00816F06 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		415FE56726B1127F00816F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4167C804215BBAB800C40E50 /* TableViewCellExtensionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCellExtensionViewController.h; sourceTree = "<group>"; };
 		4167C805215BBAB800C40E50 /* TableViewCellExtensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCellExtensionViewController.m; sourceTree = "<group>"; };
 		4193345621D39DC000B53BD7 /* CoreTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreTextViewController.h; sourceTree = "<group>"; };
@@ -234,6 +264,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		415FE55F26B1127F00816F06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -252,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				411C3F1A213816F200DEAB36 /* Valhalla */,
+				415FE56326B1127F00816F06 /* Keyboard */,
 				411C3F19213816F200DEAB36 /* Products */,
 				E7E11C0DBC51A605F2B5AF85 /* Pods */,
 				DC1B6EC024D03AF5E24BE1BD /* Frameworks */,
@@ -262,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				411C3F18213816F200DEAB36 /* Valhalla.app */,
+				415FE56226B1127F00816F06 /* Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -519,6 +558,16 @@
 			path = CreateQRCode;
 			sourceTree = "<group>";
 		};
+		415FE56326B1127F00816F06 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				415FE56426B1127F00816F06 /* KeyboardViewController.h */,
+				415FE56526B1127F00816F06 /* KeyboardViewController.m */,
+				415FE56726B1127F00816F06 /* Info.plist */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
 		4167C803215BBAAE00C40E50 /* TableViewCellExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -716,15 +765,34 @@
 				411C3F15213816F200DEAB36 /* Frameworks */,
 				411C3F16213816F200DEAB36 /* Resources */,
 				A706E71E0AC3D765956DF59F /* [CP] Embed Pods Frameworks */,
+				415FE56B26B1127F00816F06 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				415FE56926B1127F00816F06 /* PBXTargetDependency */,
 			);
 			name = Valhalla;
 			productName = Valhalla;
 			productReference = 411C3F18213816F200DEAB36 /* Valhalla.app */;
 			productType = "com.apple.product-type.application";
+		};
+		415FE56126B1127F00816F06 /* Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 415FE56E26B1127F00816F06 /* Build configuration list for PBXNativeTarget "Keyboard" */;
+			buildPhases = (
+				415FE55E26B1127F00816F06 /* Sources */,
+				415FE55F26B1127F00816F06 /* Frameworks */,
+				415FE56026B1127F00816F06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Keyboard;
+			productName = Keyboard;
+			productReference = 415FE56226B1127F00816F06 /* Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -738,6 +806,9 @@
 					411C3F17213816F200DEAB36 = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 1000;
+					};
+					415FE56126B1127F00816F06 = {
+						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
@@ -755,6 +826,7 @@
 			projectRoot = "";
 			targets = (
 				411C3F17213816F200DEAB36 /* Valhalla */,
+				415FE56126B1127F00816F06 /* Keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -770,6 +842,13 @@
 				410A6B5722CA2C4300C43B56 /* gif in Resources */,
 				411C3F812138172700DEAB36 /* Assets.xcassets in Resources */,
 				411C3F822138172700DEAB36 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		415FE56026B1127F00816F06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -886,7 +965,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		415FE55E26B1127F00816F06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415FE56626B1127F00816F06 /* KeyboardViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		415FE56926B1127F00816F06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 415FE56126B1127F00816F06 /* Keyboard */;
+			targetProxy = 415FE56826B1127F00816F06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		411C3F342138172700DEAB36 /* LaunchScreen.storyboard */ = {
@@ -1061,6 +1156,49 @@
 			};
 			name = Release;
 		};
+		415FE56C26B1127F00816F06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75C77V5UHU;
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mademao.Valhalla.Keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		415FE56D26B1127F00816F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75C77V5UHU;
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mademao.Valhalla.Keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1078,6 +1216,15 @@
 			buildConfigurations = (
 				411C3F2F213816F300DEAB36 /* Debug */,
 				411C3F30213816F300DEAB36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		415FE56E26B1127F00816F06 /* Build configuration list for PBXNativeTarget "Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				415FE56C26B1127F00816F06 /* Debug */,
+				415FE56D26B1127F00816F06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
