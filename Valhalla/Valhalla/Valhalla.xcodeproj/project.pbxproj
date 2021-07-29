@@ -49,6 +49,10 @@
 		414DB6D42154C19000B8F1F6 /* CreateQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414DB6D32154C19000B8F1F6 /* CreateQRCodeViewController.m */; };
 		415FE56626B1127F00816F06 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415FE56526B1127F00816F06 /* KeyboardViewController.m */; };
 		415FE56A26B1127F00816F06 /* Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 415FE56226B1127F00816F06 /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		415FE57126B1848000816F06 /* MDMRowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F5C2138172700DEAB36 /* MDMRowModel.m */; };
+		415FE57226B1848200816F06 /* MDMSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F5D2138172700DEAB36 /* MDMSectionModel.m */; };
+		415FE57626B1894900816F06 /* KeyboardBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 415FE57526B1894900816F06 /* KeyboardBaseView.m */; };
+		415FE57B26B18BE700816F06 /* MMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 415FE57A26B18BE700816F06 /* MMapView.m */; };
 		4167C806215BBAB800C40E50 /* TableViewCellExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4167C805215BBAB800C40E50 /* TableViewCellExtensionViewController.m */; };
 		4193345821D39DC000B53BD7 /* CoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4193345721D39DC000B53BD7 /* CoreTextViewController.m */; };
 		4193345B21D39DD400B53BD7 /* CoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4193345A21D39DD400B53BD7 /* CoreTextView.m */; };
@@ -192,6 +196,10 @@
 		415FE56426B1127F00816F06 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
 		415FE56526B1127F00816F06 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
 		415FE56726B1127F00816F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		415FE57426B1894900816F06 /* KeyboardBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardBaseView.h; sourceTree = "<group>"; };
+		415FE57526B1894900816F06 /* KeyboardBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardBaseView.m; sourceTree = "<group>"; };
+		415FE57926B18BE700816F06 /* MMapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMapView.h; sourceTree = "<group>"; };
+		415FE57A26B18BE700816F06 /* MMapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMapView.m; sourceTree = "<group>"; };
 		4167C804215BBAB800C40E50 /* TableViewCellExtensionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCellExtensionViewController.h; sourceTree = "<group>"; };
 		4167C805215BBAB800C40E50 /* TableViewCellExtensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCellExtensionViewController.m; sourceTree = "<group>"; };
 		4193345621D39DC000B53BD7 /* CoreTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreTextViewController.h; sourceTree = "<group>"; };
@@ -288,6 +296,7 @@
 		411C3F0F213816F200DEAB36 = {
 			isa = PBXGroup;
 			children = (
+				415FE56F26B1149D00816F06 /* SharedCode */,
 				411C3F1A213816F200DEAB36 /* Valhalla */,
 				415FE56326B1127F00816F06 /* Keyboard */,
 				411C3F19213816F200DEAB36 /* Products */,
@@ -406,10 +415,6 @@
 			children = (
 				411C3F5B2138172700DEAB36 /* PrefixHeader.pch */,
 				411C3F5A2138172700DEAB36 /* Valhalla-Bridging-Header.h */,
-				411C3F582138172700DEAB36 /* MDMRowModel.h */,
-				411C3F5C2138172700DEAB36 /* MDMRowModel.m */,
-				411C3F572138172700DEAB36 /* MDMSectionModel.h */,
-				411C3F5D2138172700DEAB36 /* MDMSectionModel.m */,
 				411C3F592138172700DEAB36 /* MDMRootViewController.h */,
 				411C3F562138172700DEAB36 /* MDMRootViewController.m */,
 			);
@@ -561,11 +566,58 @@
 		415FE56326B1127F00816F06 /* Keyboard */ = {
 			isa = PBXGroup;
 			children = (
-				415FE56426B1127F00816F06 /* KeyboardViewController.h */,
-				415FE56526B1127F00816F06 /* KeyboardViewController.m */,
+				415FE57726B18BC500816F06 /* Common */,
+				415FE57326B1892400816F06 /* Core */,
 				415FE56726B1127F00816F06 /* Info.plist */,
 			);
 			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		415FE56F26B1149D00816F06 /* SharedCode */ = {
+			isa = PBXGroup;
+			children = (
+				415FE57026B1845B00816F06 /* Core */,
+			);
+			path = SharedCode;
+			sourceTree = "<group>";
+		};
+		415FE57026B1845B00816F06 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				411C3F582138172700DEAB36 /* MDMRowModel.h */,
+				411C3F5C2138172700DEAB36 /* MDMRowModel.m */,
+				411C3F572138172700DEAB36 /* MDMSectionModel.h */,
+				411C3F5D2138172700DEAB36 /* MDMSectionModel.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		415FE57326B1892400816F06 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				415FE56426B1127F00816F06 /* KeyboardViewController.h */,
+				415FE56526B1127F00816F06 /* KeyboardViewController.m */,
+				415FE57426B1894900816F06 /* KeyboardBaseView.h */,
+				415FE57526B1894900816F06 /* KeyboardBaseView.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		415FE57726B18BC500816F06 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				415FE57826B18BCF00816F06 /* mmap */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		415FE57826B18BCF00816F06 /* mmap */ = {
+			isa = PBXGroup;
+			children = (
+				415FE57926B18BE700816F06 /* MMapView.h */,
+				415FE57A26B18BE700816F06 /* MMapView.m */,
+			);
+			path = mmap;
 			sourceTree = "<group>";
 		};
 		4167C803215BBAAE00C40E50 /* TableViewCellExtension */ = {
@@ -969,7 +1021,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				415FE57626B1894900816F06 /* KeyboardBaseView.m in Sources */,
 				415FE56626B1127F00816F06 /* KeyboardViewController.m in Sources */,
+				415FE57B26B18BE700816F06 /* MMapView.m in Sources */,
+				415FE57126B1848000816F06 /* MDMRowModel.m in Sources */,
+				415FE57226B1848200816F06 /* MDMSectionModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
