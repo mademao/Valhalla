@@ -9,6 +9,7 @@
 #import "KeyboardViewController.h"
 #import "MDMSectionModel.h"
 #import "KeyboardBaseView.h"
+#import "KbdConfig+ForKVC.h"
 
 @interface KeyboardViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UIButton *nextKeyboardButton;
@@ -48,6 +49,8 @@
     [self setupUI];
     
     [self.view bringSubviewToFront:self.nextKeyboardButton];
+    
+    [KbdConfig sharedInstance].hasFullAccess = self.hasFullAccess;
 }
 
 - (void)viewWillLayoutSubviews

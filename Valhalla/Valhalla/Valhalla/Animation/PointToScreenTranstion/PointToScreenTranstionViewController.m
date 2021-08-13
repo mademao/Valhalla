@@ -38,6 +38,7 @@
 
 - (void)nextAction:(UIButton *)sender {
     PointToScreenTranstionPresentedViewController *viewController = [[PointToScreenTranstionPresentedViewController alloc] init];
+    viewController.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:viewController animated:YES completion:nil];
 }
 

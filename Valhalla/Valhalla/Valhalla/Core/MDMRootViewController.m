@@ -34,6 +34,17 @@
     MDMSectionModel *sectionModel = nil;
     MDMRowModel *rowModel = nil;
     
+    //Common
+    sectionModel = [[MDMSectionModel alloc] init];
+    sectionModel.name = NSLocalizedString(@"Common", nil);
+    
+    rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"mmap", nil);
+    rowModel.viewControllerName = @"MMapViewController";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
+    [self.sectionModelArray addObject:sectionModel];
+    
     //iOS
     sectionModel = [[MDMSectionModel alloc] init];
     sectionModel.name = NSLocalizedString(@"iOS", nil);

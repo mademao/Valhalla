@@ -26,8 +26,6 @@
 		411C3F8F2138172700DEAB36 /* MessageForwardingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F522138172700DEAB36 /* MessageForwardingViewController.m */; };
 		411C3F902138172700DEAB36 /* ClassC.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F542138172700DEAB36 /* ClassC.m */; };
 		411C3F912138172700DEAB36 /* MDMRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F562138172700DEAB36 /* MDMRootViewController.m */; };
-		411C3F922138172700DEAB36 /* MDMRowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F5C2138172700DEAB36 /* MDMRowModel.m */; };
-		411C3F932138172700DEAB36 /* MDMSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F5D2138172700DEAB36 /* MDMSectionModel.m */; };
 		411C3F942138172700DEAB36 /* GIFFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F602138172700DEAB36 /* GIFFileTool.m */; };
 		411C3F952138172700DEAB36 /* GIFSpeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F632138172700DEAB36 /* GIFSpeedViewController.m */; };
 		411C3F962138172700DEAB36 /* DigitScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F672138172700DEAB36 /* DigitScrollViewController.m */; };
@@ -49,11 +47,22 @@
 		414DB6D42154C19000B8F1F6 /* CreateQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414DB6D32154C19000B8F1F6 /* CreateQRCodeViewController.m */; };
 		415FE56626B1127F00816F06 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415FE56526B1127F00816F06 /* KeyboardViewController.m */; };
 		415FE56A26B1127F00816F06 /* Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 415FE56226B1127F00816F06 /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		415FE57126B1848000816F06 /* MDMRowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F5C2138172700DEAB36 /* MDMRowModel.m */; };
-		415FE57226B1848200816F06 /* MDMSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F5D2138172700DEAB36 /* MDMSectionModel.m */; };
 		415FE57626B1894900816F06 /* KeyboardBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 415FE57526B1894900816F06 /* KeyboardBaseView.m */; };
 		415FE57B26B18BE700816F06 /* MMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 415FE57A26B18BE700816F06 /* MMapView.m */; };
 		4167C806215BBAB800C40E50 /* TableViewCellExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4167C805215BBAB800C40E50 /* TableViewCellExtensionViewController.m */; };
+		418DB9E826B2CBD6002D3815 /* SharedCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 418DB9E626B2CBD6002D3815 /* SharedCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		418DB9EB26B2CBD6002D3815 /* SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 418DB9E426B2CBD6002D3815 /* SharedCode.framework */; };
+		418DB9EC26B2CBD6002D3815 /* SharedCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 418DB9E426B2CBD6002D3815 /* SharedCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		418DB9F126B2CC07002D3815 /* MMapUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 418DB9DC26B2CBAC002D3815 /* MMapUtil.h */; };
+		418DB9F226B2CC0D002D3815 /* MMapUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 418DB9DD26B2CBAC002D3815 /* MMapUtil.m */; };
+		418DB9F326B2CC10002D3815 /* MDMRowModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 411C3F582138172700DEAB36 /* MDMRowModel.h */; };
+		418DB9F426B2CC13002D3815 /* MDMRowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F5C2138172700DEAB36 /* MDMRowModel.m */; };
+		418DB9F526B2CC17002D3815 /* MDMSectionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 411C3F572138172700DEAB36 /* MDMSectionModel.h */; };
+		418DB9F626B2CC1A002D3815 /* MDMSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C3F5D2138172700DEAB36 /* MDMSectionModel.m */; };
+		418DB9F926B2CCA0002D3815 /* SharedCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 418DB9E426B2CBD6002D3815 /* SharedCode.framework */; };
+		418DB9FE26B2D2CB002D3815 /* MMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418DB9FD26B2D2CB002D3815 /* MMapViewController.m */; };
+		418DBA0326B2D7D0002D3815 /* KbdConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 418DBA0226B2D7D0002D3815 /* KbdConfig.m */; };
+		418DBA0626B2D86D002D3815 /* KbdConfig+ForKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 418DBA0526B2D86D002D3815 /* KbdConfig+ForKVC.m */; };
 		4193345821D39DC000B53BD7 /* CoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4193345721D39DC000B53BD7 /* CoreTextViewController.m */; };
 		4193345B21D39DD400B53BD7 /* CoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4193345A21D39DD400B53BD7 /* CoreTextView.m */; };
 		4193345E21D39E6300B53BD7 /* CoreTextLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4193345D21D39E6300B53BD7 /* CoreTextLayer.m */; };
@@ -95,6 +104,20 @@
 			remoteGlobalIDString = 415FE56126B1127F00816F06;
 			remoteInfo = Keyboard;
 		};
+		418DB9E926B2CBD6002D3815 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 411C3F10213816F200DEAB36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 418DB9E326B2CBD6002D3815;
+			remoteInfo = SharedCode;
+		};
+		418DB9F726B2CC7F002D3815 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 411C3F10213816F200DEAB36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 418DB9E326B2CBD6002D3815;
+			remoteInfo = SharedCode;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -107,6 +130,17 @@
 				415FE56A26B1127F00816F06 /* Keyboard.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418DB9F026B2CBD6002D3815 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				418DB9EC26B2CBD6002D3815 /* SharedCode.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -202,6 +236,19 @@
 		415FE57A26B18BE700816F06 /* MMapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMapView.m; sourceTree = "<group>"; };
 		4167C804215BBAB800C40E50 /* TableViewCellExtensionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCellExtensionViewController.h; sourceTree = "<group>"; };
 		4167C805215BBAB800C40E50 /* TableViewCellExtensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCellExtensionViewController.m; sourceTree = "<group>"; };
+		418DB9DC26B2CBAC002D3815 /* MMapUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMapUtil.h; sourceTree = "<group>"; };
+		418DB9DD26B2CBAC002D3815 /* MMapUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMapUtil.m; sourceTree = "<group>"; };
+		418DB9E426B2CBD6002D3815 /* SharedCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharedCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		418DB9E626B2CBD6002D3815 /* SharedCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedCode.h; sourceTree = "<group>"; };
+		418DB9E726B2CBD6002D3815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		418DB9FC26B2D2CB002D3815 /* MMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMapViewController.h; sourceTree = "<group>"; };
+		418DB9FD26B2D2CB002D3815 /* MMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMapViewController.m; sourceTree = "<group>"; };
+		418DB9FF26B2D61B002D3815 /* Valhalla.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Valhalla.entitlements; sourceTree = "<group>"; };
+		418DBA0026B2D66C002D3815 /* Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Keyboard.entitlements; sourceTree = "<group>"; };
+		418DBA0126B2D7D0002D3815 /* KbdConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KbdConfig.h; sourceTree = "<group>"; };
+		418DBA0226B2D7D0002D3815 /* KbdConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KbdConfig.m; sourceTree = "<group>"; };
+		418DBA0426B2D86D002D3815 /* KbdConfig+ForKVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KbdConfig+ForKVC.h"; sourceTree = "<group>"; };
+		418DBA0526B2D86D002D3815 /* KbdConfig+ForKVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "KbdConfig+ForKVC.m"; sourceTree = "<group>"; };
 		4193345621D39DC000B53BD7 /* CoreTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreTextViewController.h; sourceTree = "<group>"; };
 		4193345721D39DC000B53BD7 /* CoreTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreTextViewController.m; sourceTree = "<group>"; };
 		4193345921D39DD400B53BD7 /* CoreTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreTextView.h; sourceTree = "<group>"; };
@@ -268,11 +315,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				418DB9EB26B2CBD6002D3815 /* SharedCode.framework in Frameworks */,
 				81F947615183889FE734590E /* Pods_Valhalla.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		415FE55F26B1127F00816F06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418DB9F926B2CCA0002D3815 /* SharedCode.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418DB9E126B2CBD6002D3815 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -310,6 +366,7 @@
 			children = (
 				411C3F18213816F200DEAB36 /* Valhalla.app */,
 				415FE56226B1127F00816F06 /* Keyboard.appex */,
+				418DB9E426B2CBD6002D3815 /* SharedCode.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -317,6 +374,7 @@
 		411C3F1A213816F200DEAB36 /* Valhalla */ = {
 			isa = PBXGroup;
 			children = (
+				418DB9FF26B2D61B002D3815 /* Valhalla.entitlements */,
 				411C3F552138172700DEAB36 /* Core */,
 				41CF3A5021411ECA000FC5B3 /* Animation */,
 				411C3F7B2138172700DEAB36 /* Algorithm */,
@@ -324,6 +382,7 @@
 				411C3F5E2138172700DEAB36 /* ImageAndGraphics */,
 				411C3F642138172700DEAB36 /* iOS */,
 				411C3F4B2138172700DEAB36 /* Objective-C */,
+				418DB9FA26B2D1B5002D3815 /* Common */,
 				411C3F312138172700DEAB36 /* Supporting Files */,
 			);
 			path = Valhalla;
@@ -566,6 +625,7 @@
 		415FE56326B1127F00816F06 /* Keyboard */ = {
 			isa = PBXGroup;
 			children = (
+				418DBA0026B2D66C002D3815 /* Keyboard.entitlements */,
 				415FE57726B18BC500816F06 /* Common */,
 				415FE57326B1892400816F06 /* Core */,
 				415FE56726B1127F00816F06 /* Info.plist */,
@@ -576,6 +636,9 @@
 		415FE56F26B1149D00816F06 /* SharedCode */ = {
 			isa = PBXGroup;
 			children = (
+				418DB9E626B2CBD6002D3815 /* SharedCode.h */,
+				418DB9E726B2CBD6002D3815 /* Info.plist */,
+				418DB9DA26B2CB20002D3815 /* Common */,
 				415FE57026B1845B00816F06 /* Core */,
 			);
 			path = SharedCode;
@@ -599,6 +662,10 @@
 				415FE56526B1127F00816F06 /* KeyboardViewController.m */,
 				415FE57426B1894900816F06 /* KeyboardBaseView.h */,
 				415FE57526B1894900816F06 /* KeyboardBaseView.m */,
+				418DBA0126B2D7D0002D3815 /* KbdConfig.h */,
+				418DBA0226B2D7D0002D3815 /* KbdConfig.m */,
+				418DBA0426B2D86D002D3815 /* KbdConfig+ForKVC.h */,
+				418DBA0526B2D86D002D3815 /* KbdConfig+ForKVC.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -630,6 +697,40 @@
 				41CD2468215D0721003EE7D1 /* list.json */,
 			);
 			path = TableViewCellExtension;
+			sourceTree = "<group>";
+		};
+		418DB9DA26B2CB20002D3815 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				418DB9DB26B2CB27002D3815 /* mmap */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		418DB9DB26B2CB27002D3815 /* mmap */ = {
+			isa = PBXGroup;
+			children = (
+				418DB9DC26B2CBAC002D3815 /* MMapUtil.h */,
+				418DB9DD26B2CBAC002D3815 /* MMapUtil.m */,
+			);
+			path = mmap;
+			sourceTree = "<group>";
+		};
+		418DB9FA26B2D1B5002D3815 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				418DB9FB26B2D265002D3815 /* mmap */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		418DB9FB26B2D265002D3815 /* mmap */ = {
+			isa = PBXGroup;
+			children = (
+				418DB9FC26B2D2CB002D3815 /* MMapViewController.h */,
+				418DB9FD26B2D2CB002D3815 /* MMapViewController.m */,
+			);
+			path = mmap;
 			sourceTree = "<group>";
 		};
 		4193345521D39D2200B53BD7 /* CoreText */ = {
@@ -807,6 +908,20 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		418DB9DF26B2CBD6002D3815 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418DB9E826B2CBD6002D3815 /* SharedCode.h in Headers */,
+				418DB9F126B2CC07002D3815 /* MMapUtil.h in Headers */,
+				418DB9F326B2CC10002D3815 /* MDMRowModel.h in Headers */,
+				418DB9F526B2CC17002D3815 /* MDMSectionModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		411C3F17213816F200DEAB36 /* Valhalla */ = {
 			isa = PBXNativeTarget;
@@ -818,11 +933,13 @@
 				411C3F16213816F200DEAB36 /* Resources */,
 				A706E71E0AC3D765956DF59F /* [CP] Embed Pods Frameworks */,
 				415FE56B26B1127F00816F06 /* Embed App Extensions */,
+				418DB9F026B2CBD6002D3815 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				415FE56926B1127F00816F06 /* PBXTargetDependency */,
+				418DB9EA26B2CBD6002D3815 /* PBXTargetDependency */,
 			);
 			name = Valhalla;
 			productName = Valhalla;
@@ -840,11 +957,30 @@
 			buildRules = (
 			);
 			dependencies = (
+				418DB9F826B2CC7F002D3815 /* PBXTargetDependency */,
 			);
 			name = Keyboard;
 			productName = Keyboard;
 			productReference = 415FE56226B1127F00816F06 /* Keyboard.appex */;
 			productType = "com.apple.product-type.app-extension";
+		};
+		418DB9E326B2CBD6002D3815 /* SharedCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 418DB9ED26B2CBD6002D3815 /* Build configuration list for PBXNativeTarget "SharedCode" */;
+			buildPhases = (
+				418DB9DF26B2CBD6002D3815 /* Headers */,
+				418DB9E026B2CBD6002D3815 /* Sources */,
+				418DB9E126B2CBD6002D3815 /* Frameworks */,
+				418DB9E226B2CBD6002D3815 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharedCode;
+			productName = SharedCode;
+			productReference = 418DB9E426B2CBD6002D3815 /* SharedCode.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -860,6 +996,9 @@
 						LastSwiftMigration = 1000;
 					};
 					415FE56126B1127F00816F06 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					418DB9E326B2CBD6002D3815 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
@@ -879,6 +1018,7 @@
 			targets = (
 				411C3F17213816F200DEAB36 /* Valhalla */,
 				415FE56126B1127F00816F06 /* Keyboard */,
+				418DB9E326B2CBD6002D3815 /* SharedCode */,
 			);
 		};
 /* End PBXProject section */
@@ -898,6 +1038,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		415FE56026B1127F00816F06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418DB9E226B2CBD6002D3815 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -974,6 +1121,7 @@
 				411C3F8E2138172700DEAB36 /* ClassA.m in Sources */,
 				411C3F9B2138172700DEAB36 /* Player.m in Sources */,
 				41EEBCD72176147E00EE5058 /* ForceTouchDetailViewController.m in Sources */,
+				418DB9FE26B2D2CB002D3815 /* MMapViewController.m in Sources */,
 				4193345821D39DC000B53BD7 /* CoreTextViewController.m in Sources */,
 				411C3F902138172700DEAB36 /* ClassC.m in Sources */,
 				41B26A04215511A7007DD3AC /* QRCodeCreater.m in Sources */,
@@ -982,7 +1130,6 @@
 				411C3F972138172700DEAB36 /* DigitScrollView.m in Sources */,
 				411C3F882138172700DEAB36 /* CyclicCardLayoutViewController.m in Sources */,
 				410A6B5A22CA332E00C43B56 /* CompressImageUtil.m in Sources */,
-				411C3F932138172700DEAB36 /* MDMSectionModel.m in Sources */,
 				41B8412D216C5FA600B62FDB /* ImageOrientationDetailViewController.m in Sources */,
 				41B383F021493BB2002E6590 /* PointToScreenTranstionPresentedViewController.m in Sources */,
 				4127ECE02467A63C00E6E0AD /* DyldImageViewController.mm in Sources */,
@@ -992,7 +1139,6 @@
 				41B84127216B8B7700B62FDB /* ImageOrientationViewController.m in Sources */,
 				41CD24AA215E58AD003EE7D1 /* TableViewCellExtensionHeaderView.m in Sources */,
 				411C3F942138172700DEAB36 /* GIFFileTool.m in Sources */,
-				411C3F922138172700DEAB36 /* MDMRowModel.m in Sources */,
 				41A723FE22448E3E00B4F77C /* PNGCheckViewController.m in Sources */,
 				41CD25442160EE28003EE7D1 /* VideoPlayerView.m in Sources */,
 				411C3F992138172700DEAB36 /* FormTableView.m in Sources */,
@@ -1022,10 +1168,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				415FE57626B1894900816F06 /* KeyboardBaseView.m in Sources */,
+				418DBA0626B2D86D002D3815 /* KbdConfig+ForKVC.m in Sources */,
+				418DBA0326B2D7D0002D3815 /* KbdConfig.m in Sources */,
 				415FE56626B1127F00816F06 /* KeyboardViewController.m in Sources */,
 				415FE57B26B18BE700816F06 /* MMapView.m in Sources */,
-				415FE57126B1848000816F06 /* MDMRowModel.m in Sources */,
-				415FE57226B1848200816F06 /* MDMSectionModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418DB9E026B2CBD6002D3815 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418DB9F226B2CC0D002D3815 /* MMapUtil.m in Sources */,
+				418DB9F426B2CC13002D3815 /* MDMRowModel.m in Sources */,
+				418DB9F626B2CC1A002D3815 /* MDMSectionModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1036,6 +1192,16 @@
 			isa = PBXTargetDependency;
 			target = 415FE56126B1127F00816F06 /* Keyboard */;
 			targetProxy = 415FE56826B1127F00816F06 /* PBXContainerItemProxy */;
+		};
+		418DB9EA26B2CBD6002D3815 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 418DB9E326B2CBD6002D3815 /* SharedCode */;
+			targetProxy = 418DB9E926B2CBD6002D3815 /* PBXContainerItemProxy */;
+		};
+		418DB9F826B2CC7F002D3815 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 418DB9E326B2CBD6002D3815 /* SharedCode */;
+			targetProxy = 418DB9F726B2CC7F002D3815 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1110,7 +1276,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1162,7 +1328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -1175,11 +1341,12 @@
 			baseConfigurationReference = 4632E258E1D055BDF27F6541 /* Pods-Valhalla.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Valhalla/Valhalla.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75C77V5UHU;
 				GCC_PREFIX_HEADER = Valhalla/Core/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Valhalla/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1196,11 +1363,12 @@
 			baseConfigurationReference = 0CCE649E960A006EEA3DDA81 /* Pods-Valhalla.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Valhalla/Valhalla.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75C77V5UHU;
 				GCC_PREFIX_HEADER = Valhalla/Core/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/Valhalla/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1216,10 +1384,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = Keyboard/Keyboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75C77V5UHU;
 				INFOPLIST_FILE = Keyboard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1238,10 +1407,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = Keyboard/Keyboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 75C77V5UHU;
 				INFOPLIST_FILE = Keyboard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1252,6 +1422,67 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		418DB9EE26B2CBD6002D3815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 75C77V5UHU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SharedCode/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mademao.SharedCode;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		418DB9EF26B2CBD6002D3815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 75C77V5UHU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SharedCode/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mademao.SharedCode;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1281,6 +1512,15 @@
 			buildConfigurations = (
 				415FE56C26B1127F00816F06 /* Debug */,
 				415FE56D26B1127F00816F06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		418DB9ED26B2CBD6002D3815 /* Build configuration list for PBXNativeTarget "SharedCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418DB9EE26B2CBD6002D3815 /* Debug */,
+				418DB9EF26B2CBD6002D3815 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
