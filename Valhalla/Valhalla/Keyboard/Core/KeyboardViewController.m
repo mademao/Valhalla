@@ -90,6 +90,11 @@
     rowModel.viewControllerName = @"MMapView";
     [sectionModel.rowModelArray addObject:rowModel];
     
+    rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"MMKV", nil);
+    rowModel.viewControllerName = @"MMKVView";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
     [self.sectionModelArray addObject:sectionModel];
 }
 

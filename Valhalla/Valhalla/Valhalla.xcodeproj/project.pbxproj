@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4101F42126F21544000BBDF4 /* MMKVView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4101F42026F21544000BBDF4 /* MMKVView.m */; };
+		4101F42626F21A12000BBDF4 /* MMKVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4101F42526F21A12000BBDF4 /* MMKVViewController.m */; };
 		410A6B5522CA2AE000C43B56 /* CompressImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 410A6B5422CA2AE000C43B56 /* CompressImageViewController.m */; };
 		410A6B5722CA2C4300C43B56 /* gif in Resources */ = {isa = PBXBuildFile; fileRef = 410A6B5622CA2C4300C43B56 /* gif */; };
 		410A6B5A22CA332E00C43B56 /* CompressImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 410A6B5922CA332E00C43B56 /* CompressImageUtil.m */; };
@@ -94,6 +96,7 @@
 		41E740A7215A635C0029C91D /* CreatePDFPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E740A6215A635C0029C91D /* CreatePDFPreviewView.m */; };
 		41EEBCD72176147E00EE5058 /* ForceTouchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EEBCD62176147E00EE5058 /* ForceTouchDetailViewController.m */; };
 		81F947615183889FE734590E /* Pods_Valhalla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34DDC438D7A6E57F2DEC1D97 /* Pods_Valhalla.framework */; };
+		BEC7C832286795D37D948E39 /* Pods_Keyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17ECFBA3E2E1C4A7188C02F9 /* Pods_Keyboard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,7 +150,13 @@
 
 /* Begin PBXFileReference section */
 		0CCE649E960A006EEA3DDA81 /* Pods-Valhalla.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Valhalla.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Valhalla/Pods-Valhalla.release.xcconfig"; sourceTree = "<group>"; };
+		14119B9BD80FBF3191A4E9AE /* Pods-Keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keyboard.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Keyboard/Pods-Keyboard.release.xcconfig"; sourceTree = "<group>"; };
+		17ECFBA3E2E1C4A7188C02F9 /* Pods_Keyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Keyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34DDC438D7A6E57F2DEC1D97 /* Pods_Valhalla.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Valhalla.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4101F41F26F21544000BBDF4 /* MMKVView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMKVView.h; sourceTree = "<group>"; };
+		4101F42026F21544000BBDF4 /* MMKVView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMKVView.m; sourceTree = "<group>"; };
+		4101F42426F21A12000BBDF4 /* MMKVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMKVViewController.h; sourceTree = "<group>"; };
+		4101F42526F21A12000BBDF4 /* MMKVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMKVViewController.m; sourceTree = "<group>"; };
 		410A6B5322CA2AE000C43B56 /* CompressImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompressImageViewController.h; sourceTree = "<group>"; };
 		410A6B5422CA2AE000C43B56 /* CompressImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompressImageViewController.m; sourceTree = "<group>"; };
 		410A6B5622CA2C4300C43B56 /* gif */ = {isa = PBXFileReference; lastKnownFileType = folder; path = gif; sourceTree = "<group>"; };
@@ -308,6 +317,7 @@
 		41EEBCD52176147E00EE5058 /* ForceTouchDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForceTouchDetailViewController.h; sourceTree = "<group>"; };
 		41EEBCD62176147E00EE5058 /* ForceTouchDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForceTouchDetailViewController.m; sourceTree = "<group>"; };
 		4632E258E1D055BDF27F6541 /* Pods-Valhalla.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Valhalla.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Valhalla/Pods-Valhalla.debug.xcconfig"; sourceTree = "<group>"; };
+		5EC82FEC2A00B54151C15D7F /* Pods-Keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Keyboard.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Keyboard/Pods-Keyboard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				418DB9F926B2CCA0002D3815 /* SharedCode.framework in Frameworks */,
+				BEC7C832286795D37D948E39 /* Pods_Keyboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +349,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4101F41E26F2152D000BBDF4 /* MMKV */ = {
+			isa = PBXGroup;
+			children = (
+				4101F41F26F21544000BBDF4 /* MMKVView.h */,
+				4101F42026F21544000BBDF4 /* MMKVView.m */,
+			);
+			path = MMKV;
+			sourceTree = "<group>";
+		};
+		4101F42326F219FD000BBDF4 /* MMKV */ = {
+			isa = PBXGroup;
+			children = (
+				4101F42426F21A12000BBDF4 /* MMKVViewController.h */,
+				4101F42526F21A12000BBDF4 /* MMKVViewController.m */,
+			);
+			path = MMKV;
+			sourceTree = "<group>";
+		};
 		410A6B5222CA2A5500C43B56 /* CompressImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -673,6 +702,7 @@
 		415FE57726B18BC500816F06 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				4101F41E26F2152D000BBDF4 /* MMKV */,
 				415FE57826B18BCF00816F06 /* mmap */,
 			);
 			path = Common;
@@ -719,6 +749,7 @@
 		418DB9FA26B2D1B5002D3815 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				4101F42326F219FD000BBDF4 /* MMKV */,
 				418DB9FB26B2D265002D3815 /* mmap */,
 			);
 			path = Common;
@@ -893,6 +924,7 @@
 			isa = PBXGroup;
 			children = (
 				34DDC438D7A6E57F2DEC1D97 /* Pods_Valhalla.framework */,
+				17ECFBA3E2E1C4A7188C02F9 /* Pods_Keyboard.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -902,6 +934,8 @@
 			children = (
 				4632E258E1D055BDF27F6541 /* Pods-Valhalla.debug.xcconfig */,
 				0CCE649E960A006EEA3DDA81 /* Pods-Valhalla.release.xcconfig */,
+				5EC82FEC2A00B54151C15D7F /* Pods-Keyboard.debug.xcconfig */,
+				14119B9BD80FBF3191A4E9AE /* Pods-Keyboard.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -950,6 +984,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 415FE56E26B1127F00816F06 /* Build configuration list for PBXNativeTarget "Keyboard" */;
 			buildPhases = (
+				EB0014CC9111CB11C40F2068 /* [CP] Check Pods Manifest.lock */,
 				415FE55E26B1127F00816F06 /* Sources */,
 				415FE55F26B1127F00816F06 /* Frameworks */,
 				415FE56026B1127F00816F06 /* Resources */,
@@ -1089,6 +1124,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EB0014CC9111CB11C40F2068 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Keyboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1148,6 +1205,7 @@
 				41CF3AAC2142AA09000FC5B3 /* TurnAroundButton.m in Sources */,
 				41B7995E21469F4F001A632F /* NavigationAnimation.m in Sources */,
 				410A6B5522CA2AE000C43B56 /* CompressImageViewController.m in Sources */,
+				4101F42626F21A12000BBDF4 /* MMKVViewController.m in Sources */,
 				414DB6D42154C19000B8F1F6 /* CreateQRCodeViewController.m in Sources */,
 				4167C806215BBAB800C40E50 /* TableViewCellExtensionViewController.m in Sources */,
 				4193345E21D39E6300B53BD7 /* CoreTextLayer.m in Sources */,
@@ -1168,6 +1226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				415FE57626B1894900816F06 /* KeyboardBaseView.m in Sources */,
+				4101F42126F21544000BBDF4 /* MMKVView.m in Sources */,
 				418DBA0626B2D86D002D3815 /* KbdConfig+ForKVC.m in Sources */,
 				418DBA0326B2D7D0002D3815 /* KbdConfig.m in Sources */,
 				415FE56626B1127F00816F06 /* KeyboardViewController.m in Sources */,
@@ -1382,6 +1441,7 @@
 		};
 		415FE56C26B1127F00816F06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EC82FEC2A00B54151C15D7F /* Pods-Keyboard.debug.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_ENTITLEMENTS = Keyboard/Keyboard.entitlements;
@@ -1405,6 +1465,7 @@
 		};
 		415FE56D26B1127F00816F06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14119B9BD80FBF3191A4E9AE /* Pods-Keyboard.release.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_ENTITLEMENTS = Keyboard/Keyboard.entitlements;

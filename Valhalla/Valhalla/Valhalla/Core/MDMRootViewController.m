@@ -43,6 +43,11 @@
     rowModel.viewControllerName = @"MMapViewController";
     [sectionModel.rowModelArray addObject:rowModel];
     
+    rowModel = [[MDMRowModel alloc] init];
+    rowModel.name = NSLocalizedString(@"MMKV", nil);
+    rowModel.viewControllerName = @"MMKVViewController";
+    [sectionModel.rowModelArray addObject:rowModel];
+    
     [self.sectionModelArray addObject:sectionModel];
     
     //iOS

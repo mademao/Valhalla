@@ -12,6 +12,15 @@ target 'Valhalla' do
 	pod 'YYImage', '~> 1.0.4'
 	pod 'MBProgressHUD', '~> 1.1.0'
 	pod 'Pluto', '~> 1.0.4'
+  pod 'MMKV', :git => 'https://github.com/mademao/MMKV.git', :branch => 'master'
+  pod 'MMKVCore', :git => 'https://github.com/mademao/MMKV.git', :branch => 'master'
+end
+
+target 'Keyboard' do
+  platform :ios, '10.0'
+  project 'Valhalla/Valhalla.xcodeproj'
+  pod 'MMKVAppExtension', :git => 'https://github.com/mademao/MMKV.git', :branch => 'master'
+  pod 'MMKVCore', :git => 'https://github.com/mademao/MMKV.git', :branch => 'master'
 end
 
 target 'EmployeeCard' do

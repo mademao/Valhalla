@@ -5,6 +5,11 @@ PODS:
   - Kingfisher (3.5.2)
   - MBProgressHUD (1.1.0)
   - MJRefresh (3.1.12)
+  - MMKV (1.2.11):
+    - MMKVCore (~> 1.2.10)
+  - MMKVAppExtension (1.2.11):
+    - MMKVCore (~> 1.2.10)
+  - MMKVCore (1.2.11)
   - Pluto (1.0.4)
   - YYImage (1.0.4):
     - YYImage/Core (= 1.0.4)
@@ -15,6 +20,9 @@ DEPENDENCIES:
   - Kingfisher (= 3.5.2)
   - MBProgressHUD (~> 1.1.0)
   - MJRefresh (= 3.1.12)
+  - MMKV (from `https://github.com/mademao/MMKV.git`, branch `master`)
+  - MMKVAppExtension (from `https://github.com/mademao/MMKV.git`, branch `master`)
+  - MMKVCore (from `https://github.com/mademao/MMKV.git`, branch `master`)
   - Pluto (~> 1.0.4)
   - YYImage (~> 1.0.4)
 
@@ -27,14 +35,39 @@ SPEC REPOS:
     - Pluto
     - YYImage
 
+EXTERNAL SOURCES:
+  MMKV:
+    :branch: master
+    :git: https://github.com/mademao/MMKV.git
+  MMKVAppExtension:
+    :branch: master
+    :git: https://github.com/mademao/MMKV.git
+  MMKVCore:
+    :branch: master
+    :git: https://github.com/mademao/MMKV.git
+
+CHECKOUT OPTIONS:
+  MMKV:
+    :commit: 14f00f37e49a0ba7a65cb627698a1648c1dec0e3
+    :git: https://github.com/mademao/MMKV.git
+  MMKVAppExtension:
+    :commit: 14f00f37e49a0ba7a65cb627698a1648c1dec0e3
+    :git: https://github.com/mademao/MMKV.git
+  MMKVCore:
+    :commit: 14f00f37e49a0ba7a65cb627698a1648c1dec0e3
+    :git: https://github.com/mademao/MMKV.git
+
 SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   Kingfisher: 9950e382c500b6834ce004c7c4131c444e90c3a1
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MMKV: f603446edf10c071f4f87d7af4e1ac650b333f25
+  MMKVAppExtension: bcb93ebed84be7d91e491fdc0b9cef1483df4702
+  MMKVCore: 04f05e333360dcadcf3207a614daf560577685db
   Pluto: 4e1fd373a7bdae7fdabeb3e13d5a265012cd582f
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
 
-PODFILE CHECKSUM: 031ae63b8bf3ae93bb6ede2fe1999bb115b02cd1
+PODFILE CHECKSUM: 34066d25db7927a82bd3fd5b4d09d117bb564da4
 
 COCOAPODS: 1.9.3
